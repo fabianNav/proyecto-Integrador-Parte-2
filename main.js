@@ -34,22 +34,24 @@ function cargarEventos() {
 
     const ruta = String(location.href)
 
-    if (!ruta.includes('carrito') && !ruta.includes('index') && !ruta.includes('contacto') && !ruta.includes('nosotros')) {
+    if (!ruta.includes('carrito.html') && !ruta.includes('index.html') && !ruta.includes('contacto.html') && !ruta.includes('nosotros.html')) {
         esProductos()
-    } else if (ruta.includes('carrito')) {
+    } else if (ruta.includes('carrito.html')) {
         esCarrito()
-    } else if (ruta.includes('contacto') || ruta.includes('nosotros')) {
+    } else if (ruta.includes('contacto.html') || ruta.includes('nosotros')) {
         contactoONosotros()
-    } else {
+    } else if (ruta.includes('index')) {
         esIndex()
     }
 
 }
-const vaciarCarritoBtn = carrito.querySelector('#vaciar-carrito')
-const procesarPedidoBtn = carrito.querySelector('#procesar-pedido')
 
 function esIndex() {
     //console.log('No estoy en carrito!')
+
+
+    const vaciarCarritoBtn = carrito.querySelector('#vaciar-carrito')
+    const procesarPedidoBtn = carrito.querySelector('#procesar-pedido')
 
     // Se ejecuta cuando presiono sobre el botón comprar
     productos.addEventListener('click', (e) => comprarProducto(e))
@@ -70,6 +72,9 @@ function esIndex() {
 }
 
 function esProductos() {
+
+    const vaciarCarritoBtn = carrito.querySelector('#vaciar-carrito')
+    const procesarPedidoBtn = carrito.querySelector('#procesar-pedido')
     //console.log(vaciarCarritoBtn, procesarPedidoBtn)
 
     // Se ejecuta cuando presiono sobre el botón comprar

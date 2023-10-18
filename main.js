@@ -90,7 +90,7 @@ function esProductos() {
     vaciarCarritoBtn.addEventListener('click', e => vaciarCarrito(e))
 
     // Enviar pedido a otra página
-    procesarPedidoBtn.addEventListener('click', e => procesarPedidoProductos(e))
+    procesarPedidoBtn.addEventListener('click', e => procesarPedido(e))
 
     //Cambiar tema
     cambiarTema()

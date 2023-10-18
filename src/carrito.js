@@ -165,7 +165,7 @@ export function procesarPedido(e) {
         })
     } else {
         console.log('maxi')
-        location.href = 'https://main--fanciful-mermaid-a4ff68.netlify.app/pages/carrito.html'
+        location.href = 'https://educacionit.com'
         
     } 
 }

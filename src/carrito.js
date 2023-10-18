@@ -155,7 +155,6 @@ function vaciarLocalStorage() {
 export function procesarPedido(e) {
     e.preventDefault() // Detener el comportamiento por defecto de los <a> o los <form>
     let array = obtenerProductosLocalStorage()
-    const ruta = String(location.href)
     if (array.length === 0) {
         Swal.fire({
             title: 'No hay productos en el carrito',
@@ -165,11 +164,7 @@ export function procesarPedido(e) {
             background: '#000',
         })
     } else {
-        if (ruta.includes('index')) {
-            location.href = 'pages/carrito.html'
-        } else if (ruta.includes('pages')){
-            location.href = 'carrito.html'
-        }
+        location.href = 'pages/carrito.html'
     }
 }
 
@@ -189,6 +184,22 @@ export function pagar() {
             text: 'Necesitas elegír al menos un producto!',
             footer: '<a href="../index.html">Ir al menu</a>'
         })
+    }
+}
+
+export function procesarPedidoProductos(e) {
+    e.preventDefault() // Detener el comportamiento por defecto de los <a> o los <form>
+    let array = obtenerProductosLocalStorage()
+    if (array.length === 0) {
+        Swal.fire({
+            title: 'No hay productos en el carrito',
+            width: 600,
+            padding: '3em',
+            color: '#00cccc',
+            background: '#000',
+        })
+    } else {
+        location.href = 'carrito.html'
     }
 }
 

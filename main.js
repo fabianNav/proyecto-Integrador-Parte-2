@@ -40,7 +40,7 @@ function cargarEventos() {
         esCarrito()
     } else if (ruta.includes('contacto.html') || ruta.includes('nosotros')) {
         contactoONosotros()
-    } else if (ruta.includes('index')) {
+    } else if (ruta.includes) {
         esIndex()
     }
 
@@ -90,7 +90,7 @@ function esProductos() {
     vaciarCarritoBtn.addEventListener('click', e => vaciarCarrito(e))
 
     // Enviar pedido a otra página
-    procesarPedidoBtn.addEventListener('click', e => procesarPedido(e))
+    procesarPedidoBtn.addEventListener('click', e => procesarPedidoProductos(e))
 
     //Cambiar tema
     cambiarTema()

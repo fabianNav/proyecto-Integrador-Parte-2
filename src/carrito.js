@@ -167,7 +167,7 @@ export function procesarPedido(e) {
     } else {
         if (ruta.includes('index.html')) {
             location.href = 'pages/carrito.html'
-        } else {
+        } else if (ruta.includes('pages')){
             location.href = 'carrito.html'
         }
         

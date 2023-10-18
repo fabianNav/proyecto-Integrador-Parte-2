@@ -40,7 +40,7 @@ function cargarEventos() {
         esCarrito()
     } else if (ruta.includes('contacto.html') || ruta.includes('nosotros')) {
         contactoONosotros()
-    } else if (!ruta.includes('carrito.html') && !ruta.includes('contacto.html') && !ruta.includes('nosotros.html') && !ruta.includes('accesorios.html') && !ruta.includes('conectividad.html') && !ruta.includes('consolas.html') && !ruta.includes('notebooks.html') && !ruta.includes('perifericos.html') && !ruta.includes('software.html') && !ruta.includes('todo.html')) {
+    } else if (!ruta.includes('carrito') && !ruta.includes('contacto') && !ruta.includes('nosotros') && !ruta.includes('accesorios') && !ruta.includes('conectividad') && !ruta.includes('consolas') && !ruta.includes('notebooks') && !ruta.includes('perifericos') && !ruta.includes('software') && !ruta.includes('todo.html')) {
         esIndex()
     }
 

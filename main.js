@@ -36,14 +36,14 @@ function cargarEventos() {
 
     if (!ruta.includes('carrito') && !ruta.includes('index') && !ruta.includes('contacto') && !ruta.includes('nosotros')) {
         esProductos()
-    } else if (ruta.includes('index')) {
-        esIndex()
     } else if (ruta.includes('carrito')) {
         esCarrito()
     } else if (ruta.includes('contacto')) {
         contacto()
     } else if (ruta.includes('nosotros')) {
         nosotros()
+    } else {
+        esIndex()
     }
 
 }
@@ -119,14 +119,14 @@ function esCarrito() {
 }
 
 function contacto() {
-    
+
 
     cambiarTema()
 
 }
 
 function nosotros() {
-    
+
 
     cambiarTema()
 }

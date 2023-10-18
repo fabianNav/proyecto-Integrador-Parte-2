@@ -153,8 +153,11 @@ function vaciarLocalStorage() {
 
 // Procesando el pedido
 export function procesarPedido(e) {
+    debugger
     e.preventDefault() // Detener el comportamiento por defecto de los <a> o los <form>
+    debugger
     let array = obtenerProductosLocalStorage()
+    debugger
     if (array.length === 0) {
         Swal.fire({
             title: 'No hay productos en el carrito, GIL',
@@ -166,7 +169,7 @@ export function procesarPedido(e) {
 
     } else {
         location.href = 'pages/carrito.html'
-    }
+    } debugger
 }
 
 export function pagar() {

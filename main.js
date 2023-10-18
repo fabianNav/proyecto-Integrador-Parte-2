@@ -34,23 +34,23 @@ function cargarEventos() {
 
     const ruta = String(location.href)
 
-    if (!ruta.includes('carrito.html') && !ruta.includes('index.html') && !ruta.includes('contacto.html') && !ruta.includes('nosotros.html')) {
+    if (!ruta.includes('carrito') && !ruta.includes('index') && !ruta.includes('contacto') && !ruta.includes('nosotros')) {
         esProductos()
     }
 
-    if (location.href.includes('index')) {
+    if (ruta.includes('index')) {
         esIndex()
     }
 
-    if (ruta.includes('carrito.html')) {
+    if (ruta.includes('carrito')) {
         esCarrito()
     }
 
-    if (ruta.includes('contacto.html')) {
+    if (ruta.includes('contacto')) {
         contacto()
     }
 
-    if (ruta.includes('nosotros.html')) {
+    if (ruta.includes('nosotros')) {
         nosotros()
     }
 

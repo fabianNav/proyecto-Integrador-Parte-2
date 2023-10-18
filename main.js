@@ -33,13 +33,12 @@ cargarEventos()
 function cargarEventos() {
 
     const ruta = String(location.href)
-    const index = document.getElementById('index')
 
     if (!ruta.includes('carrito') && !ruta.includes('index') && !ruta.includes('contacto') && !ruta.includes('nosotros')) {
         esProductos()
     }
 
-    if (document.body.contains(index)) {
+    if (ruta.includes('index')) {
         esIndex()
     }
 

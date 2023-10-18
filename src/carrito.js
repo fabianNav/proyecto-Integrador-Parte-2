@@ -165,7 +165,7 @@ export function procesarPedido(e) {
         })
 
     } else {
-        location.href = 'pages/carrito'
+        location.href = 'pages/carrito.html'
     }
 }
 
@@ -201,7 +201,7 @@ export function procesarPedidoProductos(e) {
             background: '#000',
         })
     } else {
-        location.href = 'carrito'
+        location.href = 'carrito.html'
     }
 }
 

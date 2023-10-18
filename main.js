@@ -40,7 +40,7 @@ function cargarEventos() {
         esCarrito()
     } else if (ruta.includes('contacto.html') || ruta.includes('nosotros')) {
         contactoONosotros()
-    } else if (ruta.includes) {
+    } else {
         esIndex()
     }
 

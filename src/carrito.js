@@ -187,7 +187,7 @@ export function pagar() {
     }
 }
 
-export function procesarPedidoProductos(e) {
+export function procesarProductos(e) {
     e.preventDefault() // Detener el comportamiento por defecto de los <a> o los <form>
     let array = obtenerProductosLocalStorage()
     if (array.length === 0) {

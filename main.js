@@ -15,7 +15,7 @@ import {
     obtenerEvento,
     pagar,
     procesarPedido,
-    procesarPedidoProductos,
+    procesarProductos,
     vaciarCarrito
 } from './src/carrito'
 import { cambiarTema } from './src/tema'
@@ -90,7 +90,7 @@ function esProductos() {
     vaciarCarritoBtn.addEventListener('click', e => vaciarCarrito(e))
 
     // Enviar pedido a otra página
-    procesarPedidoBtn.addEventListener('click', e => procesarPedidoProductos(e))
+    procesarPedidoBtn.addEventListener('click', e => procesarProductos(e))
 
     //Cambiar tema
     cambiarTema()

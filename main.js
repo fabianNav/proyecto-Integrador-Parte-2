@@ -38,7 +38,7 @@ function cargarEventos() {
         esProductos()
     }
 
-    if (ruta.includes('')) {
+    if (ruta.includes('index.html')) {
         esIndex()
     }
 

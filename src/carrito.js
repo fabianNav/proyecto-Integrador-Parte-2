@@ -155,6 +155,7 @@ function vaciarLocalStorage() {
 export function procesarPedido(e) {
     e.preventDefault() // Detener el comportamiento por defecto de los <a> o los <form>
     let array = obtenerProductosLocalStorage()
+    const ruta = String(location.href)
     if (array.length === 0) {
         Swal.fire({
             title: 'No hay productos en el carrito',
@@ -164,7 +165,12 @@ export function procesarPedido(e) {
             background: '#000',
         })
     } else {
-        location.href = 'carrito.html'
+        if (ruta.includes('index.html')) {
+            location.href = 'pages/carrito.html'
+        } else {
+            location.href = 'carrito.html'
+        }
+        
     }
 }
 

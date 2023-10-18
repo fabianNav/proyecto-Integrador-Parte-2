@@ -1,0 +1,1069 @@
+@import 'bootstrap';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* !-------------------------------------------------------------------------------- */
+
+body {
+    background-color: #000;
+    color: #00cccc;
+}
+
+/* !index */
+
+.header-nav {
+    background-color: #000;
+    border-bottom: solid #00cccc 1px;
+    color: #00cccc;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+
+
+.container.justify-content-center,
+.fa-sharp.fa-solid.fa-cart-shopping,
+.dropdown {
+    margin-top: 0;
+}
+
+/* ?NAV----------------------------------------------------------------------------- */
+
+a.nav-link.ms-5.ms-auto.carrito i.fa-sharp.fa-solid.fa-cart-shopping {
+    padding: 0.4375rem;
+    transition: 1s;
+    border-radius: 0.5rem;
+    border: 0.0625rem solid #000;
+}
+
+i.fa-sharp.fa-solid.fa-cart-shopping:hover {
+    background-color: #00cccc;
+    color: #000;
+    padding: 4px;
+    margin: 0;
+    border-radius: 0.5rem;
+    transition: all 1.5s;
+}
+
+a.nav-link.ms-5.link {
+    border-radius: 0.5rem;
+    padding: 0.4375rem;
+    transition: 1s;
+    border: 0.0625rem solid #000;
+}
+
+a.nav-link.ms-5.link:hover {
+    background-color: #00cccc;
+    color: #000;
+    border: 0.0625rem solid #00cccc;
+    padding: 0.4375rem;
+    border-radius: 0.5rem;
+}
+
+.btn.dropdown-toggle {
+    color: #00cccc;
+    background-color: #000;
+    transition: 1s;
+}
+
+.dropdown a.btn.dropdown-toggle:hover {
+    background-color: #00cccc;
+    color: #000;
+}
+
+.dropdown ul {
+    background-color: #00cccc;
+    border: solid 0.0625rem #00cccc;
+}
+
+.dropdown ul li a {
+    color: #000;
+    background-color: #00cccc;
+}
+
+.dropdown ul li a:hover {
+    background-color: #000;
+    color: #00cccc;
+}
+
+.btn.btn-outline-success.ms-1 {
+    background-color: #000;
+    border: 0.0625rem solid #00cccc;
+    color: #00cccc;
+}
+
+.btn.btn-outline-success.ms-1:hover {
+    background-color: #00cccc;
+    border: 0.0625rem solid #000;
+    color: #000;
+}
+
+/* ?----------------------------------------------------------------- */
+
+
+div.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.125rem;
+    width: 68.75rem;
+    flex-wrap: wrap;
+}
+
+/* ?carrusel----------------------------------------------------------------------------------------------------------- */
+.carousel.slide {
+    width: 45.75rem;
+    text-align: center;
+}
+
+.carousel-caption {
+    background-color: #000;
+    color: #00cccc;
+}
+
+/* ?-------------------------------------------------------------------------------------------------------------------- */
+section header {
+    display: block;
+    text-align: center;
+    margin-top: 3.125rem;
+}
+
+/* ?cards----------------------------------------------------------------------------------------------------------- */
+
+div.card {
+    width: 18rem;
+    color: #00cccc;
+    margin-left: 0.25rem;
+    background-color: #000;
+    padding: 0.375rem;
+    border: #00cccc solid 0.125rem;
+    border-radius: 5%;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+}
+
+h5.card-title {
+    color: #fff;
+}
+
+h5.card-title,
+h4.costo {
+    text-align: center;
+}
+
+.white .costo {
+    background-color: #000;
+    color: #e6d8d8;
+}
+
+ul.card-text {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+
+/*? Card de categorias -------*/
+
+ul.card-text.cat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    margin-right: 1.7rem;
+}
+
+.img-grande {
+    height: 15.270rem;
+}
+
+.img-pequeña {
+    height: 15.270rem;
+}
+
+ul.card-text.cat li {
+    margin-bottom: 0.3125rem;
+}
+
+h4.costo.texto-t-corto {
+    margin-top: 1.79rem;
+}
+
+/* ?----------------------- */
+
+/* ?-------------------------------------------------------------------------------------------------------------------- */
+
+/* ?BOTONES------------------------------------------------------------------------------------------------------------- */
+a.btn.btn-primary {
+    background-color: #00cccc;
+    color: #000;
+    border-radius: 1.875rem;
+    margin-top: 0.625rem;
+}
+
+a.btn.btn-primary:active {
+    background-color: #000;
+    color: #00cccc;
+    border: #00cccc 0.0625rem solid;
+}
+
+.vermas {
+    margin-left: 3.75rem;
+}
+
+.btn.btn-primary.comprar,
+.btn.btn-primary.vermas {
+    border-color: #00cccc;
+}
+
+.white .btn.btn-primary.comprar, .white .btn.btn-primary.vermas {
+    background-color: #000;
+    color: #e6d8d8;
+    border-color: #e6d8d8;
+}
+
+.white .btn.btn-primary.comprar:active, .white .btn.btn-primary.vermas:active {
+    background-color: #e6d8d8;
+    color: #000;
+    border-color: #000;
+}
+/* ?-------------------------------------------------------------------------------------------------------------------- */
+
+
+address.container-fluid {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-self: center;
+}
+
+div.accordion-item {
+    border: none;
+    width: 12.5rem;
+}
+
+
+.accordion-collapse.collapse.show {
+    background-color: #fff;
+}
+
+button.accordion-button:hover {
+    background-color: #000;
+    color: #00cccc;
+    border: solid 0.125rem #000;
+}
+
+button.accordion-button {
+    background-color: #000;
+    color: #00cccc;
+    border: solid 0.125rem #000;
+}
+
+.nosotros-iconos {
+    margin: 3em 0;
+}
+
+.nosotros-iconos i {
+    margin-right: .8em;
+    box-shadow: 0 0 0.1875rem rgba(0, 0, 0, alpha.2);
+}
+
+.nosotros-iconos li {
+    display: inline-block;
+}
+
+.nosotros-iconos i:hover {
+    color: red;
+    transition: 1s;
+}
+
+.tarjetas img {
+    width: 70.3125rem;
+}
+
+.columna {
+    background-color: #fff;
+}
+
+/* !SEPARADOR----------------------------------------------------------------------------------------- */
+
+.separador {
+    width: 100%;
+    background-color: #00cccc;
+    height: 0.125rem;
+
+}
+
+/* !SEPARADOR----------------------------------------------------------------------------------------- */
+
+
+/* !FOOTER----------------------------------------------------------------------------------------------*/
+/* ?ICONOS-FOOTER--------------------------------------------------------------------------------------- */
+
+body footer {
+    border-top: solid #00cccc 1px;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+address div {
+    text-align: center;
+}
+
+
+address div ul li {
+    background-color: #000;
+    color: #00cccc;
+    margin: 1.25rem;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    list-style: none;
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 3.75rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0.625rem 20.3125rem rgba(0, 0, 0, .1);
+    transition: .5s;
+}
+
+address div ul li:hover {
+    /* tamaño y sombra del ovalo */
+    width: 12.5rem;
+    box-shadow: 0 0.625rem 20.3125rem rgb(0, 0, 0);
+}
+
+address div ul li::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 3.125rem;
+    opacity: 0;
+    transition: .5s;
+}
+
+address div ul #facebook::before {
+    background: linear-gradient(75deg, #1877f2, #fff);
+}
+
+address div ul #instagram::before {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+address div ul #twitter::before {
+    background: linear-gradient(55deg, #1da1f2 49%, #fff);
+
+}
+
+address div ul #tiktok::before {
+    background: linear-gradient(45deg, #ff0050, #00f2ea, #000);
+}
+
+address div ul #telegram::before {
+    background-color: #0088cc;
+    background: linear-gradient(75deg, #0088cc 40%, #fff);
+}
+
+address div ul #whatsapp::before {
+    background: linear-gradient(45deg, #33d16b, #5cda89, #fff);
+}
+
+address div ul #linkedin::before {
+    background: linear-gradient(75deg, #0a66c2 40%, #fff);
+}
+
+address div ul #youtube::before {
+    background: linear-gradient(25deg, #ff0000, #fff);
+}
+
+address div ul li:hover::before {
+    /* el ovalo que encierra al titulo */
+    opacity: 1;
+}
+
+address div ul li::after {
+    content: '';
+    position: absolute;
+    top: 0.625rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 3.75rem;
+    opacity: 0;
+    transition: .5s;
+    z-index: -1;
+    filter: blur(10.3125rem);
+}
+
+address div ul li:hover::after {
+    opacity: .5;
+}
+
+address div ul li i {
+    color: #fff;
+    font-size: 0;
+    transition: .5s;
+    transition-delay: .25s;
+}
+
+address div ul li:hover i {
+    /* tiempo que se tarda el logo en desaparecer */
+    transform: scale(0);
+    font-size: 0;
+    transition-delay: .25s;
+}
+
+address div ul li a {
+    /* posicion de los link del footer */
+    position: absolute;
+}
+
+address div ul li .titulo {
+    color: #000;
+}
+
+
+address div ul li .titulo {
+    /* titulos de las redes */
+    background-color: rgba(0, 0, 0, 0);
+    text-decoration-line: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transform: scale(0);
+    transition: .5s;
+    transition-delay: 0s;
+}
+
+address div ul li .titulo#ttwitt {
+    font-size: 2.5rem;
+}
+
+address div ul li .titulo#tinsta {
+    font-size: 1.9rem;
+}
+
+address div ul li .titulo#ttik {
+    font-size: 3.1875rem;
+}
+
+address div ul li .titulo#tyout {
+    font-size: 2.375rem;
+}
+
+address div ul li .titulo#tlink {
+    font-size: 2.3125rem;
+}
+
+address div ul li:hover .titulo {
+    /* tiempo en el que se tarda en aparecer el titulo de la red */
+    transform: scale(1);
+    transition-delay: .25s;
+}
+
+a span.titulo {
+    text-decoration: none;
+}
+
+.fa-brands {
+    color: #00cccc;
+}
+
+address div ul {
+    position: relative;
+    display: flex;
+}
+
+/* ?--------------------------------------------------------------------------------------------------- */
+
+/* ?SLIDER--------------------------------------------------------------------------------------------- */
+
+.slider {
+    display: flex;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    align-items: center;
+}
+
+.slider .slider-track {
+    display: flex;
+    animation: slider 25s linear infinite;
+    -webkit-animation: slider 25s linear infinite;
+    width: 100%;
+}
+
+.slider .slider-track .slide {
+    display: flex;
+}
+
+.slider .slider-track .slide img {
+    width: 11.25rem;
+    height: 5rem;
+    padding: 0.625rem;
+    background-color: #000;
+    cursor: pointer;
+    margin: 1.25rem;
+    border-radius: 0.5rem;
+    box-shadow: rgba(50, 50, 93, .25), 0 0.125rem 0.3125rem -0.0625rem, rgba(0, 0, 0, 0.3) 0 0.0625rem 0.1875rem -0.0625rem;
+}
+
+@keyframes slider {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+
+    100% {
+        -webkit-transform: translateX(-187.5rem);
+        transform: translateX(-187.5rem);
+    }
+}
+
+/* ?--------------------------------------------------------------------------------------------- */
+/* !----------------------------------------------------------------------------------------------*/
+
+
+
+/* !------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* !nosotros */
+
+main {
+    align-items: center;
+}
+
+section.justify-content-center.d-flex.nosotros {
+    width: 81.25rem;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+section.justify-content-center.d-flex.nosotros div.card {
+    border-radius: 0;
+    width: 60.625rem;
+    border-radius: 1.875rem;
+}
+
+div.col-md-4 {
+    border-radius: 1.875rem;
+}
+
+.row.g-0 {
+    border-radius: 1.875rem;
+}
+
+section.justify-content-center.d-flex.nosotros div.card div.row.g-0 div.col-md-8 div.card-body {
+    border-radius: 1.875rem;
+    margin-left: 1.25rem;
+}
+
+.col-md-7 {
+    border-radius: 1.875rem;
+    margin-left: 1.875rem;
+}
+
+
+.col-md-7.verde {
+    border-radius: 1.875rem;
+    margin-right: 1.875rem;
+}
+
+
+div.card div .verde {
+    background-color: #00cccc;
+    color: #000;
+}
+
+div.card .verde {
+    background-color: #00cccc;
+}
+
+div.card.verde {
+    background-color: #00cccc;
+}
+
+.img-fluid.rounded-start {
+    border-radius: 1.875rem;
+    height: 25rem;
+    width: 31.25rem;
+    margin-left: 1.25rem;
+}
+
+
+.img-fluid.rounded-start.ancho {
+    border-radius: 1.875rem;
+    height: 25rem;
+    width: 25rem;
+    margin-left: 1.25rem;
+}
+
+
+.col-md-4.achicar {
+    border-radius: 1.875rem;
+    height: 23.125rem;
+    width: 18.75rem;
+}
+
+
+
+
+/* !--------------------------------------------------------------- */
+
+
+/* !----------------------------------------------------------------- */
+/* Contacto */
+
+
+section.container.contacto.formu {
+    width: 25rem;
+}
+
+
+
+
+section.container.contacto header {
+    background-color: #00cccc;
+    width: 25rem;
+}
+
+
+section.container.contacto header h2 {
+    background-color: #00cccc;
+    color: #000;
+}
+
+form h4 {
+    font-size: 1.25rem;
+    color: #00cccc77;
+}
+
+form.container.contacto {
+    width: 25rem;
+}
+
+section.container.contacto header,
+section.container.contacto form {
+    border: 0.0625rem solid #00cccc;
+
+}
+
+
+section.container.contacto form div {
+    width: 12.5rem;
+    margin: 1.875rem 1.25rem;
+    text-align: center;
+}
+
+section.container.contacto.formu button {
+    background-color: #00cccc;
+    transition: 1s;
+}
+
+section.container.contacto button:hover {
+    color: #00cccc;
+    background-color: #000;
+}
+
+section.container.contacto.formu header.container.formu {
+    margin-top: 0;
+}
+
+/* !------------------------------------------------------------------------------------------------------------------------------- */
+
+/* !CARRITO------------------------------------------------------------------------------------ */
+
+div.dropdown.carrito ul, div.dropdown.carrito div{
+    background-color: #000;
+}
+
+#vaciar-carrito, #procesar-pedido {
+    background-color: #000;
+    color: #00cccc;
+}
+
+#vaciar-carrito:hover, #procesar-pedido:hover {
+    background-color: #00cccc;
+    color: #000;
+}
+
+.d-grid.gap-2.d-md-block.justify-content-md-center.ms-1, #carrito {
+    background-color: #000;
+}
+
+
+
+div.col-8.prod-carrito {
+    background-color: #000;
+    color: #00cccc;
+}
+
+.white div.col-8.prod-carrito {
+    background-color: #e6d8d8;
+    color: #000;
+}
+
+
+div.card.mb-4.card-carrito {
+    width: 50rem;
+}
+
+div.card-body.carrito {
+    border-radius: 10rem;
+}
+
+img.me-2.met-pago {
+    width: 6rem;
+}
+
+div.card-body.resumen.carr ul li {
+    background-color: #000;
+    color: #00cccc;
+}
+
+input.form-control.text-center.cantidad-carr {
+    background-color: #000;
+    color: #00cccc;
+    border: 0.065rem solid #00cccc;
+    margin: 1rem;
+}
+
+.white input.form-control.text-center.cantidad-carr {
+    background-color: #e6d8d8;
+    color: #000;
+    border: solid #000 1px;
+}
+
+.cantidad-carr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.white .cantidad-carr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+div.col-6 h6.color {
+    margin-top: 2.055rem;
+}
+
+h6.caract {
+    margin-top: 1.4rem;
+}
+
+
+.table thead tr th {
+    background-color: #000;
+    color: #00cccc;
+}
+
+ul.dropdown-menu.mx-3#carrito {
+    background-color: #000;
+}
+
+div.d-grid.gap-2.d-md-block.justify-content-md-center.ms-1 button.btn.btn-primary {
+    background-color: #00cccc;
+    color: #000;
+    border-radius: 1.875rem;
+    margin-top: 0.625rem;
+    border: #00cccc 0.0625rem solid;
+}
+
+div.d-grid.gap-2.d-md-block.justify-content-md-center.ms-1 button.btn.btn-primary:active {
+    background-color: #000;
+    color: #00cccc;
+    border: #00cccc 0.0625rem solid;
+}
+
+
+.btn-sm {
+    border: none;
+}
+
+.precio-carr {
+    margin-top: 18px;
+}
+
+h6.cantidad-carr {
+    margin-top: 30px;
+}
+
+.borrar-producto {
+    color: #00cccc;
+}
+
+.div-resumen-carr {
+    position: sticky;
+    top: 140px;
+}
+
+.borrar-producto-compra {
+    color: #00cccc;
+    cursor: pointer;
+}
+
+table#lista-carrito.table {
+    width: 400px;
+
+}
+
+
+/*! MODO OSCURO */
+
+.white {
+    background-color: #e9e3e3;
+    color: #221e1e;
+}
+
+.white a {
+    background-color: #000;
+    color: #e6d8d8;
+}
+
+.white a.nav-link.ms-5.link:hover {
+    background-color: #000;
+    color: #e6d8d8;
+    border: none;
+    padding: 0.4375rem;
+    border-radius: 0.5rem;
+}
+
+.white header.header-nav, .white header nav, 
+.white header nav div {
+    background-color: #e6d8d8;
+    color: #000;
+    border-color: #000;
+}
+
+.white header nav div .dropdown a, .white header nav div .dropdown ul, .white header nav div .dropdown ul li a, .white header nav .dropdown th, .white header nav .dropdown tbody td, .white div.d-grid.gap-2.d-md-block.justify-content-md-center {
+    background-color: #e6d8d8;
+    color: #000;
+    border: none;
+}
+
+.white .table {
+    margin: 0;
+}
+
+.white #carrito {
+    padding: 0;
+}
+
+.white header nav div .dropdown ul {
+    border: solid #000 1px;
+}
+
+.white header nav div .dropdown ul table#lista-carrito thead, .white header nav div .dropdown ul table#lista-carrito tbody {
+    border-bottom: solid #000 1px;
+}
+
+header nav div .dropdown ul table#lista-carrito thead, header nav div .dropdown ul table#lista-carrito tbody {
+    background-color: #000;
+}
+
+
+
+.white main, .white main section, .white main section div, .white main section div header, .white main section div header h2, .white main section div h5, .white main section div p {
+    background-color: #e6d8d8;
+    color: #000;
+}
+
+.white {
+    background-color: #e6d8d8;
+    color: #000;
+}
+
+.white #procesar-pedido, .white #vaciar-carrito {
+    background-color: #000;
+    color: #e6d8d8;
+    border: none;
+    margin-left: 4rem;
+}
+
+#procesar-pedido, #vaciar-carrito {
+    background-color: #00cccc;
+    color: #000;
+    border: none;
+    margin-left: 4rem;
+}
+
+
+#procesar-pedido:active, #vaciar-carrito:active {
+    background-color: #000;
+    color: #00cccc;
+    border: solid #00cccc 1px;
+    margin-left: 4rem;
+}
+
+.white #procesar-pedido:active, .white #vaciar-carrito:active {
+    background-color: #e6d8d8;
+    color: #000;
+    border: solid #000 1px;
+    transition: all 1s;
+}
+
+.white main section .carousel-indicators button {
+    background-color: #000;
+}
+
+.white i {
+    background: none;
+    color: #000;
+}
+
+.white .btn.dropdown-toggle {
+    border: solid #000 1px;
+}
+
+.white main section.Notebooks.container header, .white main section.Notebooks.container header h2, .white main section.Notebooks.container ul, .white main section.Notebooks.container li, .white main section.Notebooks.container .card{
+    background-color: #e6d8d8;
+    color: #000;
+    border-color: #000;
+}
+
+.white .card {
+    border-color: #000;
+}
+
+.white #vaciar-carrito:active, .white #procesar-pedido:active {
+    background-color: #e6d8d8;
+    color: #000;
+}
+
+.white footer ,.white div, .white ul, .white li, .white span, .white a, .white div.slider-track, .white .footer.justify-content-center img{
+    background-color: #e6d8d8;
+    color: #000;
+}
+
+body.white footer{
+    border-top: solid #000 1px;
+    color: #000;
+}
+
+.white a.carrito:hover {
+    background-color: #000000;
+    border-radius: 0.5rem;
+    transition: all 1.5s;
+    padding: 3px;
+}
+
+.white i.fa-sharp.fa-solid.fa-cart-shopping:hover {
+    background-color: #000000;
+    color: #e6d8d8;
+    border: none;
+    padding: 4px;
+    border-radius: 0.5rem;
+    transition: all 1.5s;
+}
+
+
+.white .dropdown a.btn.dropdown-toggle:hover {
+    background-color: #000000;
+    color: #e6d8d8;
+}
+
+span.carousel-control-prev-icon, span.carousel-control-next-icon {
+    background-color: #000;
+    color: #fff;
+}
+
+.darkModeSwitch {
+    background: #042d26de;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    justify-content: space-between;
+}
+
+.darkModeSwitch span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    color: #042d26de;
+    background: none;
+}
+
+i.fa-regular.fa-moon, i.fa-regular.fa-sun {
+    color: #fff;
+}
+
+.darkModeSwitch::after {
+    display: block;
+    background: #90ece47e;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 3rem;
+    transition: all .5s ease;
+
+    content: "";
+}
+
+.darkModeSwitch.active {
+    background: #113528;
+}
+
+.fa-regular.fa-sun,.fa-regular.fa-moon {
+    padding: 0;
+    background: none;
+    
+}
+
+.darkModeSwitch.active::after {
+    left: unset;
+    right: 0;
+    
+}
+
+.white section header.formu, .white section header.formu h2, .white section form, .white section h4, .white section.contacto button{
+    background-color: #000;
+    color: #e6d8d8;
+    border-color: #e6d8d8;
+}
+
+.white #enviarFormu {
+    background-color: #000;
+    color: #e6d8d8;
+}
+
+.white section.container.contacto.formu form{
+    border: none;
+}
+
+.white .nosotros .verde{
+    background-color: #000;
+    color: #e6d8d8;
+    border: none;
+}
+
+.white .nosotros {
+    border-color: #000;
+}
+
+.white .dropdown-item:hover {
+    background-color: #000;
+    color: #e6d8d8;
+    transition: all 1s;
+}

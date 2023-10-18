@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Accesorios</title>
+</head>
+
+<body>
+    <header class="header-nav">
+        <nav class="navbar justify-content-center container ps-5" data-bs-theme="dark">
+            <div class="container justify-content-center">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="/img/The world studios.png" alt="Logo" width="100" height="100"
+                        class="d-inline-block align-text-top">
+                </a>
+                <div class="dropdown">
+                    <a class="btn dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Categorias</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="todo.html">Todo</a></li>
+                        <li><a class="dropdown-item" href="notebooks.html">Notebooks</a></li>
+                        <li><a class="dropdown-item" href="software.html">Software</a></li>
+                        <li><a class="dropdown-item" href="conectividad.html">Conectividad</a></li>
+                        <li><a class="dropdown-item" href="accesorios.html">Accesorios</a></li>
+                        <li><a class="dropdown-item" href="perifericos.html">Perifericos</a></li>
+                        <li><a class="dropdown-item" href="consolas.html">Consolas</a></li>
+
+                    </ul>
+                </div>
+                <a class="nav-link ms-5 link" href="contacto.html">Contacto</a>
+                <a class="nav-link ms-5 link" href="nosotros.html">Nosotros</a>
+                
+                <div class="dropdown">
+                    <a type="button" class="nav-link ms-5 carrito" data-bs-toggle="dropdown" aria-expanded="false"><i
+                            class="fa-sharp fa-solid fa-cart-shopping"></i>
+                    </a>
+                    <ul class="dropdown-menu" id="carrito">
+                        <table id="lista-carrito" class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Imagen</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Precio</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="d-grid gap-2 d-md-block justify-content-md-center">
+                            <button id="vaciar-carrito" class="btn btn-primary">Vaciar</button>
+                            <button id="procesar-pedido" class="btn btn-primary">Procesar Comprar</button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            <button class="darkModeSwitch ms-2" id="switch">
+                <span><i class="fa-regular fa-moon"></i></span>
+                <span><i class="fa-regular fa-sun"></i></span>
+            </button>
+        </nav>
+    </header>
+    <main class="consolas d-flex justify-content-center">
+        <section>
+            <header>
+                <h2>Accesorios</h2>
+            </header>
+            <div class="container" id="lista-productos">
+                <div class="card">
+                    <img src="/img/accesorios/mochila-Basica-ThinkPad.webp" alt="Mochila Basica ThinkPad"
+                        class="card-img-top img-pequeña">
+                    <div class="card-body">
+                        <h5 class="card-title">MOCHILA BASICA THINKPAD</h5>
+                        <ul class="card-text cat">
+                            <li>Peso de 360g</li>
+                            <li>Color negro</li>
+                            <li>Profundidad de 95mm</li>
+                        </ul>
+                        <h4 class="costo"> 21800</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="10">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/accesorios/mochila-Porta-Notebook-Gadnic.webp" alt="Mochila Porta Notebook Gadnic"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">MOCHILA PORTA NOTEBOOK GADNIC</h5>
+                        <ul class="card-text cat">
+                            <li>Tela super resistente</li>
+                            <li>Repelente al agua</li>
+                            <li>Capacidad 30kg</li>
+                        </ul>
+                        <h4 class="costo"> 31000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="11">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/accesorios/estabilizador-De-Tension-Forza.webp" alt="Estabilizador De Tension Forza"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">ESTABILIZADOR DE TENSION FORZA</h5>
+                        <ul class="card-text cat">
+                            <li>Capacidad de 1100w</li>
+                            <li>Tension de 220v</li>
+                            <li>Frecuencia de 50/60hz</li>
+                        </ul>
+                        <h4 class="costo"> 23000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="12">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/accesorios/soporte-Para-Notebook-Nictom.webp" alt="Soporte Para Notebook Nictom"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">SOPORTE PARA NOTEBOOK SPC01</h5>
+                        <ul class="card-text cat">
+                            <li>Es plegable</li>
+                            <li>Soporta hasta 30kg</li>
+                            <li>Elevacion de 12-16cm</li>
+                        </ul>
+                        <h4 class="costo"> 8500</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="13">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/accesorios/soporte-Para-Notebook-Nictom-SPN01.webp" alt="Soporte Para Notebook SPN01"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">SOPORTE PARA NOTEBOOK SPN01</h5>
+                        <ul class="card-text cat">
+                            <li>Es plegable</li>
+                            <li>Antideslizante</li>
+                            <li>Diseño ergonomico</li>
+                        </ul>
+                        <h4 class="costo"> 11000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="14">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/accesorios/adaptador-USB-Bluetooth.webp" alt="Adaptador USB Bluetooth"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">ADAPTADOR USB BLUETOOTH DAIKON</h5>
+                        <ul class="card-text cat">
+                            <li>Bluetooth 5.0</li>
+                            <li>Velocidad de 3mbps</li>
+                            <li>Bajo consumo de energia</li>
+                        </ul>
+                        <h4 class="costo"> 4000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="15">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/accesorios/base-Soporte-Cooler-Notebook.webp"
+                        alt="Base Soporte Cooler Notebook K-505F" class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">BASE SOPORTE COOLER NOTEBOOK</h5>
+                        <ul class="card-text cat">
+                            <li>2 coolers de 55mm</li>
+                            <li>Voltage de 5V</li>
+                            <li>Soporta entre 10-14"</li>
+                        </ul>
+                        <h4 class="costo"> 4000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="16">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/accesorios/base-Soporte-Cooler-Notebook-Wesdar.webp"
+                        alt="Base Soporte Cooler Notebook K-8028F" class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">BASE SOPORTE COOLER NOTEBOOK WESDAR</h5>
+                        <ul class="card-text cat">
+                            <li>2 coolers de 125mm</li>
+                            <li>Voltage de 5V</li>
+                            <li>Soporta entre 10-15"</li>
+                        </ul>
+                        <h4 class="costo"> 10000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="17">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/accesorios/adaptador-Mini-Antena-USB-Wifi.webp" alt="Adaptador Mini Antena Wifi"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">ADAPTADOR MINI ANTENA WIFI</h5>
+                        <ul class="card-text cat">
+                            <li>Transmision de 150mbps</li>
+                            <li>Chipset RT7601</li>
+                            <li>Compatible con 2.4ghz</li>
+                        </ul>
+                        <h4 class="costo"> 6000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="18">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/accesorios/grabadora-Dvd-LG-Externa.webp" alt="grabadora Dvd LG Externa"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">GRABADORA DVD LG EXTERNA</h5>
+                        <ul class="card-text cat">
+                            <li>Usb 2.0</li>
+                            <li>Tecnologia M-DISC</li>
+                            <li>Reproduccion silenciosa</li>
+                        </ul>
+                        <h4 class="costo"> 58000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="19">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/accesorios/hub-Usb-10-Puertos.webp" alt="hub Usb 10 Puertos"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">HUB USB 10 PUERTOS LUZ LED</h5>
+                        <ul class="card-text cat">
+                            <li>Usb 2.0</li>
+                            <li>Velocidad de 480mbps</li>
+                            <li>Compatible con usb 1.1</li>
+                        </ul>
+                        <h4 class="costo"> 4000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="20">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/accesorios/cable-USB-C-Xiaomi.webp" alt="cable USB-C Xiaomi"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">CABLE USB-C A USB XIAOMI</h5>
+                        <ul class="card-text cat">
+                            <li>Cable de 1m</li>
+                            <li>Cable flexible y resistente</li>
+                            <li>Color rojo</li>
+                        </ul>
+                        <h4 class="costo"> 4000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="21">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <address class="justify-content-center">
+            <div class="footer justify-content-center">
+                <ul>
+                    <li id="facebook"><a href="https://www.facebook.com/">
+                            <span class="icono"><a href="https://www.facebook.com/" target="_blank"><i
+                                        class="fa-brands fa-facebook fa-lg"></i></a></span>
+                            <a href="https://www.facebook.com/" target="_blank" class="titulo"
+                                id="tface">facebook</a></a>
+                    </li>
+                    <li id="instagram"><a href="https://www.instagram.com" target="_blank">
+                            <span class="icono"><a href="https://www.instagram.com/" target="_blank"><i
+                                        class="fa-brands fa-instagram fa-lg"></i></a></span>
+                            <a href="https://www.instagram.com/" target="_blank" class="titulo"
+                                id="tinsta">instagram</a></a>
+                    </li>
+                    <li id="twitter"><a href="https://twitter.com/?lang=es" target="_blank">
+                            <span class="icono"><a href="https://twitter.com/?lang=es" target="_blank"><i
+                                        class="fa-brands fa-twitter fa-lg"></i></a></span>
+                            <span class="titulo" id="ttwitt">twitter</span></a>
+                    </li>
+                    <li id="tiktok"><a href="https://www.tiktok.com/es/" target="_blank">
+                            <span class="icono"><a href="https://www.tiktok.com/es/" target="_blank"><i
+                                        class="fa-brands fa-tiktok fa-lg"></i></a></span>
+                            <span class="titulo" id="ttik">tiktok</span></a>
+                    </li>
+                    <li id="telegram"><a href="https://telegram.org/" target="_blank">
+                            <span class="icono"><a href="https://telegram.org/" target="_blank"><i
+                                        class="fa-brands fa-telegram fa-lg"></i></a></span>
+                            <span class="titulo" id="ttel">telegram</span></a>
+                    </li>
+                    <li id="whatsapp"><a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
+                            <span class="icono"><a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><i
+                                        class="fa-brands fa-whatsapp fa-lg"></i></a></span>
+                            <span class="titulo" id="twhat">whatsapp</span></a>
+                    </li>
+                    <li id="linkedin"><a href="https://www.linkedin.com/home" target="_blank">
+                            <span class="icono"><a href="https://www.linkedin.com/home" target="_blank"><i
+                                        class="fa-brands fa-linkedin fa-lg"></i></a></span>
+                            <span class="titulo" id="tlink">linkedin</span></a>
+                    </li>
+                    <li id="youtube"><a href="https://www.youtube.com/" target="_blank">
+                            <span class="icono"><a href="https://www.youtube.com/" target="_blank"><i
+                                        class="fa-brands fa-youtube fa-lg"></i></a></span>
+                            <span class="titulo" id="tyout">youtube</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="slider">
+                <div class="slider-track">
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Amazon_Pay-Logo.wine.svg" alt="Amazon Pay">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/American_Express-Logo.wine.svg" alt="American Express">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/BBVA_USA-Logo.wine.svg" alt="BBVA">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Binance-Logo.wine.svg" alt="Binance">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Grupo_Financiero_Galicia-Logo.wine.svg" alt="Galicia">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/HSBC-Logo.wine.svg" alt="HSBC">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Mastercard-Logo.wine.svg" alt="Mastercard">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/MercPago.svg" alt="MercadoPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/naranja.svg" alt="Naranja">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PagoFacil.svg" alt="Pago Facil">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PayPal-Logo.wine.svg" alt="PayPal">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/RapiPago.svg" alt="RapiPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Santander_Bank-Logo.wine.svg" alt="Santander Rios">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Visa_Inc.-Logo.wine.svg" alt="Visa">
+                    </div>
+
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Amazon_Pay-Logo.wine.svg" alt="Amazon Pay">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/American_Express-Logo.wine.svg" alt="American Express">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/BBVA_USA-Logo.wine.svg" alt="BBVA">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Binance-Logo.wine.svg" alt="Binance">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Grupo_Financiero_Galicia-Logo.wine.svg" alt="Galicia">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/HSBC-Logo.wine.svg" alt="HSBC">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Mastercard-Logo.wine.svg" alt="Mastercard">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/MercPago.svg" alt="MercadoPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/naranja.svg" alt="Naranja">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PagoFacil.svg" alt="Pago Facil">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PayPal-Logo.wine.svg" alt="PayPal">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/RapiPago.svg" alt="RapiPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Santander_Bank-Logo.wine.svg" alt="Santander Rios">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Visa_Inc.-Logo.wine.svg" alt="Visa">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Amazon_Pay-Logo.wine.svg" alt="Amazon Pay">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/American_Express-Logo.wine.svg" alt="American Express">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/BBVA_USA-Logo.wine.svg" alt="BBVA">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Binance-Logo.wine.svg" alt="Binance">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Grupo_Financiero_Galicia-Logo.wine.svg" alt="Galicia">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/HSBC-Logo.wine.svg" alt="HSBC">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Mastercard-Logo.wine.svg" alt="Mastercard">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/MercPago.svg" alt="MercadoPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/naranja.svg" alt="Naranja">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PagoFacil.svg" alt="Pago Facil">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PayPal-Logo.wine.svg" alt="PayPal">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/RapiPago.svg" alt="RapiPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Santander_Bank-Logo.wine.svg" alt="Santander Rios">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Visa_Inc.-Logo.wine.svg" alt="Visa">
+                    </div>
+
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Amazon_Pay-Logo.wine.svg" alt="Amazon Pay">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/American_Express-Logo.wine.svg" alt="American Express">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/BBVA_USA-Logo.wine.svg" alt="BBVA">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Binance-Logo.wine.svg" alt="Binance">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Grupo_Financiero_Galicia-Logo.wine.svg" alt="Galicia">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/HSBC-Logo.wine.svg" alt="HSBC">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Mastercard-Logo.wine.svg" alt="Mastercard">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/MercPago.svg" alt="MercadoPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/naranja.svg" alt="Naranja">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PagoFacil.svg" alt="Pago Facil">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PayPal-Logo.wine.svg" alt="PayPal">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/RapiPago.svg" alt="RapiPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Santander_Bank-Logo.wine.svg" alt="Santander Rios">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Visa_Inc.-Logo.wine.svg" alt="Visa">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Amazon_Pay-Logo.wine.svg" alt="Amazon Pay">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/American_Express-Logo.wine.svg" alt="American Express">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/BBVA_USA-Logo.wine.svg" alt="BBVA">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Binance-Logo.wine.svg" alt="Binance">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Grupo_Financiero_Galicia-Logo.wine.svg" alt="Galicia">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/HSBC-Logo.wine.svg" alt="HSBC">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Mastercard-Logo.wine.svg" alt="Mastercard">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/MercPago.svg" alt="MercadoPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/naranja.svg" alt="Naranja">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PagoFacil.svg" alt="Pago Facil">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PayPal-Logo.wine.svg" alt="PayPal">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/RapiPago.svg" alt="RapiPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Santander_Bank-Logo.wine.svg" alt="Santander Rios">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Visa_Inc.-Logo.wine.svg" alt="Visa">
+                    </div>
+                </div>
+            </div>
+        </address>
+    </footer>
+    <script type="module" src="../main.js"></script>
+</body>
+
+</html>

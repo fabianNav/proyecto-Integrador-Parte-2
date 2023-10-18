@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <title>Inicio</title>
+
+</head>
+
+<body>
+  <header class="header-nav">
+    <nav class="navbar justify-content-center container ps-5" data-bs-theme="dark">
+      <div class="container justify-content-center">
+        <a class="navbar-brand" href="index.html">
+          <img src="/img/The world studios.png" alt="Logo" width="100" height="100">
+        </a>
+        <div class="dropdown">
+          <a class="btn dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
+
+          <ul class="dropdown-menu ">
+            <li><a class="dropdown-item" href="/pages/todo.html">Todo</a></li>
+            <li><a class="dropdown-item" href="/pages/notebooks.html">Notebooks</a></li>
+            <li><a class="dropdown-item" href="/pages/software.html">Software</a></li>
+            <li><a class="dropdown-item" href="/pages/conectividad.html">Conectividad</a></li>
+            <li><a class="dropdown-item" href="/pages/accesorios.html">Accesorios</a></li>
+            <li><a class="dropdown-item" href="/pages/perifericos.html">Perifericos</a></li>
+            <li><a class="dropdown-item" href="/pages/consolas.html">Consolas</a></li>
+
+          </ul>
+        </div>
+        <a class="nav-link ms-5 link" href="pages/contacto.html">Contacto</a>
+        <a class="nav-link ms-5 link" href="pages/nosotros.html">Nosotros</a>
+
+        <div class="dropdown carrito">
+          <a type="button" class="nav-link ms-5 carrito" data-bs-toggle="dropdown" aria-expanded="false"><i
+              class="fa-sharp fa-solid fa-cart-shopping"></i>
+          </a>
+          <ul class="dropdown-menu" id="carrito">
+            <table id="lista-carrito" class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Imagen</th>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Precio</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+
+                </tr>
+              </tbody>
+            </table>
+            <div class="d-grid gap-2 d-md-block justify-content-md-center">
+              <button id="vaciar-carrito" class="btn btn-primary">Vaciar</button>
+              <button id="procesar-pedido" class="btn btn-primary">Procesar Comprar</button>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <button class="darkModeSwitch ms-2" id="switch">
+        <span><i class="fa-regular fa-moon"></i></span>
+        <span><i class="fa-regular fa-sun"></i></span>
+      </button>
+    </nav>
+  </header>
+
+
+
+  <main>
+
+
+    <section class="d-flex justify-content-center">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <header>
+          <h2>Recomendados</h2>
+        </header>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/F1500EA-WB511-300x300.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Asus VivoBook F1500EA-WB51</h5>
+              <p>Notebook adecuada para uso basico con resolucion Full HD</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/omen-1-1-300x300.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Notebook HP OMEN 16-b0005dx 16gb</h5>
+              <p>Notebook perfecta para gaming, con una RTX 3070 corre todos los juegos a mas de 60 fps.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/S3502QA-DS711-300x300.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Notebook Asus Vivobook S 8gb</h5>
+              <p>Notebook regular para varios tipos de uso, con resolucion Full HD, Windows 11 y graficos integrados,
+                nunca te va a fallar.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+
+    <section class="Notebooks container">
+      <header class="container">
+        <h2>Más comprados</h2>
+      </header>
+      <div class="container" id="lista-productos">
+        <div class="card">
+          <img src="img/F1500EA-WB511-300x300.webp" class="card-img-top" alt="Asus VivoBook F1500EA-WB51">
+          <div class="card-body">
+            <h5 class="card-title">Asus VivoBook F1500EA-WB51</h5>
+            <ul class="card-text">
+              <li>Color: Negro</li>
+              <li>Almacenamiento: 256GB</li>
+              <li>Resolucion: 1980 x 1080</li>
+            </ul>
+            <h4 class="costo">345000</h4>
+            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="1">Comprar</a>
+            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/IdeaPad-1-1-300x300.webp" class="card-img-top" alt="Lenovo Ideapad 1 14IAU7">
+          <div class="card-body">
+            <h5 class="card-title">Notebook Lenovo 1 14IAU7</h5>
+            <ul class="card-text">
+              <li>Color: Gris</li>
+              <li>Almacenamiento: 512GB</li>
+              <li>Resolucion: 1366 x 768</li>
+            </ul>
+            <h4 class="costo">286000</h4>
+            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="2">Comprar</a>
+            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/Lenovo-V14-1-300x300.webp" class="card-img-top" alt="Lenovo V14">
+          <div class="card-body">
+            <h5 class="card-title">Notebook Lenovo V14 G2 ALC</h5>
+            <ul class="card-text">
+              <li>Color: Negro</li>
+              <li>Almacenamiento: 1TB</li>
+              <li>Resolucion: 1920 x 1080</li>
+            </ul>
+            <h4 class="costo">422000</h4>
+            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="3">Comprar</a>
+            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/msi-delta-1-300x300.webp" class="card-img-top" alt="Msi Delta 16GB Ryzen 7">
+          <div class="card-body">
+            <h5 class="card-title">Notebook MSI Delta 16GB Ryzen 7</h5>
+            <ul class="card-text">
+              <li>Color: Gris</li>
+              <li>Almacenamiento: 1TB</li>
+              <li>Resolucion: 1920 x 1080</li>
+            </ul>
+            <h4 class="costo">840000</h4>
+            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="4">Comprar</a>
+            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/omen-1-1-300x300.webp" class="card-img-top" alt="Hp Omen 16-b0005dx 16GB">
+          <div class="card-body">
+            <h5 class="card-title">Notebook HP OMEN 16-b0005dx 16gb</h5>
+            <ul class="card-text">
+              <li>Color: Negro</li>
+              <li>Almacenamiento: 1TB</li>
+              <li>Resolucion: 2560 x 1440</li>
+            </ul>
+            <h4 class="costo">900000</h4>
+            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="5">Comprar</a>
+            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/S3502QA-DS711-300x300.webp" class="card-img-top" alt="Asus VivoBook S">
+          <div class="card-body">
+            <h5 class="card-title">Notebook Asus Vivobook S</h5>
+            <ul class="card-text">
+              <li>Color: Negro</li>
+              <li>Almacenamiento: 512GB</li>
+              <li>Resolucion: 1920 x 1080</li>
+            </ul>
+            <h4 class="costo">480000</h4>
+            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="6">Comprar</a>
+            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/victus11-300x300.webp" class="card-img-top" alt="Hp Victus Gaming">
+          <div class="card-body">
+            <h5 class="card-title">Notebook HP victus Gaming</h5>
+            <ul class="card-text">
+              <li>Color: Gris Oscuro</li>
+              <li>Almacenamiento: 512GB</li>
+              <li>Resolucion: 1920 x 1080</li>
+            </ul>
+            <h4 class="costo">510000</h4>
+            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="7">Comprar</a>
+            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/nlenovo.webp" class="card-img-top" width="300px" height="273px"
+            alt="Lenovo ThinkPad E14 FHD 14 Pulgadas">
+          <div class="card-body">
+            <h5 class="card-title">Notebook Lenovo ThinkPad E14 FHD 14"</h5>
+            <ul class="card-text">
+              <li>Color: Gris Oscuro</li>
+              <li>Almacenamiento: 256GB</li>
+              <li>Resolucion: 1366 x 768</li>
+            </ul>
+            <h4 class="costo">839000</h4>
+            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="8">Comprar</a>
+            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/ngamermsi.webp" class="card-img-top" width="300px" height="273px" alt="Msi Pulse GL76 FHD">
+          <div class="card-body">
+            <h5 class="card-title">Notebook Gamer MSI Pulse GL76 FHD 17.3"</h5>
+            <ul class="card-text">
+              <li>Color: Gris Oscuro</li>
+              <li>Almacenamiento: 1TB </li>
+              <li>Resolucion: 1920 x 1080</li>
+            </ul>
+            <h4 class="costo">1299000</h4>
+            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="9">Comprar</a>
+            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <address class="justify-content-center">
+      <div class="footer justify-content-center">
+        <ul>
+          <li id="facebook"><a href="https://www.facebook.com/">
+              <span class="icono"><a href="https://www.facebook.com/" target="_blank"><i
+                    class="fa-brands fa-facebook fa-lg"></i></a></span>
+              <a href="https://www.facebook.com/" target="_blank" class="titulo" id="tface">facebook</a>
+          </li>
+          <li id="instagram"><a href="https://www.instagram.com" target="_blank">
+              <span class="icono"><a href="https://www.instagram.com/" target="_blank"><i
+                    class="fa-brands fa-instagram fa-lg"></i></a></span>
+              <a href="https://www.instagram.com/" target="_blank" class="titulo" id="tinsta">instagram</a>
+          </li>
+          <li id="twitter"><a href="https://twitter.com/?lang=es" target="_blank">
+              <span class="icono"><a href="https://twitter.com/?lang=es" target="_blank"><i
+                    class="fa-brands fa-twitter fa-lg"></i></a></span>
+              <span class="titulo" id="ttwitt">twitter</span></a>
+          </li>
+          <li id="tiktok"><a href="https://www.tiktok.com/es/" target="_blank">
+              <span class="icono"><a href="https://www.tiktok.com/es/" target="_blank"><i
+                    class="fa-brands fa-tiktok fa-lg"></i></a></span>
+              <span class="titulo" id="ttik">tiktok</span></a>
+          </li>
+          <li id="telegram"><a href="https://telegram.org/" target="_blank">
+              <span class="icono"><a href="https://telegram.org/" target="_blank"><i
+                    class="fa-brands fa-telegram fa-lg"></i></a></span>
+              <span class="titulo" id="ttel">telegram</span></a>
+          </li>
+          <li id="whatsapp"><a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
+              <span class="icono"><a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><i
+                    class="fa-brands fa-whatsapp fa-lg"></i></a></span>
+              <span class="titulo" id="twhat">whatsapp</span></a>
+          </li>
+          <li id="linkedin"><a href="https://www.linkedin.com/home" target="_blank">
+              <span class="icono"><a href="https://www.linkedin.com/home" target="_blank"><i
+                    class="fa-brands fa-linkedin fa-lg"></i></a></span>
+              <span class="titulo" id="tlink">linkedin</span></a>
+          </li>
+          <li id="youtube"><a href="https://www.youtube.com/" target="_blank">
+              <span class="icono"><a href="https://www.youtube.com/" target="_blank"><i
+                    class="fa-brands fa-youtube fa-lg"></i></a></span>
+              <span class="titulo" id="tyout">youtube</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="slider">
+        <div class="slider-track">
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/Amazon_Pay-Logo.wine.svg" alt="Amazon Pay">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/American_Express-Logo.wine.svg" alt="American Express">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/BBVA_USA-Logo.wine.svg" alt="BBVA">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/Binance-Logo.wine.svg" alt="Binance">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/Grupo_Financiero_Galicia-Logo.wine.svg" alt="Galicia">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/HSBC-Logo.wine.svg" alt="HSBC">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/Mastercard-Logo.wine.svg" alt="Mastercard">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/MercPago.svg" alt="MercadoPago">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/naranja.svg" alt="Naranja">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/PagoFacil.svg" alt="Pago Facil">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/PayPal-Logo.wine.svg" alt="PayPal">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/RapiPago.svg" alt="RapiPago">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/Santander_Bank-Logo.wine.svg" alt="Santander Rios">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/Visa_Inc.-Logo.wine.svg" alt="Visa">
+          </div>
+
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/Amazon_Pay-Logo.wine.svg" alt="Amazon Pay">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/American_Express-Logo.wine.svg" alt="American Express">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/BBVA_USA-Logo.wine.svg" alt="BBVA">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/Binance-Logo.wine.svg" alt="Binance">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/Grupo_Financiero_Galicia-Logo.wine.svg" alt="Galicia">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/HSBC-Logo.wine.svg" alt="HSBC">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/Mastercard-Logo.wine.svg" alt="Mastercard">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/MercPago.svg" alt="MercadoPago">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/naranja.svg" alt="Naranja">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/PagoFacil.svg" alt="Pago Facil">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/PayPal-Logo.wine.svg" alt="PayPal">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/RapiPago.svg" alt="RapiPago">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/Santander_Bank-Logo.wine.svg" alt="Santander Rios">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/Visa_Inc.-Logo.wine.svg" alt="Visa">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/Amazon_Pay-Logo.wine.svg" alt="Amazon Pay">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/American_Express-Logo.wine.svg" alt="American Express">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/BBVA_USA-Logo.wine.svg" alt="BBVA">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/Binance-Logo.wine.svg" alt="Binance">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/Grupo_Financiero_Galicia-Logo.wine.svg" alt="Galicia">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/HSBC-Logo.wine.svg" alt="HSBC">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/Mastercard-Logo.wine.svg" alt="Mastercard">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/MercPago.svg" alt="MercadoPago">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/naranja.svg" alt="Naranja">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/PagoFacil.svg" alt="Pago Facil">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/PayPal-Logo.wine.svg" alt="PayPal">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/RapiPago.svg" alt="RapiPago">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/Santander_Bank-Logo.wine.svg" alt="Santander Rios">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/Visa_Inc.-Logo.wine.svg" alt="Visa">
+          </div>
+
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/Amazon_Pay-Logo.wine.svg" alt="Amazon Pay">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/American_Express-Logo.wine.svg" alt="American Express">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/BBVA_USA-Logo.wine.svg" alt="BBVA">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/Binance-Logo.wine.svg" alt="Binance">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/Grupo_Financiero_Galicia-Logo.wine.svg" alt="Galicia">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/HSBC-Logo.wine.svg" alt="HSBC">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/Mastercard-Logo.wine.svg" alt="Mastercard">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/MercPago.svg" alt="MercadoPago">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/naranja.svg" alt="Naranja">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/PagoFacil.svg" alt="Pago Facil">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/PayPal-Logo.wine.svg" alt="PayPal">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/RapiPago.svg" alt="RapiPago">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/Santander_Bank-Logo.wine.svg" alt="Santander Rios">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/Visa_Inc.-Logo.wine.svg" alt="Visa">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/Amazon_Pay-Logo.wine.svg" alt="Amazon Pay">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/American_Express-Logo.wine.svg" alt="American Express">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/BBVA_USA-Logo.wine.svg" alt="BBVA">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/Binance-Logo.wine.svg" alt="Binance">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/Grupo_Financiero_Galicia-Logo.wine.svg" alt="Galicia">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/HSBC-Logo.wine.svg" alt="HSBC">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/Mastercard-Logo.wine.svg" alt="Mastercard">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/MercPago.svg" alt="MercadoPago">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/naranja.svg" alt="Naranja">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/PagoFacil.svg" alt="Pago Facil">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/PayPal-Logo.wine.svg" alt="PayPal">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/RapiPago.svg" alt="RapiPago">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/Santander_Bank-Logo.wine.svg" alt="Santander Rios">
+          </div>
+          <div class="footer justify-content-center slide">
+            <img src="/img/logos/Visa_Inc.-Logo.wine.svg" alt="Visa">
+          </div>
+        </div>
+      </div>
+    </address>
+  </footer>
+
+
+  <script type="module" src="main.js"></script>
+  
+</body>
+
+</html>

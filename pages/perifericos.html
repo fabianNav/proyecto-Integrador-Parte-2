@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Perifericos</title>
+</head>
+
+<body>
+    <header class="header-nav">
+        <nav class="navbar justify-content-center container ps-5" data-bs-theme="dark">
+            <div class="container justify-content-center">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="/img/The world studios.png" alt="Logo" width="100" height="100"
+                        class="d-inline-block align-text-top">
+                </a>
+                <div class="dropdown">
+                    <a class="btn dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Categorias</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="todo.html">Todo</a></li>
+                        <li><a class="dropdown-item" href="notebooks.html">Notebooks</a></li>
+                        <li><a class="dropdown-item" href="software.html">Software</a></li>
+                        <li><a class="dropdown-item" href="conectividad.html">Conectividad</a></li>
+                        <li><a class="dropdown-item" href="accesorios.html">Accesorios</a></li>
+                        <li><a class="dropdown-item" href="perifericos.html">Perifericos</a></li>
+                        <li><a class="dropdown-item" href="consolas.html">Consolas</a></li>
+
+                    </ul>
+                </div>
+                <a class="nav-link ms-5 link" href="contacto.html">Contacto</a>
+                <a class="nav-link ms-5 link" href="nosotros.html">Nosotros</a>
+                
+                <div class="dropdown">
+                    <a type="button" class="nav-link ms-5 carrito" data-bs-toggle="dropdown" aria-expanded="false"><i
+                            class="fa-sharp fa-solid fa-cart-shopping"></i>
+                    </a>
+                    <ul class="dropdown-menu" id="carrito">
+                        <table id="lista-carrito" class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Imagen</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Precio</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="d-grid gap-2 d-md-block justify-content-md-center">
+                            <button id="vaciar-carrito" class="btn btn-primary">Vaciar</button>
+                            <button id="procesar-pedido" class="btn btn-primary">Procesar Comprar</button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            <button class="darkModeSwitch ms-2" id="switch">
+                <span><i class="fa-regular fa-moon"></i></span>
+                <span><i class="fa-regular fa-sun"></i></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="consolas d-flex justify-content-center">
+
+        <section>
+            <header>
+                <h2>Perifericos</h2>
+            </header>
+            <div class="container" id="lista-productos">
+                <!-- !AURICULARES----------------------------------------------------------------------- -->
+                <div class="card">
+                    <img src="/img/perifericos/audifonos/HyperX-Cloud-Stinger.webp" alt="HyperX Cloud Stinger Core"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">HYPERX CLOUD STINGER CORE</h5>
+                        <ul class="card-text cat">
+                            <li>Cancelacion de ruido</li>
+                            <li>Conexion Inalambrica</li>
+                            <li>Audio 7.1</li>
+                        </ul>
+                        <h4 class="costo">64000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="88">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/audifonos/Wesdar-GH30.webp" alt="Wesdar GH30" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">WESDAR GAMING GH30 BLACK</h5>
+                        <ul class="card-text cat">
+                            <li>Sin cancelacion de ruido</li>
+                            <li>Conexion Cableada</li>
+                            <li>Audio 2.0</li>
+                        </ul>
+                        <h4 class="costo">4850</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="89">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/audifonos/Lamia-H320.webp" alt="Lamia H320" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">REDRAGON H320 LAMIA RGB</h5>
+                        <ul class="card-text cat">
+                            <li>Sin cancelacion de ruido</li>
+                            <li>Conexion Cableada</li>
+                            <li>Audio 7.1</li>
+                        </ul>
+                        <h4 class="costo">25000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="90">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/audifonos/Redragon-H120-Ares.webp" alt="Redragon Ares H120"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">REDRAGON H120 ARES BLACK</h5>
+                        <ul class="card-text cat">
+                            <li>Cancelacion de ruido</li>
+                            <li>Conexion Cableada</li>
+                            <li>Audio 2.0</li>
+                        </ul>
+                        <h4 class="costo">12399</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="91">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/audifonos/HyperX-Cloud-Flight.webp" alt="HyperX Cloud Flight"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">HYPERX CLOUD FLIGHT BLACK</h5>
+                        <ul class="card-text cat">
+                            <li>Sin cancelacion de ruido</li>
+                            <li>Conexion Inalambrica</li>
+                            <li>Audio 2.0</li>
+                        </ul>
+                        <h4 class="costo">73160 </h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="92">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/audifonos/Redragon-Pandora-H350W.webp" alt="Redragon Pandora H35W"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">REDRAGON PANDORA H350W WHITE</h5>
+                        <ul class="card-text cat">
+                            <li>Sin cancelacion de ruido</li>
+                            <li>Conexion Cableada</li>
+                            <li>Audio 7.1</li>
+                        </ul>
+                        <h4 class="costo">29990</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="93">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/audifonos/Logitech-G733-Lightspeed.webp" alt="Logitech G733 Lightspeed"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Logitech G733 Lightspeed LILA</h5>
+                        <ul class="card-text cat">
+                            <li>Sin cancelacion de ruido</li>
+                            <li>Conexion Inalambrica</li>
+                            <li>Audio 2.0</li>
+                        </ul>
+                        <h4 class="costo">99990</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="94">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/audifonos/Redragon-Zeus-H510.webp" alt="Redragon Zaeus X H510"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">REDRAGON ZEUS X H510 BLACK</h5>
+                        <ul class="card-text cat">
+                            <li>Sin cancelacion de ruido</li>
+                            <li>Conexion Cableada</li>
+                            <li>Audio 7.1</li>
+                        </ul>
+                        <h4 class="costo">48999</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="95">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/audifonos/Redragon-H260-Hylas.webp" alt="Redragon H260 Hylas"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">REDRAGON H60 HYLAS PINK</h5>
+                        <ul class="card-text cat">
+                            <li>Sin cancelacion de ruido</li>
+                            <li>Conexion Cableada</li>
+                            <li>Audio 2.0</li>
+                        </ul>
+                        <h4 class="costo">19450</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="96">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/audifonos/Wesdar-GH9.webp" alt="Wesdar GH9" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">WESDAR GAMING GH9 BLACK</h5>
+                        <ul class="card-text cat">
+                            <li>Sin cancelacion de ruido</li>
+                            <li>Conexion Cableada</li>
+                            <li>Audio 2.0</li>
+                        </ul>
+                        <h4 class="costo">5760 </h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="97">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/audifonos/Logitech-G935-LightSync.webp" alt="Logitech G935"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">LOGITECH G935 LIGHTSYNC</h5>
+                        <ul class="card-text cat">
+                            <li>Sin cancelacion de ruido</li>
+                            <li>Conexion Inalambrica</li>
+                            <li>Audio 7.1</li>
+                        </ul>
+                        <h4 class="costo">97990</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="98">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/audifonos/HyperX-Cloud-Alpha.webp" alt="HyperX Cloud Alpha"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">HYPERX CLOUD ALPHA RED</h5>
+                        <ul class="card-text cat">
+                            <li>Cancelacion de ruido</li>
+                            <li>Conexion Cableada</li>
+                            <li>Audio 2.0</li>
+                        </ul>
+                        <h4 class="costo">89520</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="99">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                    <!-- !-----------MICROFONOS--------------------------------------------- -->
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/microfonos/HyperX-DuoCast.webp" alt="HyperX DuoCast"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">HYPERX DUOCAST BLACK RGB</h5>
+                        <ul class="card-text cat">
+                            <li>Filtro: Filtro POP</li>
+                            <li>Salida USB-C</li>
+                            <li>Microfono De mesa</li>
+                        </ul>
+                        <h4 class="costo">69900</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="100">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/microfonos/HyperX-QuadCast-S-White.webp" alt="HyperX QuadCast S White"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">HYPERX QUADCAST S WHITE</h5>
+                        <ul class="card-text cat">
+                            <li>Microfono Condensador</li>
+                            <li>Salida USB-C</li>
+                            <li>Microfono De mesa</li>
+                        </ul>
+                        <h4 class="costo">140000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="101">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/microfonos/HyperX-QuadCast-S.webp" alt="HyperX QuadCast S"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">HYPERX QUADCAST S BLACK</h5>
+                        <ul class="card-text cat">
+                            <li>Microfono Condensador</li>
+                            <li>Salida USB-C</li>
+                            <li>Microfono De mesa</li>
+                        </ul>
+                        <h4 class="costo">117300</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="102">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/microfonos/HyperX-SoloCast.webp" alt="HyperX SoloCast"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">HYPERX SOLOCAST BLACK</h5>
+                        <ul class="card-text cat">
+                            <li>Microfono Condensador</li>
+                            <li>Salida USB-C</li>
+                            <li>Microfono De mesa</li>
+                        </ul>
+                        <h4 class="costo">55580</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="103">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/microfonos/Logitech-Blue-Snowball-White.webp"
+                        alt="Logitech Blue Snowball White" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">LOGITECH BLUE SNOWBALL WHITE</h5>
+                        <ul class="card-text cat">
+                            <li>Microfono Condensador</li>
+                            <li>Salida USB-C</li>
+                            <li>Microfono De mesa</li>
+                        </ul>
+                        <h4 class="costo">36650</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="104">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/microfonos/Redragon-Blazar-GM300.webp" alt="Redragon Blazar GM300"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">REDRAGON BLAZAR GM300</h5>
+                        <ul class="card-text cat">
+                            <li>Microfono Condensador</li>
+                            <li>Salida USB-C</li>
+                            <li>Microfono De mesa</li>
+                        </ul>
+                        <h4 class="costo">43550</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="105">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/microfonos/Logitech-Blue-Snowball.webp" alt="Logitech Blue Snowball"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">LOGITECH BLUE SNOWBALL BLACK</h5>
+                        <ul class="card-text cat">
+                            <li>Microfono Condensador</li>
+                            <li>Salida USB-C</li>
+                            <li>Microfono De mesa</li>
+                        </ul>
+                        <h4 class="costo">39999</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="106">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/microfonos/HyperX-QuadCast.webp" alt="HyperX QuadCast"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">HYPERX QUADCAST BLACK</h5>
+                        <ul class="card-text cat">
+                            <li>Microfono Condensador</li>
+                            <li>Salida USB-C</li>
+                            <li>Microfono De mesa</li>
+                        </ul>
+                        <h4 class="costo">91799</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="107">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/microfonos/Blue-Yeticaster-Broadcast.webp"
+                        alt="Blue Yeticaster Broadcast" class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">BLUE YETICASTER BROADCAST</h5>
+                        <ul class="card-text cat">
+                            <li>Microfono Condensador</li>
+                            <li>Salida USB-C</li>
+                            <li>Microfono De Estudio</li>
+                        </ul>
+                        <h4 class="costo">298999</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="108">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <!-- !PARLANTES-------------------------------------------------------------- -->
+                <div class="card">
+                    <img src="/img/perifericos/parlantes/Logitech-Z607.webp" alt="Logitech Z607"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">LOGITECH Z607 SURROUND</h5>
+                        <ul class="card-text cat">
+                            <li>6 Parlantes</li>
+                            <li>Incluye Control Remoto</li>
+                            <li>Canales de 5.1</li>
+                        </ul>
+                        <h4 class="costo">120450</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="109">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/parlantes/Logitech-G560.webp" alt="Logitech G560"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">LOGITECH BLUETOOTH G560 LightSync</h5>
+                        <ul class="card-text cat">
+                            <li>3 Parlantes</li>
+                            <li>Con Bluetooth</li>
+                            <li>Canales de 2.1</li>
+                        </ul>
+                        <h4 class="costo">49850</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="110">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/parlantes/Genius-SP-HF500A-II.webp" alt="Genius SP-HF500A"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">GENIUS SP-HF500A II 220V</h5>
+                        <ul class="card-text cat">
+                            <li>2 Parlantes</li>
+                            <li>Filtros Activo,Pasivo</li>
+                            <li>Canales de 2.1</li>
+                        </ul>
+                        <h4 class="costo">181700</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="111">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/parlantes/Genius-200BT.webp" alt="Genius 200BT"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">BARRA DE SONIDO GENIUS 200BT</h5>
+                        <ul class="card-text cat">
+                            <li>1 Parlante</li>
+                            <li>Con Bluetooth</li>
+                            <li>Canales de 5.1</li>
+                        </ul>
+                        <h4 class="costo">17100</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="112">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/parlantes/Genius-SP-HF380-Wood.webp" alt="Genius SP HF380 Wood"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">GENIUS SP-HF380 WOOD USB</h5>
+                        <ul class="card-text cat">
+                            <li>2 Parlantes</li>
+                            <li>Con Bluetooth</li>
+                            <li>Potencia de 3W</li>
+                        </ul>
+                        <h4 class="costo">15400</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="113">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/parlantes/Genius-SP-HF280.webp" alt="Genius SP-HF280"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">GENIUS SP-HF280 WOOD USB</h5>
+                        <ul class="card-text cat">
+                            <li>2 Parlantes</li>
+                            <li>Potencia de 6W</li>
+                            <li>Canales de 2.1</li>
+                        </ul>
+                        <h4 class="costo">12750</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="114">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/parlantes/Logitech-S150.webp" alt="Logitech S150"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">LOGITECH S150 PORTATIL BLACK</h5>
+                        <ul class="card-text cat">
+                            <li>2 Parlantes</li>
+                            <li>Entrada USB-A</li>
+                            <li>Canales de 2.0</li>
+                        </ul>
+                        <h4 class="costo">12450</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="115">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/parlantes/Genius-SP-HF180.webp" alt="Genius SP-HF280"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">GENIUS SP-HF180 WOOD USB</h5>
+                        <ul class="card-text cat">
+                            <li>2 Parlantes</li>
+                            <li>Potencia de 6W</li>
+                            <li>Canales de 2.0</li>
+                        </ul>
+                        <h4 class="costo">11550</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="116">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/parlantes/Genius-SP-U125.webp" alt="Genius SP-HF280"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">GENIUS SP-U125 USB BLACK</h5>
+                        <ul class="card-text cat">
+                            <li>2 Parlantes</li>
+                            <li>Potencia de 12W</li>
+                            <li>No es a prueba de agua</li>
+                        </ul>
+                        <h4 class="costo">11450</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="117">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <!-- !TECLADOS---------------------------------------------------------------- -->
+                <div class="card">
+                    <img src="/img/perifericos/teclados/Redragon-K509-Dyaus.webp" alt=" Redragon K509 Dyaus"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">REDRAGON K509 DYAUS RETROILUMINADO</h5>
+                        <ul class="card-text cat">
+                            <li>No es antisalpicaduras</li>
+                            <li>Teclado completo</li>
+                            <li>Distribucion latinoamericana</li>
+                        </ul>
+                        <h4 class="costo">17250</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="118">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/teclados/Logitech-Aurora-G713.webp" alt="Logitech Aurora G713"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">LOGITECH AURORA G713 WHITE</h5>
+                        <ul class="card-text cat">
+                            <li>Es antisalpicaduras</li>
+                            <li>Teclado compacto TKL</li>
+                            <li class="mb-3">Distribucion inglesa</li>
+                        </ul>
+                        <h4 class="precio texto-t-corto">141600</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="119">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/teclados/Game-PRO-GK19M.webp" alt="Game PRO GK19M"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">GAME PRO GK19M BLACK MECANICO</h5>
+                        <ul class="card-text cat">
+                            <li>Antisalpicaduras</li>
+                            <li>Teclado completo</li>
+                            <li class="mb-3">Distribucion hispana</li>
+                        </ul>
+                        <h4 class="precio texto-t-corto">11999</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="120">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/teclados/Wesdar-MK10.webp" alt="Wesdar MK10"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">WESDAR MK10 RETROILUMINADO</h5>
+                        <ul class="card-text cat">
+                            <li>No es antisalpicaduras</li>
+                            <li>Teclado completo</li>
+                            <li class="mb-3">Distribucion inglesa</li>
+                        </ul>
+                        <h4 class="precio texto-t-corto">4540</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="121">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/teclados/Logitech-PRO-TKL-LOL-2.webp" alt="Logitech PRO TKL LOL 2"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">LOGITECH PRO TKL LOL 2 MECANICO</h5>
+                        <ul class="card-text cat">
+                            <li>No es antisalpicaduras</li>
+                            <li>Teclado compacto TKL</li>
+                            <li class="mb-3">Distribucion inglesa</li>
+                        </ul>
+                        <h4 class="precio texto-t-corto">62999</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="122">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/teclados/HyperX-Alloy-MKW100.webp" alt="HyperX Alloy MKW100"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">HYPERX ALLOY MK100 MECANICO</h5>
+                        <ul class="card-text cat">
+                            <li>No es antisalpicaduras</li>
+                            <li>Teclado completo</li>
+                            <li class="mb-3">Distribucion inglesa</li>
+                        </ul>
+                        <h4 class="precio texto-t-corto">41450</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="123">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/teclados/HyperX-Alloy-Origins-60-Switch.webp"
+                        alt="HyperX Alloy Origins 60 Switch" class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">HYPERX ALLOY ORIGINS 60</h5>
+                        <ul class="card-text cat">
+                            <li>No es antisalpicaduras</li>
+                            <li>Teclado compacto 60%</li>
+                            <li class="mb-3">Distribucion inglesa</li>
+                        </ul>
+                        <h4 class="precio texto-t-corto">72000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="124">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/teclados/Redragon-Shiva-K512-.webp" alt=" Redragon Shiva K512"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">REDRAGON SHIVA K512 BLACK</h5>
+                        <ul class="card-text cat">
+                            <li>No es antisalpicaduras</li>
+                            <li>Teclado completo</li>
+                            <li>Distribucion latinoamericana</li>
+                        </ul>
+                        <h4 class="costo">22999</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="125">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/teclados/Wesdar-MK4.webp" alt="Wesdar MK4"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">WESDAR MK4 RETROILUMINADO</h5>
+                        <ul class="card-text cat">
+                            <li>No es antisalpicaduras</li>
+                            <li>Teclado completo</li>
+                            <li class="mb-3">Distribucion brasilera</li>
+                        </ul>
+                        <h4 class="precio texto-t-corto">3500</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="126">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/teclados/Redragon-Harpe-PRO-K503.webp" alt=" Redragon Harpe PRO K503"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">REDRAGON HARPE PRO K503</h5>
+                        <ul class="card-text cat">
+                            <li>Antisalpicaduras</li>
+                            <li>Teclado completo</li>
+                            <li class="mb-3">Distribucion inglesa</li>
+                        </ul>
+                        <h4 class="precio texto-t-corto">19999</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="127">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/teclados/HyperX-Alloy-Elite-2.webp" alt="HyperX Alloy Elite 2"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">HYPERX ALLOY ELITE 2 RGB</h5>
+                        <ul class="card-text cat">
+                            <li>No es antisalpicaduras</li>
+                            <li>Teclado completo</li>
+                            <li>Distribucion latinoamericana</li>
+                        </ul>
+                        <h4 class="costo">111860</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="128">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/teclados/Logitech-G915.webp" alt="Logitech G915"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">LOGITECH G915 WIRELEXX LIGHTSPEED</h5>
+                        <ul class="card-text cat">
+                            <li>No es antisalpicaduras</li>
+                            <li>Teclado compacto TKL</li>
+                            <li class="mb-3">Distribucion inglesa</li>
+                        </ul>
+                        <h4 class="precio texto-t-corto">127999</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="129">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/teclados/Logitech-G815.webp" alt="Logitech G815"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">LOGITECH G815 RGB LYGHTSYNC</h5>
+                        <ul class="card-text cat">
+                            <li>Antisalpicaduras</li>
+                            <li>Teclado completo</li>
+                            <li class="mb-3">Distribucion inglesa</li>
+                        </ul>
+                        <h4 class="precio texto-t-corto">109999</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="130">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/teclados/Redragon-K550-Yama.webp" alt=" Redragon K550 Yama"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">REDRAGON K550 YAMA WHITE RGB</h5>
+                        <ul class="card-text cat">
+                            <li>Antisalpicaduras</li>
+                            <li>Teclado completo</li>
+                            <li class="mb-3">Distribucion hispana</li>
+                        </ul>
+                        <h4 class="precio texto-t-corto">46999</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="131">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/teclados/HyperX-Alloy-CORE.webp" alt="HyperX Alloy CORE"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">HYPERX ALLOY CORE RGB BLACK</h5>
+                        <ul class="card-text cat">
+                            <li>Antisalpicaduras</li>
+                            <li>Teclado completo</li>
+                            <li>Distribucion latinoamericana</li>
+                        </ul>
+                        <h4 class="costo">36200</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="1321">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <!-- !WEBCAMS----------------------------------------------------------------------------------------------------------------->
+                <div class="card">
+                    <img src="/img/perifericos/webcams/Logitech-Brio-300-Graphite.webp" alt="Logitech Brio 300 Graphite"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">LOGITECH BRIO 300 GRAPHITE</h5>
+                        <ul class="card-text cat">
+                            <li>Microfono mono integrado</li>
+                            <li>2MP de camara</li>
+                            <li>Resolucion maxima 1080p</li>
+                        </ul>
+                        <h4 class="costo">62800</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="133">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/webcams/Logitech-Brio-300-Off-White.webp"
+                        alt="Logitech Brio 300 Off White" class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">LOGITECH BRIO 300 OFF WHITE</h5>
+                        <ul class="card-text cat">
+                            <li>Microfono mono integrado</li>
+                            <li>2MP de camara</li>
+                            <li>Resolucion maxima 1080p</li>
+                        </ul>
+                        <h4 class="costo">60650</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="134">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/webcams/Logitech-Brio-300-Rose.webp" alt="Logitech Brio 300 Rose"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">LOGITECH BRIO 300 ROSE 1080P</h5>
+                        <ul class="card-text cat">
+                            <li>Microfono mono integrado</li>
+                            <li>2MP de camara</li>
+                            <li>Resolucion maxima 1080p</li>
+                        </ul>
+                        <h4 class="costo">60000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="135">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/webcams/Logitech-C922-PRO.webp" alt="Logitech C922 PRO"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">LOGITECH C922 PRO C/TRIP</h5>
+                        <ul class="card-text cat">
+                            <li>Microfono estereo integrado</li>
+                            <li>3MP de camara</li>
+                            <li>Resolucion maxima 1080p</li>
+                        </ul>
+                        <h4 class="costo">59000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="136">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/webcams/Logitech-C920S-PRO.webp" alt="Logitech C920S PRO"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">LOGITECH C920S PRO USB</h5>
+                        <ul class="card-text cat">
+                            <li>Microfono estereo integrado</li>
+                            <li>3MP de camara</li>
+                            <li>Resolucion maxima 1080p</li>
+                        </ul>
+                        <h4 class="costo">54990</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="137">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/webcams/Redragon-GW800-Hitman.webp" alt="Redragon GW800 Hitman"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">REDRAGON GW800 HITMAN</h5>
+                        <ul class="card-text cat">
+                            <li>Microfono estereo integrado</li>
+                            <li>3MP de camara</li>
+                            <li>Resolucion maxima 1080p</li>
+                        </ul>
+                        <h4 class="costo">29999</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="138">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/webcams/Redragon-GW600-Fobos.webp" alt="Redragon GW600 Fobos"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">REDRAGON GW600 FOBOS</h5>
+                        <ul class="card-text cat">
+                            <li>Microfono mono integrado</li>
+                            <li>3MP de camara</li>
+                            <li class="mb-3">Resolucion maxima 720p</li>
+                        </ul>
+                        <h4 class="precio texto-t-corto">19800</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="139">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/webcams/Logitech-C505.webp" alt="Logitech C505"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">LOGITECH C505 HD USB BLACK</h5>
+                        <ul class="card-text cat">
+                            <li>Microfono mono integrado</li>
+                            <li>1.2MP de camara</li>
+                            <li class="mb-3">Resolucion maxima 720p</li>
+                        </ul>
+                        <h4 class="precio texto-t-corto">21999</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="140">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/webcams/HDC-H80S.webp" alt="HDC H80S" class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">HDC H80S FULL HD BLACK</h5>
+                        <ul class="card-text cat">
+                            <li>Microfono mono integrado</li>
+                            <li>3MP de camara</li>
+                            <li>Resolucion maxima 1080p</li>
+                        </ul>
+                        <h4 class="costo">16450</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="141">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <!-- !MOUSES------------------------------------------------------------------------- -->
+                <div class="card">
+                    <img src="/img/perifericos/mouse/Wesdar-Cerberus-x4-Black.webp" alt="Wesdar Cerberus X4 Black"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">WESDAR CERBERUS X4 BLACK</h5>
+                        <ul class="card-text cat">
+                            <li>Orientacion para diestros</li>
+                            <li>6 botones</li>
+                            <li>No es inalambrico</li>
+                        </ul>
+                        <h4 class="costo">2350</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="142">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/mouse/Wesdar-Cerberus-x4.webp" alt="Wesdar Cerberus X4 White"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">WESDAR CERBERUS X4 White</h5>
+                        <ul class="card-text cat">
+                            <li>Orientacion para diestros</li>
+                            <li>6 botones</li>
+                            <li>No es inalambrico</li>
+                        </ul>
+                        <h4 class="costo">2400</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="143">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/mouse/Combo-Mouse+Mousepad-Wesdar.webp"
+                        alt="Combo Wesdar Mousepad y Mouse" class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">COMBO GAMING MOUSEPAD Y MOUSE</h5>
+                        <ul class="card-text cat">
+                            <li>Orientacion para diestros</li>
+                            <li>6 botones</li>
+                            <li>No es inalambrico</li>
+                        </ul>
+                        <h4 class="costo">2730</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="144">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/mouse/Logitech-M90.webp" alt="Logitech M90 Black"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">LOGITECH M90 BLACK OPTICO</h5>
+                        <ul class="card-text cat">
+                            <li>Hecho para ambidiestros</li>
+                            <li>3 botones</li>
+                            <li>No es inalambrico</li>
+                        </ul>
+                        <h4 class="costo">4000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="145">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/mouse/Wesdar-GM2.webp" alt="Wesdar GM2 Black"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">WESDAR GM2 BLACK GREEN</h5>
+                        <ul class="card-text cat">
+                            <li>Sensor optico</li>
+                            <li>8 botones</li>
+                            <li>No es inalambrico</li>
+                        </ul>
+                        <h4 class="costo">4150</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="146">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/mouse/Marvo-G961.webp" alt="Marvo G961 Black"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">MARVO G961 BLACK 12000DPI</h5>
+                        <ul class="card-text cat">
+                            <li>Orientacion para diestros</li>
+                            <li>6 botones</li>
+                            <li>No es inalambrico</li>
+                        </ul>
+                        <h4 class="costo">15750</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="147">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/mouse/Logitech-G203-Lightspeed.webp" alt="Logitech G203 LightSync White"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">LOGITECH G203 LIGHTSYNC WHITE</h5>
+                        <ul class="card-text cat">
+                            <li>Orientacion para diestros</li>
+                            <li>6 botones</li>
+                            <li>No es inalambrico</li>
+                        </ul>
+                        <h4 class="costo">18.999</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="148">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/mouse/Glorious-Model-D.webp" alt="Glorious Model D White"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">GLORIOUS MODEL D GLOSSY WHITE</h5>
+                        <ul class="card-text cat">
+                            <li>Hecho para ambidiestros</li>
+                            <li>6 botones</li>
+                            <li>No es inalambrico</li>
+                        </ul>
+                        <h4 class="costo">21050</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="149">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/mouse/Logitech-POP.webp" alt="Logitech POP Black And Yellow"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">LOGITECH POP BLACK AND YELLOW</h5>
+                        <ul class="card-text cat">
+                            <li>Sensor optico</li>
+                            <li>4 botones</li>
+                            <li>Es inalambrico</li>
+                        </ul>
+                        <h4 class="costo">24700</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="150">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/mouse/Logitech-G502X-Plus-Black.webp" alt="Logitech G502X Plus Black"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">LOGITECH G502 PLUS BLACK</h5>
+                        <ul class="card-text cat">
+                            <li>Sensor optico</li>
+                            <li>10 botones</li>
+                            <li>Es inalambrico</li>
+                        </ul>
+                        <h4 class="costo">117999</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="151">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/mouse/Logitech-G502X-Plus.webp" alt="Logitech G502X Plus White"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">LOGITECH G502 PLUS WHITE</h5>
+                        <ul class="card-text cat">
+                            <li>Sensor optico</li>
+                            <li>10 botones</li>
+                            <li>Es inalambrico</li>
+                        </ul>
+                        <h4 class="costo">117999</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="152">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/mouse/Logitech-G-PRO-X-Superlight.webp"
+                        alt="Logitech G PRO X Superlight White" class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">LOGITECH G PRO X WIRELESS WHITE</h5>
+                        <ul class="card-text cat">
+                            <li>Orientacion para diestros </li>
+                            <li>5 botones</li>
+                            <li>Es inalambrico</li>
+                        </ul>
+                        <h4 class="costo">106200</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="153">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <!-- !JOYSTICKS--------------------------------------------------------------------------- -->
+                <div class="card">
+                    <img src="/img/perifericos/joysticks/Redragon-Saturn-G807.webp" alt="Redragon Saturn G807"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">REDRAGON SATURN G807 BLACK</h5>
+                        <ul class="card-text cat">
+                            <li>Sin sensor de movimiento</li>
+                            <li>Compatible con PC y PS3</li>
+                            <li>No es inalambrico</li>
+                        </ul>
+                        <h4 class="costo">16200</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="154">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/joysticks/Logiteh-F310.webp" alt="Logitech F310"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">LOGITECH F310 BLACK AND BLUE</h5>
+                        <ul class="card-text cat">
+                            <li>Sin sensor de movimiento</li>
+                            <li>Compatible con PC y TV</li>
+                            <li>No es inalambrico</li>
+                        </ul>
+                        <h4 class="costo">19999</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="155">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/joysticks/Logiteh-F710.webp" alt="Logitech F710"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">LOGITECH F710 BLACK AND WHITE</h5>
+                        <ul class="card-text cat">
+                            <li>Sin sensor de movimiento</li>
+                            <li>Compatible con PC y TV</li>
+                            <li>Es inalambrico</li>
+                        </ul>
+                        <h4 class="costo">37999</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="156">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/joysticks/Xbox-Pulse-Red.webp" alt="Xbox Pulse Red"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">XBOX PULSE RED BLUETOOTH</h5>
+                        <ul class="card-text cat">
+                            <li>Con sensor de movimiento</li>
+                            <li>Compatible con xbox y tv</li>
+                            <li>Es inalambrico</li>
+                        </ul>
+                        <h4 class="costo">65600</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="157">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/joysticks/Xbox-Electric-Volt.webp" alt="Xbox Electric Volt"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">XBOX ELECTRIC VOLT BLUETOOTH</h5>
+                        <ul class="card-text cat">
+                            <li>Con sensor de movimiento</li>
+                            <li>Compatible con xbox y tv</li>
+                            <li>Es inalambrico</li>
+                        </ul>
+                        <h4 class="costo">65600</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="158">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/perifericos/joysticks/Ps5.webp" alt="Ps5 Joystick" class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">JOYSTICK PS5 SONY DUALSENSE</h5>
+                        <ul class="card-text cat">
+                            <li>Con sensor de movimiento</li>
+                            <li>Compatible con ps5 y pc</li>
+                            <li>Es inalambrico</li>
+                        </ul>
+                        <h4 class="costo">65600</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="159">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <address class="justify-content-center">
+            <div class="footer justify-content-center">
+                <ul>
+                    <li id="facebook"><a href="https://www.facebook.com/">
+                            <span class="icono"><a href="https://www.facebook.com/" target="_blank"><i
+                                        class="fa-brands fa-facebook fa-lg"></i></a></span>
+                            <a href="https://www.facebook.com/" target="_blank" class="titulo"
+                                id="tface">facebook</a></a>
+                    </li>
+                    <li id="instagram"><a href="https://www.instagram.com" target="_blank">
+                            <span class="icono"><a href="https://www.instagram.com/" target="_blank"><i
+                                        class="fa-brands fa-instagram fa-lg"></i></a></span>
+                            <a href="https://www.instagram.com/" target="_blank" class="titulo"
+                                id="tinsta">instagram</a></a>
+                    </li>
+                    <li id="twitter"><a href="https://twitter.com/?lang=es" target="_blank">
+                            <span class="icono"><a href="https://twitter.com/?lang=es" target="_blank"><i
+                                        class="fa-brands fa-twitter fa-lg"></i></a></span>
+                            <span class="titulo" id="ttwitt">twitter</span></a>
+                    </li>
+                    <li id="tiktok"><a href="https://www.tiktok.com/es/" target="_blank">
+                            <span class="icono"><a href="https://www.tiktok.com/es/" target="_blank"><i
+                                        class="fa-brands fa-tiktok fa-lg"></i></a></span>
+                            <span class="titulo" id="ttik">tiktok</span></a>
+                    </li>
+                    <li id="telegram"><a href="https://telegram.org/" target="_blank">
+                            <span class="icono"><a href="https://telegram.org/" target="_blank"><i
+                                        class="fa-brands fa-telegram fa-lg"></i></a></span>
+                            <span class="titulo" id="ttel">telegram</span></a>
+                    </li>
+                    <li id="whatsapp"><a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
+                            <span class="icono"><a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><i
+                                        class="fa-brands fa-whatsapp fa-lg"></i></a></span>
+                            <span class="titulo" id="twhat">whatsapp</span></a>
+                    </li>
+                    <li id="linkedin"><a href="https://www.linkedin.com/home" target="_blank">
+                            <span class="icono"><a href="https://www.linkedin.com/home" target="_blank"><i
+                                        class="fa-brands fa-linkedin fa-lg"></i></a></span>
+                            <span class="titulo" id="tlink">linkedin</span></a>
+                    </li>
+                    <li id="youtube"><a href="https://www.youtube.com/" target="_blank">
+                            <span class="icono"><a href="https://www.youtube.com/" target="_blank"><i
+                                        class="fa-brands fa-youtube fa-lg"></i></a></span>
+                            <span class="titulo" id="tyout">youtube</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="slider">
+                <div class="slider-track">
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Amazon_Pay-Logo.wine.svg" alt="Amazon Pay">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/American_Express-Logo.wine.svg" alt="American Express">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/BBVA_USA-Logo.wine.svg" alt="BBVA">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Binance-Logo.wine.svg" alt="Binance">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Grupo_Financiero_Galicia-Logo.wine.svg" alt="Galicia">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/HSBC-Logo.wine.svg" alt="HSBC">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Mastercard-Logo.wine.svg" alt="Mastercard">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/MercPago.svg" alt="MercadoPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/naranja.svg" alt="Naranja">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PagoFacil.svg" alt="Pago Facil">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PayPal-Logo.wine.svg" alt="PayPal">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/RapiPago.svg" alt="RapiPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Santander_Bank-Logo.wine.svg" alt="Santander Rios">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Visa_Inc.-Logo.wine.svg" alt="Visa">
+                    </div>
+
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Amazon_Pay-Logo.wine.svg" alt="Amazon Pay">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/American_Express-Logo.wine.svg" alt="American Express">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/BBVA_USA-Logo.wine.svg" alt="BBVA">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Binance-Logo.wine.svg" alt="Binance">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Grupo_Financiero_Galicia-Logo.wine.svg" alt="Galicia">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/HSBC-Logo.wine.svg" alt="HSBC">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Mastercard-Logo.wine.svg" alt="Mastercard">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/MercPago.svg" alt="MercadoPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/naranja.svg" alt="Naranja">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PagoFacil.svg" alt="Pago Facil">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PayPal-Logo.wine.svg" alt="PayPal">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/RapiPago.svg" alt="RapiPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Santander_Bank-Logo.wine.svg" alt="Santander Rios">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Visa_Inc.-Logo.wine.svg" alt="Visa">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Amazon_Pay-Logo.wine.svg" alt="Amazon Pay">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/American_Express-Logo.wine.svg" alt="American Express">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/BBVA_USA-Logo.wine.svg" alt="BBVA">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Binance-Logo.wine.svg" alt="Binance">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Grupo_Financiero_Galicia-Logo.wine.svg" alt="Galicia">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/HSBC-Logo.wine.svg" alt="HSBC">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Mastercard-Logo.wine.svg" alt="Mastercard">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/MercPago.svg" alt="MercadoPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/naranja.svg" alt="Naranja">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PagoFacil.svg" alt="Pago Facil">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PayPal-Logo.wine.svg" alt="PayPal">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/RapiPago.svg" alt="RapiPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Santander_Bank-Logo.wine.svg" alt="Santander Rios">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Visa_Inc.-Logo.wine.svg" alt="Visa">
+                    </div>
+
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Amazon_Pay-Logo.wine.svg" alt="Amazon Pay">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/American_Express-Logo.wine.svg" alt="American Express">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/BBVA_USA-Logo.wine.svg" alt="BBVA">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Binance-Logo.wine.svg" alt="Binance">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Grupo_Financiero_Galicia-Logo.wine.svg" alt="Galicia">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/HSBC-Logo.wine.svg" alt="HSBC">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Mastercard-Logo.wine.svg" alt="Mastercard">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/MercPago.svg" alt="MercadoPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/naranja.svg" alt="Naranja">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PagoFacil.svg" alt="Pago Facil">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PayPal-Logo.wine.svg" alt="PayPal">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/RapiPago.svg" alt="RapiPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Santander_Bank-Logo.wine.svg" alt="Santander Rios">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Visa_Inc.-Logo.wine.svg" alt="Visa">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Amazon_Pay-Logo.wine.svg" alt="Amazon Pay">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/American_Express-Logo.wine.svg" alt="American Express">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/BBVA_USA-Logo.wine.svg" alt="BBVA">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Binance-Logo.wine.svg" alt="Binance">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Grupo_Financiero_Galicia-Logo.wine.svg" alt="Galicia">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/HSBC-Logo.wine.svg" alt="HSBC">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Mastercard-Logo.wine.svg" alt="Mastercard">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/MercPago.svg" alt="MercadoPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/naranja.svg" alt="Naranja">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PagoFacil.svg" alt="Pago Facil">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PayPal-Logo.wine.svg" alt="PayPal">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/RapiPago.svg" alt="RapiPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Santander_Bank-Logo.wine.svg" alt="Santander Rios">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Visa_Inc.-Logo.wine.svg" alt="Visa">
+                    </div>
+                </div>
+            </div>
+        </address>
+    </footer>
+    <script type="module" src="../main.js"></script>
+</body>
+
+</html>

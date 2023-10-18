@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Notebooks</title>
+</head>
+
+<body>
+    <header class="header-nav">
+        <nav class="navbar justify-content-center container ps-5" data-bs-theme="dark">
+            <div class="container justify-content-center">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="/img/The world studios.png" alt="Logo" width="100" height="100"
+                        class="d-inline-block align-text-top">
+                </a>
+                <div class="dropdown">
+                    <a class="btn dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Categorias</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="todo.html">Todo</a></li>
+                        <li><a class="dropdown-item" href="notebooks.html">Notebooks</a></li>
+                        <li><a class="dropdown-item" href="software.html">Software</a></li>
+                        <li><a class="dropdown-item" href="conectividad.html">Conectividad</a></li>
+                        <li><a class="dropdown-item" href="accesorios.html">Accesorios</a></li>
+                        <li><a class="dropdown-item" href="perifericos.html">Perifericos</a></li>
+                        <li><a class="dropdown-item" href="consolas.html">Consolas</a></li>
+
+                    </ul>
+                </div>
+                <a class="nav-link ms-5 link" href="contacto.html">Contacto</a>
+                <a class="nav-link ms-5 link" href="nosotros.html">Nosotros</a>
+                
+                <div class="dropdown">
+                    <a type="button" class="nav-link ms-5 carrito" data-bs-toggle="dropdown" aria-expanded="false"><i
+                            class="fa-sharp fa-solid fa-cart-shopping"></i>
+                    </a>
+                    <ul class="dropdown-menu" id="carrito">
+                        <table id="lista-carrito" class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Imagen</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Precio</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="d-grid gap-2 d-md-block justify-content-md-center">
+                            <button id="vaciar-carrito" class="btn btn-primary">Vaciar</button>
+                            <button id="procesar-pedido" class="btn btn-primary">Procesar Comprar</button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            <button class="darkModeSwitch ms-2" id="switch">
+                <span><i class="fa-regular fa-moon"></i></span>
+                <span><i class="fa-regular fa-sun"></i></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="software d-flex justify-content-center">
+            <div>
+                <header>
+                    <h2>Notebooks</h2>
+                </header>
+                <div class="container" id="lista-productos">
+                    <div class="card">
+                        <img src="/img/notebooks/Aiwa-Cloudbook-CA141-C.webp" alt="Aiwa Cloudbook CA141-C"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">AIWA CLOUDBOOK CA141-C</h5>
+                            <ul class="card-text cat">
+                                <li>Intel Celeron N4020</li>
+                                <li>SSD de 128GB</li>
+                                <li>RAM DDR4 4GB</li>
+                                <li>Pantalla de 14.1"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">640000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="52">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Noblex-N4020.webp" alt="Noblex Celeron N4020"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">NOBLEX CELERON N4020 W11</h5>
+                            <ul class="card-text cat">
+                                <li>Intel Celeron N4020</li>
+                                <li>SSD 128</li>
+                                <li>RAM DDR4 4GB</li>
+                                <li>Pantalla de 14"</li>
+                                <li>Resolucion Full HD</li>
+                            </ul>
+                            <h4 class="costo">560000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="53">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Lenovo-Ideapad-3-14IGL05-CELERON-N4020.webp"
+                            alt="Lenovo Ideapad 3 14IGL05 CELERON" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">LENOVO IDEAPAD 3 14IGL05</h5>
+                            <ul class="card-text cat">
+                                <li>Intel N4020</li>
+                                <li>HDD 500GB</li>
+                                <li>RAM DDR4 4GB</li>
+                                <li>Pantalla de 14"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">575000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="54">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Lenovo-Ideapad-1-14IGL05-PENTIUM-N5030.webp"
+                            alt="Lenovo Ideapad 1 14IGL05 PENTIUM" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">LENOVO IDEAPAD 1 14IGL05</h5>
+                            <ul class="card-text cat">
+                                <li>Intel N5030</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 4GB</li>
+                                <li>Pantalla de 14"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">720000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="55">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Noblex-1115G4.webp" alt="Noblex CORE I3 1115G4 8GB"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">NOTEBOOK NOBLEX 1115G4 W11</h5>
+                            <ul class="card-text cat">
+                                <li>INTEL I3</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 14.1"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">850000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="56">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Asus-X515EA-1115G4.webp" alt="Asus X515EA 1115G4 4GB FREE"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">ASUS X515EA 1115G4 4GB FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I3</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 4GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">970000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="57">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Asus-X515EA-1115G4-8GB.webp" alt="Asus X515EA 1115G4 8GB FREE"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">ASUS X515EA 1115G4 8GB FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I3</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">880000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="58">Comprar</a><a
+                                href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Lenovo-Ideapad-1-RYZEN-3-3250U.webp"
+                            alt="Lenovo Ideapad 1 Ryzen 3 3250U" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">LENOVO IDEAPAD 1 3250U FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Ryzen 3</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 14"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">860000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="59">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Lenovo-V15-I3-10110U.webp" alt="Lenovo V15 I3 10110U"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">NOTEBOOK LENOVO V15 10110U FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I3</li>
+                                <li>HDD 1TB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">900000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="60">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Lenovo-V15-G2-I3-1115G4-8GB.webp" alt="Lenovo V15 G2 I3 1115G4 8GB"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">LENOVO V15 G2 1115G4 FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I3</li>
+                                <li>HDD 1TB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">950000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="61">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Bangho-Max-L5-I3-1115G4.webp" alt="Bangho Max L5 I3 1115G4"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">BANGHO MAX L5 1115G4 FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I3</li>
+                                <li>SSD 240GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">950000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="62">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Lenovo-V15-G2-RYZEN-3-5300U.webp" alt="Lenovo V15 G2 Ryzen 3 5300U HDD"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">LENOVO V15 G2 RYZEN 3 5300U HDD FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Ryzen 3</li>
+                                <li>HDD 1TB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">920000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="63">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Lenovo-V15-G2-RYZEN-3-5300U-SSD-M2.webp"
+                            alt="Lenovo V15 G2 Ryzen 3 5300U SSD" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">LENOVO V15 G2 RYZEN 3 5300U SSD FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Ryzen 3</li>
+                                <li>HDD 1TB SSD 240GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">950000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="64">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Lenovo-V15-I3-10110U-SSD-M2.webp" alt="Lenovo V15 I3 10110U SSD"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">LENOVO V15 I3 10110U FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I3</li>
+                                <li>SSD 240GB HDD 1TB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">950000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="65">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Bangho-Max-L4-I3-1115G4.webp" alt="Bangho Max L4 I3 1115G4"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">BANGHO MAX L4 I3 1115G4 FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I3</li>
+                                <li>SSD 240GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 14"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">980000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="66">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Lenovo-Ideapad-1-RYZEN-5-3500U.webp"
+                            alt="Lenovo Ideapad 1 Ryzen 5 3500U" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">LENOVO IDEAPAD 1 RYZEN 5 3500U FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Ryzen 5</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 14"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">985500</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="67">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Dell-Inspiron-3511-I3-1115G4.webp" alt="Dell Inspiron 3511 I3 1115G4"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">DELL INSPIRON 3511 I3 1115G4 FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I3</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 4GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion de 15.6"</li>
+                            </ul>
+                            <h4 class="costo">1150000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="68">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Dell-Inspiron-3511-I3-1115G4-SSD-256GB-8GB.webp"
+                            alt="Dell Inspiron 3511 I3 1115G4" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">DELL INSPIRON 3511 CORE I3 1115G4 FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I3</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">1250000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="69">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Lenovo-V15-G2-I3-1115G4-8GB.webp" alt="Lenovo V15 G2 I3 1115G4"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">LENOVO V15 G2 I3 1115G4 FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I3</li>
+                                <li>HDD 1TB SSD 240GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">1250000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="70">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Lenovo-Ideapad-3-14IML05-I5-10210U-8GB.webp"
+                            alt="Lenovo Ideapad 3 14IML05 I5 10210U" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">LENOVO IDEAPAD 3 14IML05 W11</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I5</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 14"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">1350000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="71">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Bangho-Max-L4-I5-115567-8GB.webp" alt="Bangho Max L4 I5 115567"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">BANGHO MAX L4 115567 FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I5</li>
+                                <li>SSD 240GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 14"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">1200000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="72">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Lenovo-Ideapad-1-RYZEN-7-3700U-8GB.webp"
+                            alt="Lenovo Ideapad 1 Ryzen 7 3700U" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">LENOVO IDEAPAD 1 RYZEN 7 3700U FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Ryzen 7</li>
+                                <li>SSD 512GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">1400000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="73">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Bangho-Max-L5-INTEL-CORE-I5-1135G7-8GB.webp"
+                            alt="Bangho Max L5 INTEL CORE I5 1135G7 FREE" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">BANGHO MAX L5 1135G7 FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I5</li>
+                                <li>SSD 240GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">1400000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="74">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Bangho-Max-L5-INTEL-CORE-I5-1135G7-8GB-W11.webp"
+                            alt="Bangho Max L5 INTEL CORE I5 1135G7 W11" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">BANGHO MAX L5 1135G7 W11</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I5</li>
+                                <li>SSD 240GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">1550000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="75">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Asus-X515EA-1135G7-8GB-FREE.webp" alt="Asus X515EA 1135G7 8GB FREE"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">ASUS X515EA 1135G7 SSD FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I5</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">1600000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="76">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Bangho-Max-L5-I7-1165G7-8GB-FREE.webp"
+                            alt="Bangho Max L5 I7 1165G7 FREE" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">BANGHO MAX L5 1165G7 FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I7</li>
+                                <li>SSD 480GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">1650000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="77">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Bangho-Bes-T4-INTEL-CORE-I5-1021U-8GB-FREE.webp"
+                            alt="Bangho Bes T4 I5 1021U FREE" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">BANGHO BES T4 I5 1021U FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I5</li>
+                                <li>SSD 240GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 14"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">1700000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="78">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Dell-Inspiron-3525-Ryzen-5-5500U-8GB-W11.webp"
+                            alt="Dell Inspiron 3525 Ryzen 5 5500U 8GB W11" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">DELL INSPIRON 3525 RYZEN 5500U W11</h5>
+                            <ul class="card-text cat">
+                                <li>Ryzen 5</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">1750000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="79">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Hp-15TDW300-I5-1135G7-8GB-W11.webp"
+                            alt="Hp 15-DY2054LA I5 1135G7 8GB W11" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">HP 15-DY2054LA I5 1135G7 W11</h5>
+                            <ul class="card-text cat">
+                                <li>Ryzen 5</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">1780000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="80">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Dell-Inspiron-3520-I5-1135G7-8GB-W11.webp"
+                            alt="Dell Inspiron 3520 I5 1135G7 W11" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">DELL INSPIRON 3520 1135G7 W11</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I5</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">1850000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="81">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Hp-15TDW300-I5-1135G7-8GB-W11.webp" alt="Hp 15TDW300 I5 1135G7 W11"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">HP 15TDW300 1135G7 SSD W11</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I5</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">1840000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="82">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Dell-Inspiron-3511-I5-1135G7-8GB-FREE.webp"
+                            alt="Dell Inspiron 3511 I5 1135G7 8GB FREE" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">DELL INSPIRON 3511 I5 1135G7 FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I5</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">1865000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="83">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Bangho-Max-L5-I7-1165G7-8GB-W11.webp" alt="Bangho Max L5 I7 1165G7 W11"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">BANGHO MAX L5 I7 1165G7 W11</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I7</li>
+                                <li>SSD 480GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">1870000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="84">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Dell-Inspiron-3511-I5-1135G7-16GB-FREE.webp"
+                            alt="Dell Inspiron 3511 1135G7 16GB FREE" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">DELL INSPIRON 3511 I5 1135G7 FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I5</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 16GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">1880000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="85">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/HP-Pavilon-I5-1135G7-8GB-W11.webp" alt="HP Pavilon I5 1135G7 8GB W11"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">HP PAVILON I5 1135G7 W11</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I5</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 13"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">1890000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="86">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Lenovo-V15-G2-RYZEN-7-5700U-8GB-FREE.webp"
+                            alt="Lenovo V15 G2 Ryzen 7 5700U 8GB FREE" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">LENOVO V15 G2 RYZEN 7 5700U FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Ryzen 7</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla 15.6"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">2000000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="87">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <address class="justify-content-center">
+            <div class="footer justify-content-center">
+                <ul>
+                    <li id="facebook"><a href="https://www.facebook.com/">
+                            <span class="icono"><a href="https://www.facebook.com/" target="_blank"><i
+                                        class="fa-brands fa-facebook fa-lg"></i></a></span>
+                            <a href="https://www.facebook.com/" target="_blank" class="titulo"
+                                id="tface">facebook</a></a>
+                    </li>
+                    <li id="instagram"><a href="https://www.instagram.com" target="_blank">
+                            <span class="icono"><a href="https://www.instagram.com/" target="_blank"><i
+                                        class="fa-brands fa-instagram fa-lg"></i></a></span>
+                            <a href="https://www.instagram.com/" target="_blank" class="titulo"
+                                id="tinsta">instagram</a></a>
+                    </li>
+                    <li id="twitter"><a href="https://twitter.com/?lang=es" target="_blank">
+                            <span class="icono"><a href="https://twitter.com/?lang=es" target="_blank"><i
+                                        class="fa-brands fa-twitter fa-lg"></i></a></span>
+                            <span class="titulo" id="ttwitt">twitter</span></a>
+                    </li>
+                    <li id="tiktok"><a href="https://www.tiktok.com/es/" target="_blank">
+                            <span class="icono"><a href="https://www.tiktok.com/es/" target="_blank"><i
+                                        class="fa-brands fa-tiktok fa-lg"></i></a></span>
+                            <span class="titulo" id="ttik">tiktok</span></a>
+                    </li>
+                    <li id="telegram"><a href="https://telegram.org/" target="_blank">
+                            <span class="icono"><a href="https://telegram.org/" target="_blank"><i
+                                        class="fa-brands fa-telegram fa-lg"></i></a></span>
+                            <span class="titulo" id="ttel">telegram</span></a>
+                    </li>
+                    <li id="whatsapp"><a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
+                            <span class="icono"><a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><i
+                                        class="fa-brands fa-whatsapp fa-lg"></i></a></span>
+                            <span class="titulo" id="twhat">whatsapp</span></a>
+                    </li>
+                    <li id="linkedin"><a href="https://www.linkedin.com/home" target="_blank">
+                            <span class="icono"><a href="https://www.linkedin.com/home" target="_blank"><i
+                                        class="fa-brands fa-linkedin fa-lg"></i></a></span>
+                            <span class="titulo" id="tlink">linkedin</span></a>
+                    </li>
+                    <li id="youtube"><a href="https://www.youtube.com/" target="_blank">
+                            <span class="icono"><a href="https://www.youtube.com/" target="_blank"><i
+                                        class="fa-brands fa-youtube fa-lg"></i></a></span>
+                            <span class="titulo" id="tyout">youtube</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="slider">
+                <div class="slider-track">
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Amazon_Pay-Logo.wine.svg" alt="Amazon Pay">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/American_Express-Logo.wine.svg" alt="American Express">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/BBVA_USA-Logo.wine.svg" alt="BBVA">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Binance-Logo.wine.svg" alt="Binance">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Grupo_Financiero_Galicia-Logo.wine.svg" alt="Galicia">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/HSBC-Logo.wine.svg" alt="HSBC">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Mastercard-Logo.wine.svg" alt="Mastercard">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/MercPago.svg" alt="MercadoPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/naranja.svg" alt="Naranja">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PagoFacil.svg" alt="Pago Facil">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PayPal-Logo.wine.svg" alt="PayPal">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/RapiPago.svg" alt="RapiPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Santander_Bank-Logo.wine.svg" alt="Santander Rios">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Visa_Inc.-Logo.wine.svg" alt="Visa">
+                    </div>
+
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Amazon_Pay-Logo.wine.svg" alt="Amazon Pay">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/American_Express-Logo.wine.svg" alt="American Express">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/BBVA_USA-Logo.wine.svg" alt="BBVA">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Binance-Logo.wine.svg" alt="Binance">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Grupo_Financiero_Galicia-Logo.wine.svg" alt="Galicia">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/HSBC-Logo.wine.svg" alt="HSBC">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Mastercard-Logo.wine.svg" alt="Mastercard">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/MercPago.svg" alt="MercadoPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/naranja.svg" alt="Naranja">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PagoFacil.svg" alt="Pago Facil">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PayPal-Logo.wine.svg" alt="PayPal">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/RapiPago.svg" alt="RapiPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Santander_Bank-Logo.wine.svg" alt="Santander Rios">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Visa_Inc.-Logo.wine.svg" alt="Visa">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Amazon_Pay-Logo.wine.svg" alt="Amazon Pay">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/American_Express-Logo.wine.svg" alt="American Express">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/BBVA_USA-Logo.wine.svg" alt="BBVA">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Binance-Logo.wine.svg" alt="Binance">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Grupo_Financiero_Galicia-Logo.wine.svg" alt="Galicia">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/HSBC-Logo.wine.svg" alt="HSBC">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Mastercard-Logo.wine.svg" alt="Mastercard">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/MercPago.svg" alt="MercadoPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/naranja.svg" alt="Naranja">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PagoFacil.svg" alt="Pago Facil">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PayPal-Logo.wine.svg" alt="PayPal">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/RapiPago.svg" alt="RapiPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Santander_Bank-Logo.wine.svg" alt="Santander Rios">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Visa_Inc.-Logo.wine.svg" alt="Visa">
+                    </div>
+
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Amazon_Pay-Logo.wine.svg" alt="Amazon Pay">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/American_Express-Logo.wine.svg" alt="American Express">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/BBVA_USA-Logo.wine.svg" alt="BBVA">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Binance-Logo.wine.svg" alt="Binance">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Grupo_Financiero_Galicia-Logo.wine.svg" alt="Galicia">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/HSBC-Logo.wine.svg" alt="HSBC">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Mastercard-Logo.wine.svg" alt="Mastercard">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/MercPago.svg" alt="MercadoPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/naranja.svg" alt="Naranja">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PagoFacil.svg" alt="Pago Facil">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PayPal-Logo.wine.svg" alt="PayPal">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/RapiPago.svg" alt="RapiPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Santander_Bank-Logo.wine.svg" alt="Santander Rios">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Visa_Inc.-Logo.wine.svg" alt="Visa">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Amazon_Pay-Logo.wine.svg" alt="Amazon Pay">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/American_Express-Logo.wine.svg" alt="American Express">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/BBVA_USA-Logo.wine.svg" alt="BBVA">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Binance-Logo.wine.svg" alt="Binance">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Grupo_Financiero_Galicia-Logo.wine.svg" alt="Galicia">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/HSBC-Logo.wine.svg" alt="HSBC">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Mastercard-Logo.wine.svg" alt="Mastercard">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/MercPago.svg" alt="MercadoPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/naranja.svg" alt="Naranja">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PagoFacil.svg" alt="Pago Facil">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PayPal-Logo.wine.svg" alt="PayPal">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/RapiPago.svg" alt="RapiPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Santander_Bank-Logo.wine.svg" alt="Santander Rios">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Visa_Inc.-Logo.wine.svg" alt="Visa">
+                    </div>
+                </div>
+            </div>
+        </address>
+    </footer>
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>

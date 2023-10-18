@@ -1,0 +1,2983 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <title>Todo</title>
+
+</head>
+
+<body>
+    <header class="header-nav">
+        <nav class="navbar justify-content-center container ps-5" data-bs-theme="dark">
+            <div class="container justify-content-center">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="/img/The world studios.png" alt="Logo" width="100" height="100"
+                        class="d-inline-block align-text-top">
+                </a>
+                <div class="dropdown">
+                    <a class="btn dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Categorias</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="todo.html">Todo</a></li>
+                        <li><a class="dropdown-item" href="notebooks.html">Notebooks</a></li>
+                        <li><a class="dropdown-item" href="software.html">Software</a></li>
+                        <li><a class="dropdown-item" href="conectividad.html">Conectividad</a></li>
+                        <li><a class="dropdown-item" href="accesorios.html">Accesorios</a></li>
+                        <li><a class="dropdown-item" href="perifericos.html">Perifericos</a></li>
+                        <li><a class="dropdown-item" href="consolas.html">Consolas</a></li>
+
+                    </ul>
+                </div>
+                <a class="nav-link ms-5 link" href="contacto.html">Contacto</a>
+                <a class="nav-link ms-5 link" href="nosotros.html">Nosotros</a>
+
+                <div class="dropdown">
+                    <a type="button" class="nav-link ms-5 carrito" data-bs-toggle="dropdown" aria-expanded="false"><i
+                            class="fa-sharp fa-solid fa-cart-shopping"></i>
+                    </a>
+                    <ul class="dropdown-menu" id="carrito">
+                        <table id="lista-carrito" class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Imagen</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Precio</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="d-grid gap-2 d-md-block justify-content-md-center">
+                            <button id="vaciar-carrito" class="btn btn-primary">Vaciar</button>
+                            <button id="procesar-pedido" class="btn btn-primary">Procesar Comprar</button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            <button class="darkModeSwitch ms-2" id="switch">
+                <span><i class="fa-regular fa-moon"></i></span>
+                <span><i class="fa-regular fa-sun"></i></span>
+            </button>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <section class="consolas d-flex justify-content-center" id="lista-todo">
+            <div>
+                <header>
+                    <h2>Todo</h2>
+                </header>
+                <div class="container" id="lista-productos">
+                    <div class="card">
+                        <img src="/img/F1500EA-WB511-300x300.webp" class="card-img-top"
+                            alt="Asus VivoBook F1500EA-WB51">
+                        <div class="card-body">
+                            <h5 class="card-title">Asus VivoBook F1500EA-WB51</h5>
+                            <ul class="card-text">
+                                <li>Color: Negro</li>
+                                <li>Almacenamiento: 256GB</li>
+                                <li>Resolucion: 1980 x 1080</li>
+                            </ul>
+                            <h4 class="costo">345000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="1">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/IdeaPad-1-1-300x300.webp" class="card-img-top" alt="Lenovo Ideapad 1 14IAU7">
+                        <div class="card-body">
+                            <h5 class="card-title">Notebook Lenovo 1 14IAU7</h5>
+                            <ul class="card-text">
+                                <li>Color: Gris</li>
+                                <li>Almacenamiento: 512GB</li>
+                                <li>Resolucion: 1366 x 768</li>
+                            </ul>
+                            <h4 class="costo">286000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="2">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/Lenovo-V14-1-300x300.webp" class="card-img-top" alt="Lenovo V14">
+                        <div class="card-body">
+                            <h5 class="card-title">Notebook Lenovo V14 G2 ALC</h5>
+                            <ul class="card-text">
+                                <li>Color: Negro</li>
+                                <li>Almacenamiento: 1TB</li>
+                                <li>Resolucion: 1920 x 1080</li>
+                            </ul>
+                            <h4 class="costo">422000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="3">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/msi-delta-1-300x300.webp" class="card-img-top" alt="Msi Delta 16GB Ryzen 7">
+                        <div class="card-body">
+                            <h5 class="card-title">Notebook MSI Delta 16GB Ryzen 7</h5>
+                            <ul class="card-text">
+                                <li>Color: Gris</li>
+                                <li>Almacenamiento: 1TB</li>
+                                <li>Resolucion: 1920 x 1080</li>
+                            </ul>
+                            <h4 class="costo">840000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="4">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/omen-1-1-300x300.webp" class="card-img-top" alt="Hp Omen 16-b0005dx 16GB">
+                        <div class="card-body">
+                            <h5 class="card-title">Notebook HP OMEN 16-b0005dx 16gb</h5>
+                            <ul class="card-text">
+                                <li>Color: Negro</li>
+                                <li>Almacenamiento: 1TB</li>
+                                <li>Resolucion: 2560 x 1440</li>
+                            </ul>
+                            <h4 class="costo">900000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="5">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/S3502QA-DS711-300x300.webp" class="card-img-top" alt="Asus VivoBook S">
+                        <div class="card-body">
+                            <h5 class="card-title">Notebook Asus Vivobook S</h5>
+                            <ul class="card-text">
+                                <li>Color: Negro</li>
+                                <li>Almacenamiento: 512GB</li>
+                                <li>Resolucion: 1920 x 1080</li>
+                            </ul>
+                            <h4 class="costo">480000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="6">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/victus11-300x300.webp" class="card-img-top" alt="Hp Victus Gaming">
+                        <div class="card-body">
+                            <h5 class="card-title">Notebook HP victus Gaming</h5>
+                            <ul class="card-text">
+                                <li>Color: Gris Oscuro</li>
+                                <li>Almacenamiento: 512GB</li>
+                                <li>Resolucion: 1920 x 1080</li>
+                            </ul>
+                            <h4 class="costo">510000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="7">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/nlenovo.webp" class="card-img-top" width="300px" height="273px"
+                            alt="Lenovo ThinkPad E14 FHD 14 Pulgadas">
+                        <div class="card-body">
+                            <h5 class="card-title">Notebook Lenovo ThinkPad E14 FHD 14"</h5>
+                            <ul class="card-text">
+                                <li>Color: Gris Oscuro</li>
+                                <li>Almacenamiento: 256GB</li>
+                                <li>Resolucion: 1366 x 768</li>
+                            </ul>
+                            <h4 class="costo">839000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="8">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/ngamermsi.webp" class="card-img-top" width="300px" height="273px"
+                            alt="Msi Pulse GL76 FHD">
+                        <div class="card-body">
+                            <h5 class="card-title">Notebook Gamer MSI Pulse GL76 FHD 17.3"</h5>
+                            <ul class="card-text">
+                                <li>Color: Gris Oscuro</li>
+                                <li>Almacenamiento: 1TB </li>
+                                <li>Resolucion: 1920 x 1080</li>
+                            </ul>
+                            <h4 class="costo">1299000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="9">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/accesorios/mochila-Basica-ThinkPad.webp" alt="Mochila Basica ThinkPad"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">MOCHILA BASICA THINKPAD</h5>
+                            <ul class="card-text cat">
+                                <li>Peso de 360g</li>
+                                <li>Color negro</li>
+                                <li>Profundidad de 95mm</li>
+                            </ul>
+                            <h4 class="costo"> 21800</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="10">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/accesorios/mochila-Porta-Notebook-Gadnic.webp"
+                            alt="Mochila Porta Notebook Gadnic" class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">MOCHILA PORTA NOTEBOOK GADNIC</h5>
+                            <ul class="card-text cat">
+                                <li>Tela super resistente</li>
+                                <li>Repelente al agua</li>
+                                <li>Capacidad 30kg</li>
+                            </ul>
+                            <h4 class="costo"> 31000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="11">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/accesorios/estabilizador-De-Tension-Forza.webp"
+                            alt="Estabilizador De Tension Forza" class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">ESTABILIZADOR DE TENSION FORZA</h5>
+                            <ul class="card-text cat">
+                                <li>Capacidad de 1100w</li>
+                                <li>Tension de 220v</li>
+                                <li>Frecuencia de 50/60hz</li>
+                            </ul>
+                            <h4 class="costo"> 23000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="12">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/accesorios/soporte-Para-Notebook-Nictom.webp" alt="Soporte Para Notebook Nictom"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">SOPORTE PARA NOTEBOOK SPC01</h5>
+                            <ul class="card-text cat">
+                                <li>Es plegable</li>
+                                <li>Soporta hasta 30kg</li>
+                                <li>Elevacion de 12-16cm</li>
+                            </ul>
+                            <h4 class="costo"> 8500</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="13">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/accesorios/soporte-Para-Notebook-Nictom-SPN01.webp"
+                            alt="Soporte Para Notebook SPN01" class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">SOPORTE PARA NOTEBOOK SPN01</h5>
+                            <ul class="card-text cat">
+                                <li>Es plegable</li>
+                                <li>Antideslizante</li>
+                                <li>Diseño ergonomico</li>
+                            </ul>
+                            <h4 class="costo"> 11000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="14">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/accesorios/adaptador-USB-Bluetooth.webp" alt="Adaptador USB Bluetooth"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">ADAPTADOR USB BLUETOOTH DAIKON</h5>
+                            <ul class="card-text cat">
+                                <li>Bluetooth 5.0</li>
+                                <li>Velocidad de 3mbps</li>
+                                <li>Bajo consumo de energia</li>
+                            </ul>
+                            <h4 class="costo"> 4000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="15">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/accesorios/base-Soporte-Cooler-Notebook.webp"
+                            alt="Base Soporte Cooler Notebook K-505F" class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">BASE SOPORTE COOLER NOTEBOOK</h5>
+                            <ul class="card-text cat">
+                                <li>2 coolers de 55mm</li>
+                                <li>Voltage de 5V</li>
+                                <li>Soporta entre 10-14"</li>
+                            </ul>
+                            <h4 class="costo"> 4000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="16">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/accesorios/base-Soporte-Cooler-Notebook-Wesdar.webp"
+                            alt="Base Soporte Cooler Notebook K-8028F" class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">BASE SOPORTE COOLER NOTEBOOK WESDAR</h5>
+                            <ul class="card-text cat">
+                                <li>2 coolers de 125mm</li>
+                                <li>Voltage de 5V</li>
+                                <li>Soporta entre 10-15"</li>
+                            </ul>
+                            <h4 class="costo"> 10000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="17">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/accesorios/adaptador-Mini-Antena-USB-Wifi.webp" alt="Adaptador Mini Antena Wifi"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">ADAPTADOR MINI ANTENA WIFI</h5>
+                            <ul class="card-text cat">
+                                <li>Transmision de 150mbps</li>
+                                <li>Chipset RT7601</li>
+                                <li>Compatible con 2.4ghz</li>
+                            </ul>
+                            <h4 class="costo"> 6000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="18">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/accesorios/grabadora-Dvd-LG-Externa.webp" alt="grabadora Dvd LG Externa"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">GRABADORA DVD LG EXTERNA</h5>
+                            <ul class="card-text cat">
+                                <li>Usb 2.0</li>
+                                <li>Tecnologia M-DISC</li>
+                                <li>Reproduccion silenciosa</li>
+                            </ul>
+                            <h4 class="costo"> 58000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="19">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/accesorios/hub-Usb-10-Puertos.webp" alt="hub Usb 10 Puertos"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">HUB USB 10 PUERTOS LUZ LED</h5>
+                            <ul class="card-text cat">
+                                <li>Usb 2.0</li>
+                                <li>Velocidad de 480mbps</li>
+                                <li>Compatible con usb 1.1</li>
+                            </ul>
+                            <h4 class="costo"> 4000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="20">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/accesorios/cable-USB-C-Xiaomi.webp" alt="cable USB-C Xiaomi"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">CABLE USB-C A USB XIAOMI</h5>
+                            <ul class="card-text cat">
+                                <li>Cable de 1m</li>
+                                <li>Cable flexible y resistente</li>
+                                <li>Color rojo</li>
+                            </ul>
+                            <h4 class="costo"> 4000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="21">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/conectividad/router-WiFi-Mercusys-TP-Link-MW302R.webp"
+                            alt="Router Mercusys TP-Link MW302R" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">ROUTER MERCUSYS TP-LINK MW302R</h5>
+                            <ul class="card-text cat">
+                                <li>Velocidad de 300Mbps</li>
+                                <li>Alcance de 300m</li>
+                                <li>Con 2 antenas</li>
+                            </ul>
+                            <h4 class="costo"> 64800</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="22">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/conectividad/router-WiFi-Mercusys-TP-Link-MW305R.webp"
+                            alt="router Mercusys TP-LINK MW305R" class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">ROUTER MERCUSYS TP-LINK MW305R</h5>
+                            <ul class="card-text cat">
+                                <li>Velocidad de 300Mbps</li>
+                                <li>Alcance de 400m</li>
+                                <li>Con 2 antenas</li>
+                            </ul>
+                            <h4 class="costo"> 46400</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="23">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/conectividad/router-WiFi-ASUS-RT-N300-B1.webp" alt="router ASUS RT-N300 B1"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">ROUTER ASUS RT-N300 B1</h5>
+                            <ul class="card-text cat">
+                                <li>Velocidad de 300Mbps</li>
+                                <li>Alcance de 300m</li>
+                                <li>Con 2 antenas</li>
+                            </ul>
+                            <h4 class="costo"> 65000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="24">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/conectividad/router-WiFi-TP-Link-WR850N.webp" alt="router TP-LINK WR850N"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">ROUTER WIFI TP-LINK WR850N</h5>
+                            <ul class="card-text cat">
+                                <li>Velocidad de 300Mbps</li>
+                                <li>Alcance de 450m</li>
+                                <li>Con 2 antenas</li>
+                            </ul>
+                            <h4 class="costo"> 45000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="25">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/conectividad/repetidor-WiFi-TP-Link-WA850RE.webp" class="card-img-top img-grande"
+                            alt="repetidor TP-LINK WA850RE">
+                        <div class="card-body">
+                            <h5 class="card-title">REPETIDOR WIFI TP-LINK WA850RE</h5>
+                            <ul class="card-text cat">
+                                <li>Velocidad de 100Mbps</li>
+                                <li>Alcance de 300m</li>
+                                <li>Con 2 antenas internas</li>
+                            </ul>
+                            <h4 class="costo"> 64000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="26">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/conectividad/router-WiFi-TP-Link-Archer-C24.webp" alt="router TP-LINK Archer C24"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">ROUTER WIF TP-LINK ARCHER C24 AC750</h5>
+                            <ul class="card-text cat">
+                                <li>Velocidad de 300Mbps</li>
+                                <li>Alcance de 300m</li>
+                                <li>Con 4 antenas exteriores</li>
+                            </ul>
+                            <h4 class="costo"> 55000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="27">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/conectividad/router-WiFi-TP-Link-WR940N.webp" alt="router TP-LINK WR940N"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">ROUTER WIFI TP-LINK WR940N</h5>
+                            <ul class="card-text cat">
+                                <li>Velocidad de 450Mbps</li>
+                                <li>Alcance de 450m</li>
+                                <li>Con 3 antenas</li>
+                            </ul>
+                            <h4 class="costo"> 57000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="28">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/conectividad/router-WiFi-ASUS-RT-AC1200.webp" alt="router ASUS RT-AC1200"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">ROUTER ASUS RT AC1200 DUAL BAND</h5>
+                            <ul class="card-text cat">
+                                <li>Velocidad de 300Mbps</li>
+                                <li>Alcance de 300m</li>
+                                <li>Con 4 antenas</li>
+                            </ul>
+                            <h4 class="costo"> 58000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="29">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/conectividad/router-WiFi-TP-Link-Archer-C5-AC1200.webp"
+                            alt="router TP-LINK Archer C5 AC1200" class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">ROUTER TP-LINK ARCHER C5 AC1200</h5>
+                            <ul class="card-text cat">
+                                <li>Velocidad de 300Mbps</li>
+                                <li>Alcance de 500m</li>
+                                <li>Con 4 antenas</li>
+                            </ul>
+                            <h4 class="costo"> 66000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="30">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/conectividad/router-WiFi-TP-Link-Archer-C50-AC1200.webp"
+                            alt="router TP-LINK Archer C50 AC1200" class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">ROUTER TP-LINK ARCHER C50 AC1200</h5>
+                            <ul class="card-text cat">
+                                <li>Velocidad de 300Mbps</li>
+                                <li>Alcance de 400m</li>
+                                <li>Con 4 antenas</li>
+                            </ul>
+                            <h4 class="costo"> 70000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="31">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/conectividad/router-WiFi-TP-Link-WR841HP.webp" alt="router TP-LINK WR841HP"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">ROUTER TP-LINK WR841HP</h5>
+                            <ul class="card-text cat">
+                                <li>Velocidad de 300Mbps</li>
+                                <li>Alcance de 900m</li>
+                                <li>Con 2 antenas</li>
+                            </ul>
+                            <h4 class="costo"> 83000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="32">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/conectividad/sistema-WiFi-Mesh-TP-Link-Deco-E4-pack-X3.webp"
+                            alt="sistema Mesh TP-LINK Deco E4 Pack X3" class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">SISTEMA MESH TP-LINK DECO E4 AC1200</h5>
+                            <ul class="card-text cat">
+                                <li>Velocidad de 500Mbps</li>
+                                <li>Alcance de 260m² c/u</li>
+                                <li>Pack de 3 unidades</li>
+                            </ul>
+                            <h4 class="costo"> 334000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="33">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/conectividad/sistema-WiFi-Mesh-TP-Link-Deco-X20-pack-X2.webp"
+                            alt="sistema Mesh TP-LINK Deco X2 AX1800 Pack X2" class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">SISTEMA MESH TP-LINK DECO AX1800</h5>
+                            <ul class="card-text cat">
+                                <li>Velocidad de 600Mbps</li>
+                                <li>Alcance de 300m² c/u</li>
+                                <li>Pack de 2 unidades</li>
+                            </ul>
+                            <h4 class="costo"> 350000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="34">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/conectividad/router-Nexxt-AMP.webp" alt="router Nexxt AMP"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">ROUTER WIFI NEXXT AMP BLACK</h5>
+                            <ul class="card-text cat">
+                                <li>Velocidad de 300Mbps</li>
+                                <li>Alcance de 100m</li>
+                                <li>Con 3 antenas</li>
+                            </ul>
+                            <h4 class="costo"> 14000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="35">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/conectividad/repetidor-TP-LINK-WA820RE.webp" alt="repetidor TP-LINK WA820RE"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">REPETIDOR TP-LINK WA820RE</h5>
+                            <ul class="card-text cat">
+                                <li>Velocidad de 300Mbps</li>
+                                <li>Alcance de 100m</li>
+                                <li>Es de conexion USB</li>
+                            </ul>
+                            <h4 class="costo"> 12000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="36">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/conectividad/router-WiFi-TP-Link-WR840N.webp" alt="router TP-LINK WR840N"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">ROUTER TP-LINK WR840N</h5>
+                            <ul class="card-text cat">
+                                <li>Velocidad de 300Mbps</li>
+                                <li>Alcance de 300m</li>
+                                <li>Con 2 antenas</li>
+                            </ul>
+                            <h4 class="costo"> 22000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="37">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/conectividad/router-WiFi-TP-Link-WR841N.webp" alt="router TP-LINK WR841N"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">ROUTER WIFI TP-LINK WR841N</h5>
+                            <ul class="card-text cat">
+                                <li>Velocidad de 300Mbps</li>
+                                <li>Alcance de 300m</li>
+                                <li>Con 2 antenas</li>
+                            </ul>
+                            <h4 class="costo"> 14000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="38">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/conectividad/acces-Point-TP-Link-WA801ND.webp" alt="access Point TP-LINK WA801ND"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">ACCESS POINT TP-LINK WA801ND</h5>
+                            <ul class="card-text cat">
+                                <li>Velocidad de 350Mbps</li>
+                                <li>Alcance de 200m</li>
+                                <li>Con 2 antenas</li>
+                            </ul>
+                            <h4 class="costo"> 44000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="39">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/consolas/32Bits.webp" alt="G36" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">BLACKPOINT G36</h5>
+                            <ul class="card-text cat">
+                                <li>Color: Gris</li>
+                                <li>Tamaño: 11.5X14X3 CM</li>
+                                <li>Tipo: Retro</li>
+                            </ul>
+                            <h4 class="costo">28329</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="40">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/consolas/G24.webp" alt="G24" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">JOYPLAY G24</h5>
+                            <ul class="card-text cat">
+                                <li>Color: Negro</li>
+                                <li>Tamaño: 21.5X5.3X3 CM</li>
+                                <li>Tipo: Retro</li>
+                            </ul>
+                            <h4 class="costo">17300</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="41">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/consolas/G28.webp" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">JOYPLAY G28</h5>
+                            <ul class="card-text cat">
+                                <li>Color: Negro</li>
+                                <li>Tamaño: 19X14.8X3.5 CM</li>
+                                <li>Tipo: Retro</li>
+                            </ul>
+                            <h4 class="costo">25000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="42">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/consolas/GM-8610PG.webp" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">GM-8610PG PANACOM</h5>
+                            <ul class="card-text cat">
+                                <li>Color: Azul con rojo</li>
+                                <li>Tamaño: 4.3"</li>
+                                <li>Tipo: Retro</li>
+                            </ul>
+                            <h4 class="costo">47219</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="43">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/consolas/levelUp.webp" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">LEVELUP LT 2300</h5>
+                            <ul class="card-text cat">
+                                <li>Color: Negro</li>
+                                <li>Tamaño: 15X15X2 CM</li>
+                                <li>Tipo: Retro</li>
+                            </ul>
+                            <h4 class="costo">48000 </h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="44">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/consolas/nintendoRetro.webp" alt="Nintendo-Retro" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">NINTENDO RETRO</h5>
+                            <ul class="card-text cat">
+                                <li>Color:Gris</li>
+                                <li>Tamaño: 20X20X20 CM</li>
+                                <li>Tipo: Retro</li>
+                            </ul>
+                            <h4 class="costo">15600</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="45">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/consolas/ps5ConDisco.webp" alt="PS5-Standar" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">PS5 STANDAR EDITION</h5>
+                            <ul class="card-text cat">
+                                <li>Color: Blanco Y Negro</li>
+                                <li>Tamaño: 39X26X10.4 CM</li>
+                                <li>Marca: Sony</li>
+                            </ul>
+                            <h4 class="costo">635000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="46">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/consolas/PS5digitaledition.webp" alt="PS5-Digital" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">PS5 DIGITAL EDITION</h5>
+                            <ul class="card-text cat">
+                                <li>Color: Blanco Y Negro</li>
+                                <li>Tamaño: 39X26X10.4 CM</li>
+                                <li>Marca: Sony</li>
+                            </ul>
+                            <h4 class="costo">635000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="47">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/consolas/Nintendo-Switch.webp" alt="Nintendo-Switch-Oled" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Nintendo Switch Oled</h5>
+                            <ul class="card-text cat">
+                                <li>Color: Blanco</li>
+                                <li>Tamaño: 39X26X10.4 CM</li>
+                                <li>Marca: Nintendo</li>
+                            </ul>
+                            <h4 class="costo">425000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="48">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/consolas/ps5GodOfWarRagnarok.webp" alt="PS5-Ragnarok" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">PS5 REGNAROK EDITION</h5>
+                            <ul class="card-text cat">
+                                <li>Color: Blanco Y Negro</li>
+                                <li>Tamaño: 39X26X10.4 CM</li>
+                                <li>Marca: Sony</li>
+                            </ul>
+                            <h4 class="costo">635000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="49">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/consolas/xboxSeresX.webp" alt="XBOX-X" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">XBOX SERIES X</h5>
+                            <ul class="card-text cat">
+                                <li>Color: Negro</li>
+                                <li>Tamaño: 30.1X15X15 CM</li>
+                                <li>Marca: Microsoft</li>
+                            </ul>
+                            <h4 class="costo">385000 </h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="50">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/consolas/xboxSeriesS.webp" alt="XBOX-S" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">XBOX SERIES S</h5>
+                            <ul class="card-text cat">
+                                <li>Color: Blanco</li>
+                                <li>Tamaño: 27X15X6 CM</li>
+                                <li>Marca: Microsoft</li>
+                            </ul>
+                            <h4 class="costo">275000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="51">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Aiwa-Cloudbook-CA141-C.webp" alt="Aiwa Cloudbook CA141-C"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">AIWA CLOUDBOOK CA141-C</h5>
+                            <ul class="card-text cat">
+                                <li>Intel Celeron N4020</li>
+                                <li>SSD de 128GB</li>
+                                <li>RAM DDR4 4GB</li>
+                                <li>Pantalla de 14.1"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">640000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="52">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Noblex-N4020.webp" alt="Noblex Celeron N4020"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">NOBLEX CELERON N4020 W11</h5>
+                            <ul class="card-text cat">
+                                <li>Intel Celeron N4020</li>
+                                <li>SSD 128</li>
+                                <li>RAM DDR4 4GB</li>
+                                <li>Pantalla de 14"</li>
+                                <li>Resolucion Full HD</li>
+                            </ul>
+                            <h4 class="costo">560000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="53">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Lenovo-Ideapad-3-14IGL05-CELERON-N4020.webp"
+                            alt="Lenovo Ideapad 3 14IGL05 CELERON" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">LENOVO IDEAPAD 3 14IGL05</h5>
+                            <ul class="card-text cat">
+                                <li>Intel N4020</li>
+                                <li>HDD 500GB</li>
+                                <li>RAM DDR4 4GB</li>
+                                <li>Pantalla de 14"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">575000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="54">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Lenovo-Ideapad-1-14IGL05-PENTIUM-N5030.webp"
+                            alt="Lenovo Ideapad 1 14IGL05 PENTIUM" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">LENOVO IDEAPAD 1 14IGL05</h5>
+                            <ul class="card-text cat">
+                                <li>Intel N5030</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 4GB</li>
+                                <li>Pantalla de 14"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">720000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="55">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Noblex-1115G4.webp" alt="Noblex CORE I3 1115G4 8GB"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">NOTEBOOK NOBLEX 1115G4 W11</h5>
+                            <ul class="card-text cat">
+                                <li>INTEL I3</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 14.1"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">850000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="56">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Asus-X515EA-1115G4.webp" alt="Asus X515EA 1115G4 4GB FREE"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">ASUS X515EA 1115G4 4GB FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I3</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 4GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">970000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="57">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Asus-X515EA-1115G4-8GB.webp" alt="Asus X515EA 1115G4 8GB FREE"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">ASUS X515EA 1115G4 8GB FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I3</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">880000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="58">Comprar</a><a
+                                href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Lenovo-Ideapad-1-RYZEN-3-3250U.webp"
+                            alt="Lenovo Ideapad 1 Ryzen 3 3250U" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">LENOVO IDEAPAD 1 3250U FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Ryzen 3</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 14"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">860000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="59">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Lenovo-V15-I3-10110U.webp" alt="Lenovo V15 I3 10110U"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">NOTEBOOK LENOVO V15 10110U FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I3</li>
+                                <li>HDD 1TB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">900000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="60">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Lenovo-V15-G2-I3-1115G4-8GB.webp" alt="Lenovo V15 G2 I3 1115G4 8GB"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">LENOVO V15 G2 1115G4 FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I3</li>
+                                <li>HDD 1TB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">950000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="61">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Bangho-Max-L5-I3-1115G4.webp" alt="Bangho Max L5 I3 1115G4"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">BANGHO MAX L5 1115G4 FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I3</li>
+                                <li>SSD 240GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">950000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="62">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Lenovo-V15-G2-RYZEN-3-5300U.webp" alt="Lenovo V15 G2 Ryzen 3 5300U HDD"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">LENOVO V15 G2 RYZEN 3 5300U HDD FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Ryzen 3</li>
+                                <li>HDD 1TB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">920000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="63">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Lenovo-V15-G2-RYZEN-3-5300U-SSD-M2.webp"
+                            alt="Lenovo V15 G2 Ryzen 3 5300U SSD" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">LENOVO V15 G2 RYZEN 3 5300U SSD FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Ryzen 3</li>
+                                <li>HDD 1TB SSD 240GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">950000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="64">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Lenovo-V15-I3-10110U-SSD-M2.webp" alt="Lenovo V15 I3 10110U SSD"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">LENOVO V15 I3 10110U FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I3</li>
+                                <li>SSD 240GB HDD 1TB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">950000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="65">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Bangho-Max-L4-I3-1115G4.webp" alt="Bangho Max L4 I3 1115G4"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">BANGHO MAX L4 I3 1115G4 FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I3</li>
+                                <li>SSD 240GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 14"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">980000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="66">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Lenovo-Ideapad-1-RYZEN-5-3500U.webp"
+                            alt="Lenovo Ideapad 1 Ryzen 5 3500U" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">LENOVO IDEAPAD 1 RYZEN 5 3500U FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Ryzen 5</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 14"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">985500</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="67">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Dell-Inspiron-3511-I3-1115G4.webp" alt="Dell Inspiron 3511 I3 1115G4"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">DELL INSPIRON 3511 I3 1115G4 FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I3</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 4GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion de 15.6"</li>
+                            </ul>
+                            <h4 class="costo">1150000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="68">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Dell-Inspiron-3511-I3-1115G4-SSD-256GB-8GB.webp"
+                            alt="Dell Inspiron 3511 I3 1115G4" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">DELL INSPIRON 3511 CORE I3 1115G4 FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I3</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">1250000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="69">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Lenovo-V15-G2-I3-1115G4-8GB.webp" alt="Lenovo V15 G2 I3 1115G4"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">LENOVO V15 G2 I3 1115G4 FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I3</li>
+                                <li>HDD 1TB SSD 240GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">1250000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="70">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Lenovo-Ideapad-3-14IML05-I5-10210U-8GB.webp"
+                            alt="Lenovo Ideapad 3 14IML05 I5 10210U" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">LENOVO IDEAPAD 3 14IML05 W11</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I5</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 14"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">1350000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="71">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Bangho-Max-L4-I5-115567-8GB.webp" alt="Bangho Max L4 I5 115567"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">BANGHO MAX L4 115567 FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I5</li>
+                                <li>SSD 240GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 14"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">1200000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="72">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Lenovo-Ideapad-1-RYZEN-7-3700U-8GB.webp"
+                            alt="Lenovo Ideapad 1 Ryzen 7 3700U" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">LENOVO IDEAPAD 1 RYZEN 7 3700U FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Ryzen 7</li>
+                                <li>SSD 512GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">1400000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="73">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Bangho-Max-L5-INTEL-CORE-I5-1135G7-8GB.webp"
+                            alt="Bangho Max L5 INTEL CORE I5 1135G7 FREE" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">BANGHO MAX L5 1135G7 FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I5</li>
+                                <li>SSD 240GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">1400000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="74">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Bangho-Max-L5-INTEL-CORE-I5-1135G7-8GB-W11.webp"
+                            alt="Bangho Max L5 INTEL CORE I5 1135G7 W11" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">BANGHO MAX L5 1135G7 W11</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I5</li>
+                                <li>SSD 240GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">1550000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="75">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Asus-X515EA-1135G7-8GB-FREE.webp" alt="Asus X515EA 1135G7 8GB FREE"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">ASUS X515EA 1135G7 SSD FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I5</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">1600000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="76">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Bangho-Max-L5-I7-1165G7-8GB-FREE.webp"
+                            alt="Bangho Max L5 I7 1165G7 FREE" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">BANGHO MAX L5 1165G7 FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I7</li>
+                                <li>SSD 480GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">1650000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="77">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Bangho-Bes-T4-INTEL-CORE-I5-1021U-8GB-FREE.webp"
+                            alt="Bangho Bes T4 I5 1021U FREE" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">BANGHO BES T4 I5 1021U FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I5</li>
+                                <li>SSD 240GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 14"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">1700000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="78">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Dell-Inspiron-3525-Ryzen-5-5500U-8GB-W11.webp"
+                            alt="Dell Inspiron 3525 Ryzen 5 5500U 8GB W11" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">DELL INSPIRON 3525 RYZEN 5500U W11</h5>
+                            <ul class="card-text cat">
+                                <li>Ryzen 5</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">1750000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="79">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Hp-15TDW300-I5-1135G7-8GB-W11.webp"
+                            alt="Hp 15-DY2054LA I5 1135G7 8GB W11" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">HP 15-DY2054LA I5 1135G7 W11</h5>
+                            <ul class="card-text cat">
+                                <li>Ryzen 5</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">1780000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="80">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Dell-Inspiron-3520-I5-1135G7-8GB-W11.webp"
+                            alt="Dell Inspiron 3520 I5 1135G7 W11" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">DELL INSPIRON 3520 1135G7 W11</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I5</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">1850000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="81">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Hp-15TDW300-I5-1135G7-8GB-W11.webp" alt="Hp 15TDW300 I5 1135G7 W11"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">HP 15TDW300 1135G7 SSD W11</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I5</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">1840000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="82">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Dell-Inspiron-3511-I5-1135G7-8GB-FREE.webp"
+                            alt="Dell Inspiron 3511 I5 1135G7 8GB FREE" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">DELL INSPIRON 3511 I5 1135G7 FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I5</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">1865000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="83">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Bangho-Max-L5-I7-1165G7-8GB-W11.webp" alt="Bangho Max L5 I7 1165G7 W11"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">BANGHO MAX L5 I7 1165G7 W11</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I7</li>
+                                <li>SSD 480GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">1870000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="84">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Dell-Inspiron-3511-I5-1135G7-16GB-FREE.webp"
+                            alt="Dell Inspiron 3511 1135G7 16GB FREE" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">DELL INSPIRON 3511 I5 1135G7 FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I5</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 16GB</li>
+                                <li>Pantalla de 15.6"</li>
+                                <li>Resolucion HD</li>
+                            </ul>
+                            <h4 class="costo">1880000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="85">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/HP-Pavilon-I5-1135G7-8GB-W11.webp" alt="HP Pavilon I5 1135G7 8GB W11"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">HP PAVILON I5 1135G7 W11</h5>
+                            <ul class="card-text cat">
+                                <li>Intel I5</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla de 13"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">1890000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="86">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/notebooks/Lenovo-V15-G2-RYZEN-7-5700U-8GB-FREE.webp"
+                            alt="Lenovo V15 G2 Ryzen 7 5700U 8GB FREE" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">LENOVO V15 G2 RYZEN 7 5700U FREE</h5>
+                            <ul class="card-text cat">
+                                <li>Ryzen 7</li>
+                                <li>SSD 256GB</li>
+                                <li>RAM DDR4 8GB</li>
+                                <li>Pantalla 15.6"</li>
+                                <li>Resolucion FULLHD</li>
+                            </ul>
+                            <h4 class="costo">2000000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="87">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/audifonos/HyperX-Cloud-Stinger.webp" alt="HyperX Cloud Stinger Core"
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">HYPERX CLOUD STINGER CORE</h5>
+                            <ul class="card-text cat">
+                                <li>Cancelacion de ruido</li>
+                                <li>Conexion Inalambrica</li>
+                                <li>Audio 7.1</li>
+                            </ul>
+                            <h4 class="costo">64000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="88">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/audifonos/Wesdar-GH30.webp" alt="Wesdar GH30" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">WESDAR GAMING GH30 BLACK</h5>
+                            <ul class="card-text cat">
+                                <li>Sin cancelacion de ruido</li>
+                                <li>Conexion Cableada</li>
+                                <li>Audio 2.0</li>
+                            </ul>
+                            <h4 class="costo">4850</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="89">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/audifonos/Lamia-H320.webp" alt="Lamia H320" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">REDRAGON H320 LAMIA RGB</h5>
+                            <ul class="card-text cat">
+                                <li>Sin cancelacion de ruido</li>
+                                <li>Conexion Cableada</li>
+                                <li>Audio 7.1</li>
+                            </ul>
+                            <h4 class="costo">25000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="90">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/audifonos/Redragon-H120-Ares.webp" alt="Redragon Ares H120"
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">REDRAGON H120 ARES BLACK</h5>
+                            <ul class="card-text cat">
+                                <li>Cancelacion de ruido</li>
+                                <li>Conexion Cableada</li>
+                                <li>Audio 2.0</li>
+                            </ul>
+                            <h4 class="costo">12399</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="91">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/audifonos/HyperX-Cloud-Flight.webp" alt="HyperX Cloud Flight"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">HYPERX CLOUD FLIGHT BLACK</h5>
+                            <ul class="card-text cat">
+                                <li>Sin cancelacion de ruido</li>
+                                <li>Conexion Inalambrica</li>
+                                <li>Audio 2.0</li>
+                            </ul>
+                            <h4 class="costo">73160 </h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="92">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/audifonos/Redragon-Pandora-H350W.webp" alt="Redragon Pandora H35W"
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">REDRAGON PANDORA H350W WHITE</h5>
+                            <ul class="card-text cat">
+                                <li>Sin cancelacion de ruido</li>
+                                <li>Conexion Cableada</li>
+                                <li>Audio 7.1</li>
+                            </ul>
+                            <h4 class="costo">29990</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="93">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/audifonos/Logitech-G733-Lightspeed.webp"
+                            alt="Logitech G733 Lightspeed" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Logitech G733 Lightspeed LILA</h5>
+                            <ul class="card-text cat">
+                                <li>Sin cancelacion de ruido</li>
+                                <li>Conexion Inalambrica</li>
+                                <li>Audio 2.0</li>
+                            </ul>
+                            <h4 class="costo">99990</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="94">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/audifonos/Redragon-Zeus-H510.webp" alt="Redragon Zaeus X H510"
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">REDRAGON ZEUS X H510 BLACK</h5>
+                            <ul class="card-text cat">
+                                <li>Sin cancelacion de ruido</li>
+                                <li>Conexion Cableada</li>
+                                <li>Audio 7.1</li>
+                            </ul>
+                            <h4 class="costo">48999</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="95">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/audifonos/Redragon-H260-Hylas.webp" alt="Redragon H260 Hylas"
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">REDRAGON H60 HYLAS PINK</h5>
+                            <ul class="card-text cat">
+                                <li>Sin cancelacion de ruido</li>
+                                <li>Conexion Cableada</li>
+                                <li>Audio 2.0</li>
+                            </ul>
+                            <h4 class="costo">19450</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="96">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/audifonos/Wesdar-GH9.webp" alt="Wesdar GH9" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">WESDAR GAMING GH9 BLACK</h5>
+                            <ul class="card-text cat">
+                                <li>Sin cancelacion de ruido</li>
+                                <li>Conexion Cableada</li>
+                                <li>Audio 2.0</li>
+                            </ul>
+                            <h4 class="costo">5760 </h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="97">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/audifonos/Logitech-G935-LightSync.webp" alt="Logitech G935"
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">LOGITECH G935 LIGHTSYNC</h5>
+                            <ul class="card-text cat">
+                                <li>Sin cancelacion de ruido</li>
+                                <li>Conexion Inalambrica</li>
+                                <li>Audio 7.1</li>
+                            </ul>
+                            <h4 class="costo">97990</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="98">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/audifonos/HyperX-Cloud-Alpha.webp" alt="HyperX Cloud Alpha"
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">HYPERX CLOUD ALPHA RED</h5>
+                            <ul class="card-text cat">
+                                <li>Cancelacion de ruido</li>
+                                <li>Conexion Cableada</li>
+                                <li>Audio 2.0</li>
+                            </ul>
+                            <h4 class="costo">89520</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="99">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/microfonos/HyperX-DuoCast.webp" alt="HyperX DuoCast"
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">HYPERX DUOCAST BLACK RGB</h5>
+                            <ul class="card-text cat">
+                                <li>Filtro: Filtro POP</li>
+                                <li>Salida USB-C</li>
+                                <li>Microfono De mesa</li>
+                            </ul>
+                            <h4 class="costo">69900</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="100">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/microfonos/HyperX-QuadCast-S-White.webp"
+                            alt="HyperX QuadCast S White" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">HYPERX QUADCAST S WHITE</h5>
+                            <ul class="card-text cat">
+                                <li>Microfono Condensador</li>
+                                <li>Salida USB-C</li>
+                                <li>Microfono De mesa</li>
+                            </ul>
+                            <h4 class="costo">140000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="101">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/microfonos/HyperX-QuadCast-S.webp" alt="HyperX QuadCast S"
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">HYPERX QUADCAST S BLACK</h5>
+                            <ul class="card-text cat">
+                                <li>Microfono Condensador</li>
+                                <li>Salida USB-C</li>
+                                <li>Microfono De mesa</li>
+                            </ul>
+                            <h4 class="costo">117300</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="102">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/microfonos/HyperX-SoloCast.webp" alt="HyperX SoloCast"
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">HYPERX SOLOCAST BLACK</h5>
+                            <ul class="card-text cat">
+                                <li>Microfono Condensador</li>
+                                <li>Salida USB-C</li>
+                                <li>Microfono De mesa</li>
+                            </ul>
+                            <h4 class="costo">55580</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="103">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/microfonos/Logitech-Blue-Snowball-White.webp"
+                            alt="Logitech Blue Snowball White" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">LOGITECH BLUE SNOWBALL WHITE</h5>
+                            <ul class="card-text cat">
+                                <li>Microfono Condensador</li>
+                                <li>Salida USB-C</li>
+                                <li>Microfono De mesa</li>
+                            </ul>
+                            <h4 class="costo">36650</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="104">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/microfonos/Redragon-Blazar-GM300.webp" alt="Redragon Blazar GM300"
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">REDRAGON BLAZAR GM300</h5>
+                            <ul class="card-text cat">
+                                <li>Microfono Condensador</li>
+                                <li>Salida USB-C</li>
+                                <li>Microfono De mesa</li>
+                            </ul>
+                            <h4 class="costo">43550</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="105">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/microfonos/Logitech-Blue-Snowball.webp" alt="Logitech Blue Snowball"
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">LOGITECH BLUE SNOWBALL BLACK</h5>
+                            <ul class="card-text cat">
+                                <li>Microfono Condensador</li>
+                                <li>Salida USB-C</li>
+                                <li>Microfono De mesa</li>
+                            </ul>
+                            <h4 class="costo">39999</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="106">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/microfonos/HyperX-QuadCast.webp" alt="HyperX QuadCast"
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">HYPERX QUADCAST BLACK</h5>
+                            <ul class="card-text cat">
+                                <li>Microfono Condensador</li>
+                                <li>Salida USB-C</li>
+                                <li>Microfono De mesa</li>
+                            </ul>
+                            <h4 class="costo">91799</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="107">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/microfonos/Blue-Yeticaster-Broadcast.webp"
+                            alt="Blue Yeticaster Broadcast" class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">BLUE YETICASTER BROADCAST</h5>
+                            <ul class="card-text cat">
+                                <li>Microfono Condensador</li>
+                                <li>Salida USB-C</li>
+                                <li>Microfono De Estudio</li>
+                            </ul>
+                            <h4 class="costo">298999</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="108">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/parlantes/Logitech-Z607.webp" alt="Logitech Z607"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">LOGITECH Z607 SURROUND</h5>
+                            <ul class="card-text cat">
+                                <li>6 Parlantes</li>
+                                <li>Incluye Control Remoto</li>
+                                <li>Canales de 5.1</li>
+                            </ul>
+                            <h4 class="costo">120450</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="109">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/parlantes/Logitech-G560.webp" alt="Logitech G560"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">LOGITECH BLUETOOTH G560 LightSync</h5>
+                            <ul class="card-text cat">
+                                <li>3 Parlantes</li>
+                                <li>Con Bluetooth</li>
+                                <li>Canales de 2.1</li>
+                            </ul>
+                            <h4 class="costo">49850</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="110">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/parlantes/Genius-SP-HF500A-II.webp" alt="Genius SP-HF500A"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">GENIUS SP-HF500A II 220V</h5>
+                            <ul class="card-text cat">
+                                <li>2 Parlantes</li>
+                                <li>Filtros Activo,Pasivo</li>
+                                <li>Canales de 2.1</li>
+                            </ul>
+                            <h4 class="costo">181700</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="111">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/parlantes/Genius-200BT.webp" alt="Genius 200BT"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">BARRA DE SONIDO GENIUS 200BT</h5>
+                            <ul class="card-text cat">
+                                <li>1 Parlante</li>
+                                <li>Con Bluetooth</li>
+                                <li>Canales de 5.1</li>
+                            </ul>
+                            <h4 class="costo">17100</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="112">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/parlantes/Genius-SP-HF380-Wood.webp" alt="Genius SP HF380 Wood"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">GENIUS SP-HF380 WOOD USB</h5>
+                            <ul class="card-text cat">
+                                <li>2 Parlantes</li>
+                                <li>Con Bluetooth</li>
+                                <li>Potencia de 3W</li>
+                            </ul>
+                            <h4 class="costo">15400</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="113">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/parlantes/Genius-SP-HF280.webp" alt="Genius SP-HF280"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">GENIUS SP-HF280 WOOD USB</h5>
+                            <ul class="card-text cat">
+                                <li>2 Parlantes</li>
+                                <li>Potencia de 6W</li>
+                                <li>Canales de 2.1</li>
+                            </ul>
+                            <h4 class="costo">12750</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="114">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/parlantes/Logitech-S150.webp" alt="Logitech S150"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">LOGITECH S150 PORTATIL BLACK</h5>
+                            <ul class="card-text cat">
+                                <li>2 Parlantes</li>
+                                <li>Entrada USB-A</li>
+                                <li>Canales de 2.0</li>
+                            </ul>
+                            <h4 class="costo">12450</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="115">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/parlantes/Genius-SP-HF180.webp" alt="Genius SP-HF280"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">GENIUS SP-HF180 WOOD USB</h5>
+                            <ul class="card-text cat">
+                                <li>2 Parlantes</li>
+                                <li>Potencia de 6W</li>
+                                <li>Canales de 2.0</li>
+                            </ul>
+                            <h4 class="costo">11550</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="116">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/parlantes/Genius-SP-U125.webp" alt="Genius SP-HF280"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">GENIUS SP-U125 USB BLACK</h5>
+                            <ul class="card-text cat">
+                                <li>2 Parlantes</li>
+                                <li>Potencia de 12W</li>
+                                <li>No es a prueba de agua</li>
+                            </ul>
+                            <h4 class="costo">11450</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="117">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/teclados/Redragon-K509-Dyaus.webp" alt=" Redragon K509 Dyaus"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">REDRAGON K509 DYAUS RETROILUMINADO</h5>
+                            <ul class="card-text cat">
+                                <li>No es antisalpicaduras</li>
+                                <li>Teclado completo</li>
+                                <li>Distribucion latinoamericana</li>
+                            </ul>
+                            <h4 class="costo">17250</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="118">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/teclados/Logitech-Aurora-G713.webp" alt="Logitech Aurora G713"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">LOGITECH AURORA G713 WHITE</h5>
+                            <ul class="card-text cat">
+                                <li>Es antisalpicaduras</li>
+                                <li>Teclado compacto TKL</li>
+                                <li class="mb-3">Distribucion inglesa</li>
+                            </ul>
+                            <h4 class="precio texto-t-corto">141600</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="119">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/teclados/Game-PRO-GK19M.webp" alt="Game PRO GK19M"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">GAME PRO GK19M BLACK MECANICO</h5>
+                            <ul class="card-text cat">
+                                <li>Antisalpicaduras</li>
+                                <li>Teclado completo</li>
+                                <li class="mb-3">Distribucion hispana</li>
+                            </ul>
+                            <h4 class="precio texto-t-corto">11999</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="120">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/teclados/Wesdar-MK10.webp" alt="Wesdar MK10"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">WESDAR MK10 RETROILUMINADO</h5>
+                            <ul class="card-text cat">
+                                <li>No es antisalpicaduras</li>
+                                <li>Teclado completo</li>
+                                <li class="mb-3">Distribucion inglesa</li>
+                            </ul>
+                            <h4 class="precio texto-t-corto">4540</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="121">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/teclados/Logitech-PRO-TKL-LOL-2.webp" alt="Logitech PRO TKL LOL 2"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">LOGITECH PRO TKL LOL 2 MECANICO</h5>
+                            <ul class="card-text cat">
+                                <li>No es antisalpicaduras</li>
+                                <li>Teclado compacto TKL</li>
+                                <li class="mb-3">Distribucion inglesa</li>
+                            </ul>
+                            <h4 class="precio texto-t-corto">62999</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="122">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/teclados/HyperX-Alloy-MKW100.webp" alt="HyperX Alloy MKW100"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">HYPERX ALLOY MK100 MECANICO</h5>
+                            <ul class="card-text cat">
+                                <li>No es antisalpicaduras</li>
+                                <li>Teclado completo</li>
+                                <li class="mb-3">Distribucion inglesa</li>
+                            </ul>
+                            <h4 class="precio texto-t-corto">41450</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="123">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/teclados/HyperX-Alloy-Origins-60-Switch.webp"
+                            alt="HyperX Alloy Origins 60 Switch" class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">HYPERX ALLOY ORIGINS 60</h5>
+                            <ul class="card-text cat">
+                                <li>No es antisalpicaduras</li>
+                                <li>Teclado compacto 60%</li>
+                                <li class="mb-3">Distribucion inglesa</li>
+                            </ul>
+                            <h4 class="precio texto-t-corto">72000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="124">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/teclados/Redragon-Shiva-K512-.webp" alt=" Redragon Shiva K512"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">REDRAGON SHIVA K512 BLACK</h5>
+                            <ul class="card-text cat">
+                                <li>No es antisalpicaduras</li>
+                                <li>Teclado completo</li>
+                                <li>Distribucion latinoamericana</li>
+                            </ul>
+                            <h4 class="costo">22999</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="125">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/teclados/Wesdar-MK4.webp" alt="Wesdar MK4"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">WESDAR MK4 RETROILUMINADO</h5>
+                            <ul class="card-text cat">
+                                <li>No es antisalpicaduras</li>
+                                <li>Teclado completo</li>
+                                <li class="mb-3">Distribucion brasilera</li>
+                            </ul>
+                            <h4 class="precio texto-t-corto">3500</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="126">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/teclados/Redragon-Harpe-PRO-K503.webp" alt=" Redragon Harpe PRO K503"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">REDRAGON HARPE PRO K503</h5>
+                            <ul class="card-text cat">
+                                <li>Antisalpicaduras</li>
+                                <li>Teclado completo</li>
+                                <li class="mb-3">Distribucion inglesa</li>
+                            </ul>
+                            <h4 class="precio texto-t-corto">19999</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="127">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/teclados/HyperX-Alloy-Elite-2.webp" alt="HyperX Alloy Elite 2"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">HYPERX ALLOY ELITE 2 RGB</h5>
+                            <ul class="card-text cat">
+                                <li>No es antisalpicaduras</li>
+                                <li>Teclado completo</li>
+                                <li>Distribucion latinoamericana</li>
+                            </ul>
+                            <h4 class="costo">111860</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="128">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/teclados/Logitech-G915.webp" alt="Logitech G915"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">LOGITECH G915 WIRELEXX LIGHTSPEED</h5>
+                            <ul class="card-text cat">
+                                <li>No es antisalpicaduras</li>
+                                <li>Teclado compacto TKL</li>
+                                <li class="mb-3">Distribucion inglesa</li>
+                            </ul>
+                            <h4 class="precio texto-t-corto">127999</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="129">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/teclados/Logitech-G815.webp" alt="Logitech G815"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">LOGITECH G815 RGB LYGHTSYNC</h5>
+                            <ul class="card-text cat">
+                                <li>Antisalpicaduras</li>
+                                <li>Teclado completo</li>
+                                <li class="mb-3">Distribucion inglesa</li>
+                            </ul>
+                            <h4 class="precio texto-t-corto">109999</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="130">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/teclados/Redragon-K550-Yama.webp" alt=" Redragon K550 Yama"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">REDRAGON K550 YAMA WHITE RGB</h5>
+                            <ul class="card-text cat">
+                                <li>Antisalpicaduras</li>
+                                <li>Teclado completo</li>
+                                <li class="mb-3">Distribucion hispana</li>
+                            </ul>
+                            <h4 class="precio texto-t-corto">46999</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="131">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/teclados/HyperX-Alloy-CORE.webp" alt="HyperX Alloy CORE"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">HYPERX ALLOY CORE RGB BLACK</h5>
+                            <ul class="card-text cat">
+                                <li>Antisalpicaduras</li>
+                                <li>Teclado completo</li>
+                                <li>Distribucion latinoamericana</li>
+                            </ul>
+                            <h4 class="costo">36200</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="1321">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/webcams/Logitech-Brio-300-Graphite.webp"
+                            alt="Logitech Brio 300 Graphite" class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">LOGITECH BRIO 300 GRAPHITE</h5>
+                            <ul class="card-text cat">
+                                <li>Microfono mono integrado</li>
+                                <li>2MP de camara</li>
+                                <li>Resolucion maxima 1080p</li>
+                            </ul>
+                            <h4 class="costo">62800</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="133">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/webcams/Logitech-Brio-300-Off-White.webp"
+                            alt="Logitech Brio 300 Off White" class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">LOGITECH BRIO 300 OFF WHITE</h5>
+                            <ul class="card-text cat">
+                                <li>Microfono mono integrado</li>
+                                <li>2MP de camara</li>
+                                <li>Resolucion maxima 1080p</li>
+                            </ul>
+                            <h4 class="costo">60650</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="134">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/webcams/Logitech-Brio-300-Rose.webp" alt="Logitech Brio 300 Rose"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">LOGITECH BRIO 300 ROSE 1080P</h5>
+                            <ul class="card-text cat">
+                                <li>Microfono mono integrado</li>
+                                <li>2MP de camara</li>
+                                <li>Resolucion maxima 1080p</li>
+                            </ul>
+                            <h4 class="costo">60000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="135">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/webcams/Logitech-C922-PRO.webp" alt="Logitech C922 PRO"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">LOGITECH C922 PRO C/TRIP</h5>
+                            <ul class="card-text cat">
+                                <li>Microfono estereo integrado</li>
+                                <li>3MP de camara</li>
+                                <li>Resolucion maxima 1080p</li>
+                            </ul>
+                            <h4 class="costo">59000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="136">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/webcams/Logitech-C920S-PRO.webp" alt="Logitech C920S PRO"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">LOGITECH C920S PRO USB</h5>
+                            <ul class="card-text cat">
+                                <li>Microfono estereo integrado</li>
+                                <li>3MP de camara</li>
+                                <li>Resolucion maxima 1080p</li>
+                            </ul>
+                            <h4 class="costo">54990</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="137">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/webcams/Redragon-GW800-Hitman.webp" alt="Redragon GW800 Hitman"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">REDRAGON GW800 HITMAN</h5>
+                            <ul class="card-text cat">
+                                <li>Microfono estereo integrado</li>
+                                <li>3MP de camara</li>
+                                <li>Resolucion maxima 1080p</li>
+                            </ul>
+                            <h4 class="costo">29999</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="138">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/webcams/Redragon-GW600-Fobos.webp" alt="Redragon GW600 Fobos"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">REDRAGON GW600 FOBOS</h5>
+                            <ul class="card-text cat">
+                                <li>Microfono mono integrado</li>
+                                <li>3MP de camara</li>
+                                <li class="mb-3">Resolucion maxima 720p</li>
+                            </ul>
+                            <h4 class="precio texto-t-corto">19800</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="139">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/webcams/Logitech-C505.webp" alt="Logitech C505"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">LOGITECH C505 HD USB BLACK</h5>
+                            <ul class="card-text cat">
+                                <li>Microfono mono integrado</li>
+                                <li>1.2MP de camara</li>
+                                <li class="mb-3">Resolucion maxima 720p</li>
+                            </ul>
+                            <h4 class="precio texto-t-corto">21999</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="140">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/webcams/HDC-H80S.webp" alt="HDC H80S"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">HDC H80S FULL HD BLACK</h5>
+                            <ul class="card-text cat">
+                                <li>Microfono mono integrado</li>
+                                <li>3MP de camara</li>
+                                <li>Resolucion maxima 1080p</li>
+                            </ul>
+                            <h4 class="costo">16450</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="141">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/mouse/Wesdar-Cerberus-x4-Black.webp" alt="Wesdar Cerberus X4 Black"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">WESDAR CERBERUS X4 BLACK</h5>
+                            <ul class="card-text cat">
+                                <li>Orientacion para diestros</li>
+                                <li>6 botones</li>
+                                <li>No es inalambrico</li>
+                            </ul>
+                            <h4 class="costo">2350</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="142">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/mouse/Wesdar-Cerberus-x4.webp" alt="Wesdar Cerberus X4 White"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">WESDAR CERBERUS X4 White</h5>
+                            <ul class="card-text cat">
+                                <li>Orientacion para diestros</li>
+                                <li>6 botones</li>
+                                <li>No es inalambrico</li>
+                            </ul>
+                            <h4 class="costo">2400</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="143">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/mouse/Combo-Mouse+Mousepad-Wesdar.webp"
+                            alt="Combo Wesdar Mousepad y Mouse" class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">COMBO GAMING MOUSEPAD Y MOUSE</h5>
+                            <ul class="card-text cat">
+                                <li>Orientacion para diestros</li>
+                                <li>6 botones</li>
+                                <li>No es inalambrico</li>
+                            </ul>
+                            <h4 class="costo">2730</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="144">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/mouse/Logitech-M90.webp" alt="Logitech M90 Black"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">LOGITECH M90 BLACK OPTICO</h5>
+                            <ul class="card-text cat">
+                                <li>Hecho para ambidiestros</li>
+                                <li>3 botones</li>
+                                <li>No es inalambrico</li>
+                            </ul>
+                            <h4 class="costo">4000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="145">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/mouse/Wesdar-GM2.webp" alt="Wesdar GM2 Black"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">WESDAR GM2 BLACK GREEN</h5>
+                            <ul class="card-text cat">
+                                <li>Sensor optico</li>
+                                <li>8 botones</li>
+                                <li>No es inalambrico</li>
+                            </ul>
+                            <h4 class="costo">4150</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="146">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/mouse/Marvo-G961.webp" alt="Marvo G961 Black"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">MARVO G961 BLACK 12000DPI</h5>
+                            <ul class="card-text cat">
+                                <li>Orientacion para diestros</li>
+                                <li>6 botones</li>
+                                <li>No es inalambrico</li>
+                            </ul>
+                            <h4 class="costo">15750</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="147">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/mouse/Logitech-G203-Lightspeed.webp"
+                            alt="Logitech G203 LightSync White" class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">LOGITECH G203 LIGHTSYNC WHITE</h5>
+                            <ul class="card-text cat">
+                                <li>Orientacion para diestros</li>
+                                <li>6 botones</li>
+                                <li>No es inalambrico</li>
+                            </ul>
+                            <h4 class="costo">18.999</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="148">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/mouse/Glorious-Model-D.webp" alt="Glorious Model D White"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">GLORIOUS MODEL D GLOSSY WHITE</h5>
+                            <ul class="card-text cat">
+                                <li>Hecho para ambidiestros</li>
+                                <li>6 botones</li>
+                                <li>No es inalambrico</li>
+                            </ul>
+                            <h4 class="costo">21050</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="149">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/mouse/Logitech-POP.webp" alt="Logitech POP Black And Yellow"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">LOGITECH POP BLACK AND YELLOW</h5>
+                            <ul class="card-text cat">
+                                <li>Sensor optico</li>
+                                <li>4 botones</li>
+                                <li>Es inalambrico</li>
+                            </ul>
+                            <h4 class="costo">24700</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="150">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/mouse/Logitech-G502X-Plus-Black.webp" alt="Logitech G502X Plus Black"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">LOGITECH G502 PLUS BLACK</h5>
+                            <ul class="card-text cat">
+                                <li>Sensor optico</li>
+                                <li>10 botones</li>
+                                <li>Es inalambrico</li>
+                            </ul>
+                            <h4 class="costo">117999</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="151">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/mouse/Logitech-G502X-Plus.webp" alt="Logitech G502X Plus White"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">LOGITECH G502 PLUS WHITE</h5>
+                            <ul class="card-text cat">
+                                <li>Sensor optico</li>
+                                <li>10 botones</li>
+                                <li>Es inalambrico</li>
+                            </ul>
+                            <h4 class="costo">117999</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="152">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/mouse/Logitech-G-PRO-X-Superlight.webp"
+                            alt="Logitech G PRO X Superlight White" class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">LOGITECH G PRO X WIRELESS WHITE</h5>
+                            <ul class="card-text cat">
+                                <li>Orientacion para diestros </li>
+                                <li>5 botones</li>
+                                <li>Es inalambrico</li>
+                            </ul>
+                            <h4 class="costo">106200</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="153">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/joysticks/Redragon-Saturn-G807.webp" alt="Redragon Saturn G807"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">REDRAGON SATURN G807 BLACK</h5>
+                            <ul class="card-text cat">
+                                <li>Sin sensor de movimiento</li>
+                                <li>Compatible con PC y PS3</li>
+                                <li>No es inalambrico</li>
+                            </ul>
+                            <h4 class="costo">16200</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="154">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/joysticks/Logiteh-F310.webp" alt="Logitech F310"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">LOGITECH F310 BLACK AND BLUE</h5>
+                            <ul class="card-text cat">
+                                <li>Sin sensor de movimiento</li>
+                                <li>Compatible con PC y TV</li>
+                                <li>No es inalambrico</li>
+                            </ul>
+                            <h4 class="costo">19999</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="155">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/joysticks/Logiteh-F710.webp" alt="Logitech F710"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">LOGITECH F710 BLACK AND WHITE</h5>
+                            <ul class="card-text cat">
+                                <li>Sin sensor de movimiento</li>
+                                <li>Compatible con PC y TV</li>
+                                <li>Es inalambrico</li>
+                            </ul>
+                            <h4 class="costo">37999</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="156">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/joysticks/Xbox-Pulse-Red.webp" alt="Xbox Pulse Red"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">XBOX PULSE RED BLUETOOTH</h5>
+                            <ul class="card-text cat">
+                                <li>Con sensor de movimiento</li>
+                                <li>Compatible con xbox y tv</li>
+                                <li>Es inalambrico</li>
+                            </ul>
+                            <h4 class="costo">65600</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="157">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/joysticks/Xbox-Electric-Volt.webp" alt="Xbox Electric Volt"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">XBOX ELECTRIC VOLT BLUETOOTH</h5>
+                            <ul class="card-text cat">
+                                <li>Con sensor de movimiento</li>
+                                <li>Compatible con xbox y tv</li>
+                                <li>Es inalambrico</li>
+                            </ul>
+                            <h4 class="costo">65600</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="158">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/perifericos/joysticks/Ps5.webp" alt="Ps5 Joystick"
+                            class="card-img-top img-grande">
+                        <div class="card-body">
+                            <h5 class="card-title">JOYSTICK PS5 SONY DUALSENSE</h5>
+                            <ul class="card-text cat">
+                                <li>Con sensor de movimiento</li>
+                                <li>Compatible con ps5 y pc</li>
+                                <li>Es inalambrico</li>
+                            </ul>
+                            <h4 class="costo">65600</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="159">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/software/CCleaner-Professional-pc.webp" alt="CCleaner Professionall 1 Año"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">CCLEANER PROFESSIONAL 1 AÑO</h5>
+                            <p class="card-text cat">CCleaner Professional puede escanear rápidamente los archivos de su
+                                ordenador, limpiando todos los archivos basura innecesarios.</p>
+                            <h4 class="costo">9400</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="160">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/software/3DMark-Steam-Key-Global.webp" alt="3DMark Steam Key GLOBAL"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">3DMARK STEAM KEY GLOBAL</h5>
+                            <p class="card-text cat">3DMark es una herramienta de evaluación comparativa de
+                                computadoras, El software está diseñado para probar las capacidades de su computadora
+                            </p>
+                            <h4 class="costo">5500</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="161">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/software/AVG-Internet-Security-1-Year.webp" alt="AVG Internet Security 1 Year"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">AVG INTERNET SECURITY 1 AÑO GLOBAL</h5>
+                            <p class="card-text cat">AVG Internet Security es una solución antivirus repleta de una
+                                variedad de características diseñadas para proteger su computadora de cualquier daño.
+                            </p>
+                            <h4 class="costo">1500</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="162">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/software/Malwarebytes-Premium-PC-Android.webp"
+                            alt="Malwarebytes Premium 1 AÑP PC" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">MALWAREBYTES PREMIUM PC, 1 AÑO</h5>
+                            <p class="card-text cat">Malwarebytes es una especie de "escáner" que monitorea
+                                constantemente los archivos que usa actualmente. le brinda una alta seguridad en
+                                Internet.</p>
+                            <h4 class="costo">22000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="163">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/software/Avast-Ultimate-10-3-Years.webp" alt="Avast Ultimate 10 Devices 3 Años"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">AVAST ULTIMATE 10 DISPOSITIVOS 3 AÑOS</h5>
+                            <p class="card-text cat">Avast Ultimate es un paquete de productos de Avast que consta de
+                                Avast Premier, Avast Cleanup Premium, Avast SecureLine VPN y Avast Passwords Premium.
+                            </p>
+                            <h4 class="costo">19000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="164">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/software/Adobe-Photoshop-Elements-1-Device.webp" alt="Adobe Photoshop Elements"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">ADOBE ELEMENTS PHOTOSHOP</h5>
+                            <p class="card-text cat">Cree maravillosas obras de arte basadas en fotos, edite sus
+                                imágenes para deshacerse de cualquier imperfección y elementos no deseados.</p>
+                            <h4 class="costo">50000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="165">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/software/Windows-10-PRO-1-PC.webp" alt="Windows 10 Pro"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">WINDOWS 10 PRO ORIGINAL 1 PC</h5>
+                            <p class="card-text cat">Windows 10 Pro, es un sistema operativo creado por Microsoft, se
+                                tiene en cuenta para empresas por su amplio sistema de seguridad de datos.</p>
+                            <h4 class="costo">4100</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="166">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/software/Windows-11-PRO-1-PC.webp" alt="Windows 11 Pro"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">WINDOWS 11 PRO ORIGINAL 1 PC</h5>
+                            <p class="card-text cat">Windows 11 está diseñado para trabajos híbridos, ofrece una
+                                experiencia de usuario potente que le ayuda a mantenerse enfocado y hacer más.</p>
+                            <h4 class="costo">5000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="167">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/software/Windows-10-Home-1-PC.webp" alt="Windows 10/11 Home"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">WINDOWS 10/11 HOME 1 PC</h5>
+                            <p class="card-text cat">Windows 10/11 Home ofrece seguridad integrada y aplicaciones para
+                                que sea productivo en un entorno seguro.</p>
+                            <h4 class="costo">6000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="168">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/software/Windows-7-Ultimate-1-PC.webp" alt="Windows 7 Ultimate"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">WINDOWS 7 ULTIMATE 1 PC</h5>
+                            <p class="card-text cat">Es la versión más completa de Windows, tiene las mismas
+                                características que la versión Enterprise, pero su licencia se vende a todo el mundo.
+                            </p>
+                            <h4 class="costo">4000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="169">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/software/Office-365-Pro-Plus-5-Dispositivos-1-Año.webp" alt="Office 365 Pro"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">OFFICE 365 PRO PLUS 1 AÑO</h5>
+                            <p class="card-text cat">Office 365 es un software de productividad que se instala en tu
+                                ordenador con una única licencia que incluye: Word, Power Point, Excel, Outlook,
+                                OneNote.</p>
+                            <h4 class="costo">8500</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="170">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/software/Office-2019-Pro-Plus-1-Año.webp" alt="Office 2019 Pro Plus"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">OFFICE 2019 PRO PLUS 1 PC</h5>
+                            <p class="card-text cat">Office Professional Plus 2019 te ayuda a crear, presentar,
+                                comunicar y publicar documentos profesionales con características que te permiten
+                                ahorrar tiempo.</p>
+                            <h4 class="costo">9000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="171">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/software/Office-2016-Pro-Plus-1-Año.webp" alt="Office 2016 Pro Plus"
+                            class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">OFFICE 2016 PRO PLUS 1 PC</h5>
+                            <p class="card-text cat">Office Professional Plus 2019 te ayuda a crear, presentar,
+                                comunicar y publicar documentos profesionales con características que te permiten
+                                ahorrar tiempo.</p>
+                            <h4 class="costo">5000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="172">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/software/Office-2021-Professional-Plus-1-Año.webp"
+                            alt="Office 2021 Professional Plus" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">OFFICE 2021 PROFESSIONAL PLUS</h5>
+                            <p class="card-text cat">Office Professional 2021 es para pequeñas empresas en crecimiento
+                                que desean las aplicaciones clásicas de Office (Word, Excel y PowerPoint).</p>
+                            <h4 class="costo">13000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="173">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/software/Visual-Studio-Professional-2022-1PC.webp"
+                            alt="Visual Studio Professional 2022" class="card-img-top img-pequeña">
+                        <div class="card-body">
+                            <h5 class="card-title">VISUAL STUDIO PROFESSIONAL 2022</h5>
+                            <p class="card-text cat">Visual Studio 2022 Professional es una solución excelente para
+                                trabajar de forma productiva y moderna, así como para abordar proyectos complejos.</p>
+                            <h4 class="costo">26000</h4>
+                            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="174">Comprar</a>
+                            <a href="#" class="btn btn-primary vermas">Ver Mas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <address class="justify-content-center">
+            <div class="footer justify-content-center">
+                <ul>
+                    <li id="facebook"><a href="https://www.facebook.com/">
+                            <span class="icono"><a href="https://www.facebook.com/" target="_blank"><i
+                                        class="fa-brands fa-facebook fa-lg"></i></a></span>
+                            <a href="https://www.facebook.com/" target="_blank" class="titulo"
+                                id="tface">facebook</a></a>
+                    </li>
+                    <li id="instagram"><a href="https://www.instagram.com" target="_blank">
+                            <span class="icono"><a href="https://www.instagram.com/" target="_blank"><i
+                                        class="fa-brands fa-instagram fa-lg"></i></a></span>
+                            <a href="https://www.instagram.com/" target="_blank" class="titulo"
+                                id="tinsta">instagram</a></a>
+                    </li>
+                    <li id="twitter"><a href="https://twitter.com/?lang=es" target="_blank">
+                            <span class="icono"><a href="https://twitter.com/?lang=es" target="_blank"><i
+                                        class="fa-brands fa-twitter fa-lg"></i></a></span>
+                            <span class="titulo" id="ttwitt">twitter</span></a>
+                    </li>
+                    <li id="tiktok"><a href="https://www.tiktok.com/es/" target="_blank">
+                            <span class="icono"><a href="https://www.tiktok.com/es/" target="_blank"><i
+                                        class="fa-brands fa-tiktok fa-lg"></i></a></span>
+                            <span class="titulo" id="ttik">tiktok</span></a>
+                    </li>
+                    <li id="telegram"><a href="https://telegram.org/" target="_blank">
+                            <span class="icono"><a href="https://telegram.org/" target="_blank"><i
+                                        class="fa-brands fa-telegram fa-lg"></i></a></span>
+                            <span class="titulo" id="ttel">telegram</span></a>
+                    </li>
+                    <li id="whatsapp"><a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
+                            <span class="icono"><a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><i
+                                        class="fa-brands fa-whatsapp fa-lg"></i></a></span>
+                            <span class="titulo" id="twhat">whatsapp</span></a>
+                    </li>
+                    <li id="linkedin"><a href="https://www.linkedin.com/home" target="_blank">
+                            <span class="icono"><a href="https://www.linkedin.com/home" target="_blank"><i
+                                        class="fa-brands fa-linkedin fa-lg"></i></a></span>
+                            <span class="titulo" id="tlink">linkedin</span></a>
+                    </li>
+                    <li id="youtube"><a href="https://www.youtube.com/" target="_blank">
+                            <span class="icono"><a href="https://www.youtube.com/" target="_blank"><i
+                                        class="fa-brands fa-youtube fa-lg"></i></a></span>
+                            <span class="titulo" id="tyout">youtube</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="slider">
+                <div class="slider-track">
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Amazon_Pay-Logo.wine.svg" alt="Amazon Pay">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/American_Express-Logo.wine.svg" alt="American Express">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/BBVA_USA-Logo.wine.svg" alt="BBVA">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Binance-Logo.wine.svg" alt="Binance">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Grupo_Financiero_Galicia-Logo.wine.svg" alt="Galicia">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/HSBC-Logo.wine.svg" alt="HSBC">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Mastercard-Logo.wine.svg" alt="Mastercard">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/MercPago.svg" alt="MercadoPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/naranja.svg" alt="Naranja">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PagoFacil.svg" alt="Pago Facil">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PayPal-Logo.wine.svg" alt="PayPal">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/RapiPago.svg" alt="RapiPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Santander_Bank-Logo.wine.svg" alt="Santander Rios">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Visa_Inc.-Logo.wine.svg" alt="Visa">
+                    </div>
+
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Amazon_Pay-Logo.wine.svg" alt="Amazon Pay">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/American_Express-Logo.wine.svg" alt="American Express">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/BBVA_USA-Logo.wine.svg" alt="BBVA">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Binance-Logo.wine.svg" alt="Binance">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Grupo_Financiero_Galicia-Logo.wine.svg" alt="Galicia">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/HSBC-Logo.wine.svg" alt="HSBC">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Mastercard-Logo.wine.svg" alt="Mastercard">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/MercPago.svg" alt="MercadoPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/naranja.svg" alt="Naranja">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PagoFacil.svg" alt="Pago Facil">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PayPal-Logo.wine.svg" alt="PayPal">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/RapiPago.svg" alt="RapiPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Santander_Bank-Logo.wine.svg" alt="Santander Rios">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Visa_Inc.-Logo.wine.svg" alt="Visa">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Amazon_Pay-Logo.wine.svg" alt="Amazon Pay">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/American_Express-Logo.wine.svg" alt="American Express">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/BBVA_USA-Logo.wine.svg" alt="BBVA">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Binance-Logo.wine.svg" alt="Binance">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Grupo_Financiero_Galicia-Logo.wine.svg" alt="Galicia">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/HSBC-Logo.wine.svg" alt="HSBC">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Mastercard-Logo.wine.svg" alt="Mastercard">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/MercPago.svg" alt="MercadoPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/naranja.svg" alt="Naranja">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PagoFacil.svg" alt="Pago Facil">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PayPal-Logo.wine.svg" alt="PayPal">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/RapiPago.svg" alt="RapiPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Santander_Bank-Logo.wine.svg" alt="Santander Rios">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Visa_Inc.-Logo.wine.svg" alt="Visa">
+                    </div>
+
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Amazon_Pay-Logo.wine.svg" alt="Amazon Pay">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/American_Express-Logo.wine.svg" alt="American Express">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/BBVA_USA-Logo.wine.svg" alt="BBVA">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Binance-Logo.wine.svg" alt="Binance">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Grupo_Financiero_Galicia-Logo.wine.svg" alt="Galicia">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/HSBC-Logo.wine.svg" alt="HSBC">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Mastercard-Logo.wine.svg" alt="Mastercard">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/MercPago.svg" alt="MercadoPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/naranja.svg" alt="Naranja">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PagoFacil.svg" alt="Pago Facil">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PayPal-Logo.wine.svg" alt="PayPal">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/RapiPago.svg" alt="RapiPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Santander_Bank-Logo.wine.svg" alt="Santander Rios">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Visa_Inc.-Logo.wine.svg" alt="Visa">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Amazon_Pay-Logo.wine.svg" alt="Amazon Pay">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/American_Express-Logo.wine.svg" alt="American Express">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/BBVA_USA-Logo.wine.svg" alt="BBVA">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Binance-Logo.wine.svg" alt="Binance">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Grupo_Financiero_Galicia-Logo.wine.svg" alt="Galicia">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/HSBC-Logo.wine.svg" alt="HSBC">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Mastercard-Logo.wine.svg" alt="Mastercard">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/MercPago.svg" alt="MercadoPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/naranja.svg" alt="Naranja">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PagoFacil.svg" alt="Pago Facil">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PayPal-Logo.wine.svg" alt="PayPal">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/RapiPago.svg" alt="RapiPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Santander_Bank-Logo.wine.svg" alt="Santander Rios">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Visa_Inc.-Logo.wine.svg" alt="Visa">
+                    </div>
+                </div>
+            </div>
+        </address>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>

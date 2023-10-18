@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Conectividad</title>
+</head>
+
+<body>
+    <header class="header-nav">
+        <nav class="navbar justify-content-center container ps-5" data-bs-theme="dark">
+            <div class="container justify-content-center">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="/img/The world studios.png" alt="Logo" width="100" height="100"
+                        class="d-inline-block align-text-top">
+                </a>
+                <div class="dropdown">
+                    <a class="btn dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Categorias</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="todo.html">Todo</a></li>
+                        <li><a class="dropdown-item" href="notebooks.html">Notebooks</a></li>
+                        <li><a class="dropdown-item" href="software.html">Software</a></li>
+                        <li><a class="dropdown-item" href="conectividad.html">Conectividad</a></li>
+                        <li><a class="dropdown-item" href="accesorios.html">Accesorios</a></li>
+                        <li><a class="dropdown-item" href="perifericos.html">Perifericos</a></li>
+                        <li><a class="dropdown-item" href="consolas.html">Consolas</a></li>
+
+                    </ul>
+                </div>
+                <a class="nav-link ms-5 link" href="contacto.html">Contacto</a>
+                <a class="nav-link ms-5 link" href="nosotros.html">Nosotros</a>
+                
+                <div class="dropdown">
+                    <a type="button" class="nav-link ms-5 carrito" data-bs-toggle="dropdown" aria-expanded="false"><i
+                            class="fa-sharp fa-solid fa-cart-shopping"></i>
+                    </a>
+                    <ul class="dropdown-menu" id="carrito">
+                        <table id="lista-carrito" class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Imagen</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Precio</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="d-grid gap-2 d-md-block justify-content-md-center">
+                            <button id="vaciar-carrito" class="btn btn-primary">Vaciar</button>
+                            <button id="procesar-pedido" class="btn btn-primary">Procesar Comprar</button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            <button class="darkModeSwitch ms-2" id="switch">
+                <span><i class="fa-regular fa-moon"></i></span>
+                <span><i class="fa-regular fa-sun"></i></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="conectividad d-flex justify-content-center">
+        <section>
+            <header>
+                <h2>Conectividad</h2>
+            </header>
+            <div class="container" id="lista-productos">
+                <div class="card">
+                    <img src="/img/conectividad/router-WiFi-Mercusys-TP-Link-MW302R.webp"
+                        alt="Router Mercusys TP-Link MW302R" class="card-img-top img-pequeña">
+                    <div class="card-body">
+                        <h5 class="card-title">ROUTER MERCUSYS TP-LINK MW302R</h5>
+                        <ul class="card-text cat">
+                            <li>Velocidad de 300Mbps</li>
+                            <li>Alcance de 300m</li>
+                            <li>Con 2 antenas</li>
+                        </ul>
+                        <h4 class="costo"> 64800</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="22">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/conectividad/router-WiFi-Mercusys-TP-Link-MW305R.webp"
+                        alt="router Mercusys TP-LINK MW305R" class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">ROUTER MERCUSYS TP-LINK MW305R</h5>
+                        <ul class="card-text cat">
+                            <li>Velocidad de 300Mbps</li>
+                            <li>Alcance de 400m</li>
+                            <li>Con 2 antenas</li>
+                        </ul>
+                        <h4 class="costo"> 46400</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="23">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/conectividad/router-WiFi-ASUS-RT-N300-B1.webp" alt="router ASUS RT-N300 B1"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">ROUTER ASUS RT-N300 B1</h5>
+                        <ul class="card-text cat">
+                            <li>Velocidad de 300Mbps</li>
+                            <li>Alcance de 300m</li>
+                            <li>Con 2 antenas</li>
+                        </ul>
+                        <h4 class="costo"> 65000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="24">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/conectividad/router-WiFi-TP-Link-WR850N.webp" alt="router TP-LINK WR850N"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">ROUTER WIFI TP-LINK WR850N</h5>
+                        <ul class="card-text cat">
+                            <li>Velocidad de 300Mbps</li>
+                            <li>Alcance de 450m</li>
+                            <li>Con 2 antenas</li>
+                        </ul>
+                        <h4 class="costo"> 45000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="25">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/conectividad/repetidor-WiFi-TP-Link-WA850RE.webp" class="card-img-top img-grande"
+                        alt="repetidor TP-LINK WA850RE">
+                    <div class="card-body">
+                        <h5 class="card-title">REPETIDOR WIFI TP-LINK WA850RE</h5>
+                        <ul class="card-text cat">
+                            <li>Velocidad de 100Mbps</li>
+                            <li>Alcance de 300m</li>
+                            <li>Con 2 antenas internas</li>
+                        </ul>
+                        <h4 class="costo"> 64000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="26">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/conectividad/router-WiFi-TP-Link-Archer-C24.webp" alt="router TP-LINK Archer C24"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">ROUTER WIF TP-LINK ARCHER C24 AC750</h5>
+                        <ul class="card-text cat">
+                            <li>Velocidad de 300Mbps</li>
+                            <li>Alcance de 300m</li>
+                            <li>Con 4 antenas exteriores</li>
+                        </ul>
+                        <h4 class="costo"> 55000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="27">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/conectividad/router-WiFi-TP-Link-WR940N.webp" alt="router TP-LINK WR940N"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">ROUTER WIFI TP-LINK WR940N</h5>
+                        <ul class="card-text cat">
+                            <li>Velocidad de 450Mbps</li>
+                            <li>Alcance de 450m</li>
+                            <li>Con 3 antenas</li>
+                        </ul>
+                        <h4 class="costo"> 57000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="28">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/conectividad/router-WiFi-ASUS-RT-AC1200.webp" alt="router ASUS RT-AC1200"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">ROUTER ASUS RT AC1200 DUAL BAND</h5>
+                        <ul class="card-text cat">
+                            <li>Velocidad de 300Mbps</li>
+                            <li>Alcance de 300m</li>
+                            <li>Con 4 antenas</li>
+                        </ul>
+                        <h4 class="costo"> 58000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="29">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/conectividad/router-WiFi-TP-Link-Archer-C5-AC1200.webp"
+                        alt="router TP-LINK Archer C5 AC1200" class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">ROUTER TP-LINK ARCHER C5 AC1200</h5>
+                        <ul class="card-text cat">
+                            <li>Velocidad de 300Mbps</li>
+                            <li>Alcance de 500m</li>
+                            <li>Con 4 antenas</li>
+                        </ul>
+                        <h4 class="costo"> 66000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="30">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/conectividad/router-WiFi-TP-Link-Archer-C50-AC1200.webp"
+                        alt="router TP-LINK Archer C50 AC1200" class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">ROUTER TP-LINK ARCHER C50 AC1200</h5>
+                        <ul class="card-text cat">
+                            <li>Velocidad de 300Mbps</li>
+                            <li>Alcance de 400m</li>
+                            <li>Con 4 antenas</li>
+                        </ul>
+                        <h4 class="costo"> 70000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="31">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/conectividad/router-WiFi-TP-Link-WR841HP.webp" alt="router TP-LINK WR841HP"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">ROUTER TP-LINK WR841HP</h5>
+                        <ul class="card-text cat">
+                            <li>Velocidad de 300Mbps</li>
+                            <li>Alcance de 900m</li>
+                            <li>Con 2 antenas</li>
+                        </ul>
+                        <h4 class="costo"> 83000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="32">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/conectividad/sistema-WiFi-Mesh-TP-Link-Deco-E4-pack-X3.webp"
+                        alt="sistema Mesh TP-LINK Deco E4 Pack X3" class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">SISTEMA MESH TP-LINK DECO E4 AC1200</h5>
+                        <ul class="card-text cat">
+                            <li>Velocidad de 500Mbps</li>
+                            <li>Alcance de 260m² c/u</li>
+                            <li>Pack de 3 unidades</li>
+                        </ul>
+                        <h4 class="costo"> 334000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="33">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/conectividad/sistema-WiFi-Mesh-TP-Link-Deco-X20-pack-X2.webp"
+                        alt="sistema Mesh TP-LINK Deco X2 AX1800 Pack X2" class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">SISTEMA MESH TP-LINK DECO AX1800</h5>
+                        <ul class="card-text cat">
+                            <li>Velocidad de 600Mbps</li>
+                            <li>Alcance de 300m² c/u</li>
+                            <li>Pack de 2 unidades</li>
+                        </ul>
+                        <h4 class="costo"> 350000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="34">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/conectividad/router-Nexxt-AMP.webp" alt="router Nexxt AMP"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">ROUTER WIFI NEXXT AMP BLACK</h5>
+                        <ul class="card-text cat">
+                            <li>Velocidad de 300Mbps</li>
+                            <li>Alcance de 100m</li>
+                            <li>Con 3 antenas</li>
+                        </ul>
+                        <h4 class="costo"> 14000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="35">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/conectividad/repetidor-TP-LINK-WA820RE.webp" alt="repetidor TP-LINK WA820RE"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">REPETIDOR TP-LINK WA820RE</h5>
+                        <ul class="card-text cat">
+                            <li>Velocidad de 300Mbps</li>
+                            <li>Alcance de 100m</li>
+                            <li>Es de conexion USB</li>
+                        </ul>
+                        <h4 class="costo"> 12000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="36">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/conectividad/router-WiFi-TP-Link-WR840N.webp" alt="router TP-LINK WR840N"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">ROUTER TP-LINK WR840N</h5>
+                        <ul class="card-text cat">
+                            <li>Velocidad de 300Mbps</li>
+                            <li>Alcance de 300m</li>
+                            <li>Con 2 antenas</li>
+                        </ul>
+                        <h4 class="costo"> 22000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="37">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/conectividad/router-WiFi-TP-Link-WR841N.webp" alt="router TP-LINK WR841N"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">ROUTER WIFI TP-LINK WR841N</h5>
+                        <ul class="card-text cat">
+                            <li>Velocidad de 300Mbps</li>
+                            <li>Alcance de 300m</li>
+                            <li>Con 2 antenas</li>
+                        </ul>
+                        <h4 class="costo"> 14000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="38">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/conectividad/acces-Point-TP-Link-WA801ND.webp" alt="access Point TP-LINK WA801ND"
+                        class="card-img-top img-grande">
+                    <div class="card-body">
+                        <h5 class="card-title">ACCESS POINT TP-LINK WA801ND</h5>
+                        <ul class="card-text cat">
+                            <li>Velocidad de 350Mbps</li>
+                            <li>Alcance de 200m</li>
+                            <li>Con 2 antenas</li>
+                        </ul>
+                        <h4 class="costo"> 44000</h4>
+                        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="39">Comprar</a>
+                        <a href="#" class="btn btn-primary vermas">Ver mas</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <address class="justify-content-center">
+            <div class="footer justify-content-center">
+                <ul>
+                    <li id="facebook"><a href="https://www.facebook.com/">
+                            <span class="icono"><a href="https://www.facebook.com/" target="_blank"><i
+                                        class="fa-brands fa-facebook fa-lg"></i></a></span>
+                            <a href="https://www.facebook.com/" target="_blank" class="titulo"
+                                id="tface">facebook</a></a>
+                    </li>
+                    <li id="instagram"><a href="https://www.instagram.com" target="_blank">
+                            <span class="icono"><a href="https://www.instagram.com/" target="_blank"><i
+                                        class="fa-brands fa-instagram fa-lg"></i></a></span>
+                            <a href="https://www.instagram.com/" target="_blank" class="titulo"
+                                id="tinsta">instagram</a></a>
+                    </li>
+                    <li id="twitter"><a href="https://twitter.com/?lang=es" target="_blank">
+                            <span class="icono"><a href="https://twitter.com/?lang=es" target="_blank"><i
+                                        class="fa-brands fa-twitter fa-lg"></i></a></span>
+                            <span class="titulo" id="ttwitt">twitter</span></a>
+                    </li>
+                    <li id="tiktok"><a href="https://www.tiktok.com/es/" target="_blank">
+                            <span class="icono"><a href="https://www.tiktok.com/es/" target="_blank"><i
+                                        class="fa-brands fa-tiktok fa-lg"></i></a></span>
+                            <span class="titulo" id="ttik">tiktok</span></a>
+                    </li>
+                    <li id="telegram"><a href="https://telegram.org/" target="_blank">
+                            <span class="icono"><a href="https://telegram.org/" target="_blank"><i
+                                        class="fa-brands fa-telegram fa-lg"></i></a></span>
+                            <span class="titulo" id="ttel">telegram</span></a>
+                    </li>
+                    <li id="whatsapp"><a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
+                            <span class="icono"><a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><i
+                                        class="fa-brands fa-whatsapp fa-lg"></i></a></span>
+                            <span class="titulo" id="twhat">whatsapp</span></a>
+                    </li>
+                    <li id="linkedin"><a href="https://www.linkedin.com/home" target="_blank">
+                            <span class="icono"><a href="https://www.linkedin.com/home" target="_blank"><i
+                                        class="fa-brands fa-linkedin fa-lg"></i></a></span>
+                            <span class="titulo" id="tlink">linkedin</span></a>
+                    </li>
+                    <li id="youtube"><a href="https://www.youtube.com/" target="_blank">
+                            <span class="icono"><a href="https://www.youtube.com/" target="_blank"><i
+                                        class="fa-brands fa-youtube fa-lg"></i></a></span>
+                            <span class="titulo" id="tyout">youtube</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="footer justify-content-center slide">
+                <img src="" alt="">
+            </div>
+            <div class="slider">
+                <div class="slider-track">
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Amazon_Pay-Logo.wine.svg" alt="Amazon Pay">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/American_Express-Logo.wine.svg" alt="American Express">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/BBVA_USA-Logo.wine.svg" alt="BBVA">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Binance-Logo.wine.svg" alt="Binance">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Grupo_Financiero_Galicia-Logo.wine.svg" alt="Galicia">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/HSBC-Logo.wine.svg" alt="HSBC">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Mastercard-Logo.wine.svg" alt="Mastercard">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/MercPago.svg" alt="MercadoPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/naranja.svg" alt="Naranja">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PagoFacil.svg" alt="Pago Facil">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PayPal-Logo.wine.svg" alt="PayPal">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/RapiPago.svg" alt="RapiPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Santander_Bank-Logo.wine.svg" alt="Santander Rios">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Visa_Inc.-Logo.wine.svg" alt="Visa">
+                    </div>
+
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Amazon_Pay-Logo.wine.svg" alt="Amazon Pay">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/American_Express-Logo.wine.svg" alt="American Express">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/BBVA_USA-Logo.wine.svg" alt="BBVA">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Binance-Logo.wine.svg" alt="Binance">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Grupo_Financiero_Galicia-Logo.wine.svg" alt="Galicia">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/HSBC-Logo.wine.svg" alt="HSBC">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Mastercard-Logo.wine.svg" alt="Mastercard">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/MercPago.svg" alt="MercadoPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/naranja.svg" alt="Naranja">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PagoFacil.svg" alt="Pago Facil">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PayPal-Logo.wine.svg" alt="PayPal">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/RapiPago.svg" alt="RapiPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Santander_Bank-Logo.wine.svg" alt="Santander Rios">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Visa_Inc.-Logo.wine.svg" alt="Visa">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Amazon_Pay-Logo.wine.svg" alt="Amazon Pay">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/American_Express-Logo.wine.svg" alt="American Express">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/BBVA_USA-Logo.wine.svg" alt="BBVA">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Binance-Logo.wine.svg" alt="Binance">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Grupo_Financiero_Galicia-Logo.wine.svg" alt="Galicia">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/HSBC-Logo.wine.svg" alt="HSBC">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Mastercard-Logo.wine.svg" alt="Mastercard">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/MercPago.svg" alt="MercadoPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/naranja.svg" alt="Naranja">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PagoFacil.svg" alt="Pago Facil">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PayPal-Logo.wine.svg" alt="PayPal">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/RapiPago.svg" alt="RapiPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Santander_Bank-Logo.wine.svg" alt="Santander Rios">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Visa_Inc.-Logo.wine.svg" alt="Visa">
+                    </div>
+
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Amazon_Pay-Logo.wine.svg" alt="Amazon Pay">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/American_Express-Logo.wine.svg" alt="American Express">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/BBVA_USA-Logo.wine.svg" alt="BBVA">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Binance-Logo.wine.svg" alt="Binance">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Grupo_Financiero_Galicia-Logo.wine.svg" alt="Galicia">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/HSBC-Logo.wine.svg" alt="HSBC">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Mastercard-Logo.wine.svg" alt="Mastercard">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/MercPago.svg" alt="MercadoPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/naranja.svg" alt="Naranja">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PagoFacil.svg" alt="Pago Facil">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PayPal-Logo.wine.svg" alt="PayPal">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/RapiPago.svg" alt="RapiPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Santander_Bank-Logo.wine.svg" alt="Santander Rios">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Visa_Inc.-Logo.wine.svg" alt="Visa">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Amazon_Pay-Logo.wine.svg" alt="Amazon Pay">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/American_Express-Logo.wine.svg" alt="American Express">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/BBVA_USA-Logo.wine.svg" alt="BBVA">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Binance-Logo.wine.svg" alt="Binance">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Grupo_Financiero_Galicia-Logo.wine.svg" alt="Galicia">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/HSBC-Logo.wine.svg" alt="HSBC">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Mastercard-Logo.wine.svg" alt="Mastercard">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/MercPago.svg" alt="MercadoPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/naranja.svg" alt="Naranja">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PagoFacil.svg" alt="Pago Facil">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/PayPal-Logo.wine.svg" alt="PayPal">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/RapiPago.svg" alt="RapiPago">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Santander_Bank-Logo.wine.svg" alt="Santander Rios">
+                    </div>
+                    <div class="footer justify-content-center slide">
+                        <img src="/img/logos/Visa_Inc.-Logo.wine.svg" alt="Visa">
+                    </div>
+                </div>
+            </div>
+        </address>
+    </footer>
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>

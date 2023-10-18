@@ -164,7 +164,7 @@ export function procesarPedido(e) {
             background: '#000',
         })
     } else {
-        location.href = 'carrito.html'
+        location.href = 'pages/carrito.html'
     }
 }
 
@@ -184,7 +184,6 @@ export function pagar() {
             text: 'Necesitas elegír al menos un producto!',
             footer: '<a href="../index.html">Ir al menu</a>'
         })
-
     }
 }
 

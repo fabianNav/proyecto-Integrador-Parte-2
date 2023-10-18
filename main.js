@@ -45,13 +45,11 @@ function cargarEventos() {
     }
 
 }
+const vaciarCarritoBtn = carrito.querySelector('#vaciar-carrito')
+const procesarPedidoBtn = carrito.querySelector('#procesar-pedido')
 
 function esIndex() {
     //console.log('No estoy en carrito!')
-
-
-    const vaciarCarritoBtn = carrito.querySelector('#vaciar-carrito')
-    const procesarPedidoBtn = carrito.querySelector('#procesar-pedido')
 
     // Se ejecuta cuando presiono sobre el botón comprar
     productos.addEventListener('click', (e) => comprarProducto(e))
@@ -72,9 +70,6 @@ function esIndex() {
 }
 
 function esProductos() {
-
-    const vaciarCarritoBtn = carrito.querySelector('#vaciar-carrito')
-    const procesarPedidoBtn = carrito.querySelector('#procesar-pedido')
     //console.log(vaciarCarritoBtn, procesarPedidoBtn)
 
     // Se ejecuta cuando presiono sobre el botón comprar

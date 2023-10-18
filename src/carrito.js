@@ -164,7 +164,7 @@ export function procesarPedido(e) {
             background: '#000',
         })
     } else {
-        location.href = '/pages/carrito.html'
+        location.href = 'https://main--fanciful-mermaid-a4ff68.netlify.app/pages/carrito.html'
     }
 }
 

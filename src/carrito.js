@@ -151,7 +151,22 @@ function vaciarLocalStorage() {
     window.localStorage.clear()
 }
 
-
+// Procesando el pedido
+export function procesarPedido(e) {
+    e.preventDefault() // Detener el comportamiento por defecto de los <a> o los <form>
+    let array = obtenerProductosLocalStorage()
+    if (array.length === 0) {
+        Swal.fire({
+            title: 'No hay productos en el carrito',
+            width: 600,
+            padding: '3em',
+            color: '#00cccc',
+            background: '#000',
+        })
+    } else {
+        location.href = 'pages/carrito.html'
+    }
+}
 
 export function pagar() {
 

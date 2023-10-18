@@ -28,33 +28,7 @@ const carrito = document.getElementById('carrito')
 const carritoCompra = document.getElementById('lista-compra')
 
 
-cargarEventos()
 
-function cargarEventos() {
-
-    const ruta = String(location.href)
-
-    if (!ruta.includes('carrito') && !ruta.includes('index') && !ruta.includes('contacto') && !ruta.includes('nosotros')) {
-        esProductos()
-    }
-
-    if (document.title.includes('Inicio')) {
-        esIndex()
-    }
-
-    if (ruta.includes('carrito')) {
-        esCarrito()
-    }
-
-    if (ruta.includes('contacto')) {
-        contacto()
-    }
-
-    if (ruta.includes('nosotros')) {
-        nosotros()
-    }
-
-}
 
 function esIndex() {
     //console.log('No estoy en carrito!')
@@ -138,4 +112,32 @@ function nosotros() {
     
 
     cambiarTema()
+}
+
+cargarEventos()
+
+function cargarEventos() {
+
+    const ruta = String(location.href)
+
+    if (!ruta.includes('carrito') && !ruta.includes('index') && !ruta.includes('contacto') && !ruta.includes('nosotros')) {
+        esProductos()
+    }
+
+    if (ruta.includes('index')) {
+        esIndex()
+    }
+
+    if (ruta.includes('carrito')) {
+        esCarrito()
+    }
+
+    if (ruta.includes('contacto')) {
+        contacto()
+    }
+
+    if (ruta.includes('nosotros')) {
+        nosotros()
+    }
+
 }

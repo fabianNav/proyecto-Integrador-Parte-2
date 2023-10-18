@@ -164,7 +164,23 @@ export function procesarPedido(e) {
             background: '#000',
         })
     } else {
-        location.href = 'pages/carrito.html'
+        location.href = '/pages/carrito.html'
+    }
+}
+
+export function procesarProductos(e) {
+    e.preventDefault() // Detener el comportamiento por defecto de los <a> o los <form>
+    let array = obtenerProductosLocalStorage()
+    if (array.length === 0) {
+        Swal.fire({
+            title: 'No hay productos en el carrito',
+            width: 600,
+            padding: '3em',
+            color: '#00cccc',
+            background: '#000',
+        })
+    } else {
+        location.href = 'carrito.html'
     }
 }
 
@@ -187,21 +203,7 @@ export function pagar() {
     }
 }
 
-export function procesarProductos(e) {
-    e.preventDefault() // Detener el comportamiento por defecto de los <a> o los <form>
-    let array = obtenerProductosLocalStorage()
-    if (array.length === 0) {
-        Swal.fire({
-            title: 'No hay productos en el carrito',
-            width: 600,
-            padding: '3em',
-            color: '#00cccc',
-            background: '#000',
-        })
-    } else {
-        location.href = 'carrito.html'
-    }
-}
+
 
 // Mostrar los productos guardados en el LS en la página de carrito.html
 export function leerLocalStorageCompra() {

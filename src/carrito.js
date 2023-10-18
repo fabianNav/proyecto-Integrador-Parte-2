@@ -164,8 +164,10 @@ export function procesarPedido(e) {
             background: '#000',
         })
     } else {
+        console.log('maxi')
         location.href = 'https://main--fanciful-mermaid-a4ff68.netlify.app/pages/carrito.html'
-    }
+        
+    } 
 }
 
 export function procesarProductos(e) {

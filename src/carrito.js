@@ -157,14 +157,14 @@ export function procesarPedido(e) {
     let array = obtenerProductosLocalStorage()
     if (array.length === 0) {
         Swal.fire({
-            title: 'No hay productos en el carrito, GIL',
+            title: 'No hay productos en el carrito',
             width: 600,
             padding: '3em',
             color: '#00cccc',
             background: '#000',
         })
     } else {
-        location.href = 'pages/carrito.html'
+        location.href = '/pages/carrito.html'
     }
 }
 
@@ -193,7 +193,7 @@ export function procesarPedidoProductos(e) {
     let array = obtenerProductosLocalStorage()
     if (array.length === 0) {
         Swal.fire({
-            title: 'No hay productos en el carrito, GIL',
+            title: 'No hay productos en el carrito',
             width: 600,
             padding: '3em',
             color: '#00cccc',

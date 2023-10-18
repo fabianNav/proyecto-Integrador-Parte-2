@@ -36,21 +36,13 @@ function cargarEventos() {
 
     if (!ruta.includes('carrito') && !ruta.includes('index') && !ruta.includes('contacto') && !ruta.includes('nosotros')) {
         esProductos()
-    }
-
-    if (ruta.includes('index')) {
+    } else if (ruta.includes('index')) {
         esIndex()
-    }
-
-    if (ruta.includes('carrito')) {
+    } else if (ruta.includes('carrito')) {
         esCarrito()
-    }
-
-    if (ruta.includes('contacto')) {
+    } else if (ruta.includes('contacto')) {
         contacto()
-    }
-
-    if (ruta.includes('nosotros')) {
+    } else if (ruta.includes('nosotros')) {
         nosotros()
     }
 
@@ -111,7 +103,6 @@ function esCarrito() {
 
     const pagarCarrito = document.getElementById('pagar')
 
-    console.log('Estoy en carrito')
     // Voy a leer el localStorage
     document.addEventListener('DOMContentLoaded', leerLocalStorageCompra())
 

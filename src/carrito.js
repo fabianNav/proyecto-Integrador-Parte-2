@@ -164,10 +164,8 @@ export function procesarPedido(e) {
             background: '#000',
         })
     } else {
-        console.log('maxi')
-        location.href = 'https://educacionit.com'
-        
-    } 
+        location.href = 'pages/carrito.html'
+    }
 }
 
 export function procesarProductos(e) {

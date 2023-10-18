@@ -38,10 +38,8 @@ function cargarEventos() {
         esProductos()
     } else if (ruta.includes('carrito')) {
         esCarrito()
-    } else if (ruta.includes('contacto')) {
-        contacto()
-    } else if (ruta.includes('nosotros')) {
-        nosotros()
+    } else if (ruta.includes('contacto') || ruta.includes('nosotros')) {
+        contactoONosotros()
     } else {
         esIndex()
     }
@@ -118,15 +116,9 @@ function esCarrito() {
     pagarCarrito.addEventListener('click', e => pagar())
 }
 
-function contacto() {
+function contactoONosotros() {
 
 
     cambiarTema()
 
-}
-
-function nosotros() {
-
-
-    cambiarTema()
 }

@@ -151,18 +151,7 @@ function vaciarLocalStorage() {
     window.localStorage.clear()
 }
 
-// Procesando el pedido
-export function procesarPedido(e) {
-    e.preventDefault() // Detener el comportamiento por defecto de los <a> o los <form>
-    let array = obtenerProductosLocalStorage()
-    if ( array.length === 0 ) {
-        console.warn('El carrito está vacío')
-    } else {
-        location.href = 'pages/carrito.html'
-    }
 
-
-}
 
 export function pagar() {
 

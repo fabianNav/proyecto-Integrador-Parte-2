@@ -66,7 +66,7 @@ function esIndex() {
     vaciarCarritoBtn.addEventListener('click', e => vaciarCarrito(e))
 
     // Enviar pedido a otra página
-    procesarPedidoBtn.addEventListener('click', e => procesarPedido(e))
+    procesarPedidoBtn.addEventListener('click', e => procesarPedidoProductos(e))
 
     cambiarTema()
 }

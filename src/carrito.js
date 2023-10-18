@@ -164,7 +164,7 @@ export function procesarPedido(e) {
             background: '#000',
         })
     } else {
-        location.href = '/pages/carrito.html'
+        location.href = 'pages/carrito'
     }
 }
 

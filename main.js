@@ -30,9 +30,14 @@ const carritoCompra = document.getElementById('lista-compra')
 
 cargarEventos()
 
+esIndex()
+
+
 function cargarEventos() {
 
     const ruta = String(location.href)
+
+
 
     if (!ruta.includes('carrito.html') && !ruta.includes('index.html') && !ruta.includes('contacto.html') && !ruta.includes('nosotros.html')) {
         esProductos()
@@ -40,9 +45,7 @@ function cargarEventos() {
         esCarrito()
     } else if (ruta.includes('contacto.html') || ruta.includes('nosotros')) {
         contactoONosotros()
-    } else {
-        esIndex()
-    }
+    } 
 
 }
 

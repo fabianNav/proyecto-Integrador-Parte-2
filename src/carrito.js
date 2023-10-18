@@ -163,7 +163,6 @@ export function procesarPedido(e) {
             color: '#00cccc',
             background: '#000',
         })
-
     } else {
         location.href = 'pages/carrito.html'
     }

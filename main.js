@@ -38,7 +38,7 @@ function cargarEventos() {
 
     const ruta = String(location.href)
 
-
+    esIndex()
 
     if (!ruta.includes('carrito.html') && !ruta.includes('index.html') && !ruta.includes('contacto.html') && !ruta.includes('nosotros.html')) {
         esProductos()
@@ -49,7 +49,6 @@ function cargarEventos() {
     } 
 
 }
-esIndex()
 
 function esIndex() {
     //console.log('No estoy en carrito!')

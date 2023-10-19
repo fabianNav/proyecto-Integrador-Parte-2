@@ -27,7 +27,7 @@ const carrito = document.getElementById('carrito')
 // console.log(carrito)
 const carritoCompra = document.getElementById('lista-compra')
 
-esIndex()
+
 
 cargarEventos()
 
@@ -49,6 +49,7 @@ function cargarEventos() {
     } 
 
 }
+esIndex()
 
 function esIndex() {
     //console.log('No estoy en carrito!')

@@ -27,10 +27,11 @@ const carrito = document.getElementById('carrito')
 // console.log(carrito)
 const carritoCompra = document.getElementById('lista-compra')
 
+esIndex()
 
 cargarEventos()
 
-esIndex()
+
 
 
 function cargarEventos() {
